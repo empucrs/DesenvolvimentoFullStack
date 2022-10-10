@@ -1,8 +1,5 @@
-# DesenvolvimentoFullStack
-Repositório contendo recursos elaborados para o curso PUC/UOL Desenvolvimento Full Stack
-
-Especialização em Desenvolvimento-Full-Stack - PUCRS
-Repositório destinado aos materiais para reunir as dúvidas recorrentes entre os alunos do Curso de Especialização em Desenvolvimento-Full-Stack da Universidade Pontifícia Universidade Católica - PUCRS.
+## Desenvolvimento Full Stack - Especialização em Desenvolvimento-Full-Stack - PUCRS
+Repositório contendo recursos elaborados para o curso PUC/UOL Desenvolvimento Full Stack e destinado aos materiais para reunir as dúvidas recorrentes entre os alunos do Curso de Especialização em Desenvolvimento-Full-Stack da Universidade Pontifícia Universidade Católica - PUCRS.
 
 Atualmente as 23 disciplinas serão disponibilizadas aos alunos, este material contemplará todas elas por, após terem gerado comentários. São elas:
 
