@@ -1,0 +1,11 @@
+Comentário 1 - Ainda vemos em vários sistemas (utilitários do windows, visual studio, delphi, etc) o uso de programação estruturada, usando o "velho" GOTO e tudo mais, como exemplo nos arquivos BATCH (*.BAT):
+
+O exemplo abaixo exibe computadores na rede e seus usuários conectados: https://www.robvanderwoude.com/sourcecode.php?src=actusr_nt
+
+Outros: https://www.robvanderwoude.com/batexamples.php
+
+Resposta 1 - Sim, algumas empresas trabalham com soluções legadas ou desenvolvendo com programação estruturada, ainda, é bem comum no mercado de trabalho.
+
+Comentário 2 - Corroborando com um dos itens exposto pelo professor, em uma das empresas que trabalhei a pouco tempo (a uns 3 anos atrás), mais de 90% do trabalho era de manutenção de códigos. Trabalhava com a linguagem Natural para computadores de grande porte (Mainframe).
+
+Resposta 2- Isso mesmo. Outro exemplo de Empresa que trabalha com Mainframe ainda, é o Banrisul.
