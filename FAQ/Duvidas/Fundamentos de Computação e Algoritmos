@@ -44,11 +44,6 @@ Pergunta 8 - No switch, onde o case não possui o break, e considerando que a co
 
 Resposta 8 -  O comportamento do Switch, ao executar o código, ocorre a partir do case de sucesso, até encontrar o Break, em qualquer linguagem, Assim, sem o Break, o Switch faz o que chamamos de "Fall Through", ou seja, ele entra na condição que estiver abaixo dele. Logo, sem o Break, ele não irá cair no Default, mesmo com as condições dos cases sendo falsas. Você pode, ao invés de usar um Break, colocar um Return, que retorna a função e para o código naquele ponto, sem executar os demais Cases.
 
-Pergunta 9 - Eu fiquei com dúvida em relação a entrega, trabalho de fechamento de curso. Hoje finalizei o módulo de Programação Orientada a Objetos, e essa dúvida se deu justamente por não saber se eu deveria já atuar em algum ponto visando o trabalho final. Tenho acompanhado as aulas, replicando "alguns" códigos demonstrados (somente os que tenho mais dúvidas), e outros códigos eu executo do próprio material fornecido via repo no github. Entendi que temos 2 opções: - Desenvolver uma solução aplicando tudo que aprendemos durante o curso; - Entregar um portfolio com tudo desenvolvido no curso. A entrega pode ser de um ou dos dois itens. Correto? 
-A dúvida sobre a questão do portfolio com o desenvolvido durante o curso, é se deveria ser somente o código replicado das aulas? Ou se tem alguma área com desafios ou coisas do tipo de códigos que precisaríamos desenvolver para entregar?
+Pergunta 9 - Na linha 31 do algoritmo de lista encadeada (var MyLL = new LinkedList();), se por uma questão de boas práticas eu quisesse declarar esta variável como const, os métodos da classe de adição ainda funcionariam corretamente?
 
-Resposta 9 - Esclarecendo: temos duas opões de TCC, uma que é a solução em si e a outra o memorial, certo? No TCC os alunos terão professores orientadores, que darão um auxílio nas dúvidas. Importante, no caso de escolheres desenvolver a solução, deves sim, utilizar todas as tecnologias.
-
-Pergunta 10 - Na linha 31 do algoritmo de lista encadeada (var MyLL = new LinkedList();), se por uma questão de boas práticas eu quisesse declarar esta variável como const, os métodos da classe de adição ainda funcionariam corretamente?
-
-Resposta 10 - Sim, pode ser declarada como const. Os métodos da classe funcionam corretamente.
+Resposta 9 - Sim, pode ser declarada como const. Os métodos da classe funcionam corretamente.
