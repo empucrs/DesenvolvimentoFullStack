@@ -49,10 +49,6 @@ A dúvida sobre a questão do portfolio com o desenvolvido durante o curso, é s
 
 Resposta 9 - Esclarecendo: temos duas opões de TCC, uma que é a solução em si e a outra o memorial, certo? No TCC os alunos terão professores orientadores, que darão um auxílio nas dúvidas. Importante, no caso de escolheres desenvolver a solução, deves sim, utilizar todas as tecnologias.
 
-Pergunta 10 - Já podemos começar a desenvolver o TCC, ou precisamos esperar a conclusão de todos os modulos primeiro? Exemplo: Criar o github para armazenar o projeto, idealização, começar a levantar requisitos, e etc.?
+Pergunta 10 - Na linha 31 do algoritmo de lista encadeada (var MyLL = new LinkedList();), se por uma questão de boas práticas eu quisesse declarar esta variável como const, os métodos da classe de adição ainda funcionariam corretamente?
 
-Resposta 10 -  O ideal é terminar todos os módulos, visto que vocês terão orientador. Exemplo: Criar o github para armazenar o projeto, idealização, começar a levantar requisitos, e etc... A documentação e criação de contas, etc... Pode ser feita sim, mas sempre lembrando que a ideia deverá ser exposta ao orientador.
-
-Pergunta 11 - Vocês possuem algum template Latex do projeto escrito?
-
-Resposta 11 -  Quando vocês iniciarem o TCC, junto com o orientador, todas as informações serão passadas.
+Resposta 10 - Sim, pode ser declarada como const. Os métodos da classe funcionam corretamente.
