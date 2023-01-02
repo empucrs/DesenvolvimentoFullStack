@@ -5,3 +5,8 @@ Resposta 1 -  Workflow já está será disponibilizado na sala de aula virtual.
 Cometário 1 - O programa de medir temperatura usado como exemplo não está mais disponível no repositório do professor.
 
 Resposta 1 - O código está disponível na plataforma, na disciplina. 
+
+Pergunta 2 - Sobre o uso de MongoDB em containers. Como podemos persistir os dados do banco de dados quando um container for reiniciado ou removido? 
+Seria utilizando volumes? Se sim, poderia me passar algum exemplo de uso de  volumes e MongoDB? 
+
+Resposta 2 - Vocês terão a disciplina de Banco de Dados NQL, mas podes consultar a documentação em: https://www.mongodb.com/docs/
