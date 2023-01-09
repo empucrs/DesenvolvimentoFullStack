@@ -10,3 +10,12 @@ Pergunta 2 - Sobre o uso de MongoDB em containers. Como podemos persistir os dad
 Seria utilizando volumes? Se sim, poderia me passar algum exemplo de uso de  volumes e MongoDB? 
 
 Resposta 2 - Vocês terão a disciplina de Banco de Dados NQL, mas podes consultar a documentação em: https://www.mongodb.com/docs/
+
+Comentário 2 - Obrigado pela dica, porém ao verificar o npm não estava instalado no meu setup.
+
+Resposta 2 - Quando tu instala o node.js, por padrão o npm já é instalado em conjunto. Tentar usar, então o comando install express, sem o npm. Me avisa se deu certo.
+
+Pergunta 3 - Vcs poderiam disponibilizar o arquivo '.github/workflows/main.xml' utilizado no Actions do Github para execução do pipeline de CI? 
+
+Resposta 3 - O tutorial com o github Action já está elaborado conforme a aula do professor Manga. Como ficou muito grande estou reduzindo, pois pesa muito devido as 
+imagens. Assim que passar pela nossa coordenação peso para colocar na sala de aula virtual e no github: https://github.com/empucrs/DesenvolvimentoFullStack.
