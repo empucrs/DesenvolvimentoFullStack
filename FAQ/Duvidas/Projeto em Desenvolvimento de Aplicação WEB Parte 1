@@ -52,3 +52,9 @@ Pergunta 8 - Vocês possuem algum template Latex do projeto escrito?
 
 Resposta 8 -  Quando vocês iniciarem o TCC, junto com o orientador, todas as informações serão passadas.
 
+Pergunta 9 - Gostaria de saber qual é a opinião dos professores, em termos de stack, sobre as diferenças entre frameworks back-end como Django e Node, tirando a parte 
+da linguagem dos frameworks. Existe alguma diferença perceptível em termos de escalabilidade, segurança e até mesmo performance?
+
+Resposta 9 - O Django é utilizado em analise de dados, junto ao Phyton, Já o Node.js é um framework para desenvolvimento de soluções web. Dito isso, não vejo 
+diferença em relação a escalabilidade, segurança e performance, mas veja, nosso curso é voltado para microservices, o que diminui muito a escalabilidade de soluções 
+web.
