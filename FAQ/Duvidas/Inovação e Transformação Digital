@@ -30,3 +30,13 @@ estão ligados as preocupações da inovação. Artistas com medo de perder o em
 Resposta 5 - Muito bem coloca! Fiz mestrado em Tecnologias da Informação em Gestão da Saúde Pública. E, mesmo no cenário da saúde ainda existe uma resistência ao uso 
 da tecnologia, principalmente o que diz respeito a IA, que na verdade auxilia muito médicos, etc. A inovação, em vários período da história trouxe esse paradigma de 
 incerteza e até medo.  Como colocaste muito bem, a pandemia foi o start para o uso e disseminação da tecnologia, mas, como sempre temos aqueles que pensam diferente. 
+
+Comentário 6 - Gostaria de sugerir que analisassem tanto a escalabilidade em termos de infraestrutura de TI utilizada para disponibilizar a sala virtual quanto a 
+otimização do código-fonte do portal/sala virtual. Independente de qual horário eu tento acessar, ocorre instabilidade, com vários erros por parte da PUCRS e/ou 
+provedor de conteúdo, tais como: 1. Código de status: 301 Temporary Redirect2. Código de status: 301 Moved Permanently3. 504 Gateway Time-out4. Código de status: 504 
+Moved Permanently. Entre outros (erro 307, por exemplo). O mais irônico é que há professores e profissionais de alto calibre na PUCRS, constantemente citados tanto no
+corpo docente quanto nas StartUp's apoiadas pela PUCRS, e mesmo assim, o ambiente de ensino virtual é altamente instável. Há vários alunos, neste exato momento, que 
+estão deixando de prosseguir com o curso, cancelando a matrícula e espalhando a insatisfação junto a potenciais novos alunos.
+
+Resposta 6 - Acesse  o conteúdo de forma online, pelo app. É possível acessar as aulas de Inovação pelo navegador, por hora é uma solução paliativa.
+
