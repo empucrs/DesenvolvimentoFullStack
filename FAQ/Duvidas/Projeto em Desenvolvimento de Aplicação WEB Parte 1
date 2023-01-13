@@ -58,3 +58,15 @@ da linguagem dos frameworks. Existe alguma diferença perceptível em termos de 
 Resposta 9 - O Django é utilizado em analise de dados, junto ao Phyton, Já o Node.js é um framework para desenvolvimento de soluções web. Dito isso, não vejo 
 diferença em relação a escalabilidade, segurança e performance, mas veja, nosso curso é voltado para microservices, o que diminui muito a escalabilidade de soluções 
 web.
+
+Pergunta 10 - Microservices diminui a escabilidade, é isso? 
+
+Resposta 10 - Sim, quando se trabalha com Microsservices, pode-se usar bancos de dados múltiplos e cada serviço fica independente, por exemplo: Ao realizar o cadastro 
+em uma determinada solução, esses dados vão para um banco de dados que se comunica com os demais, mas é único para cadastros. Esse formulário de cadastro fica 
+completamente independente dos demais serviços oferecidos, logo, se por algum motivo, compras, por exemplo sair do ar ou der qualquer outro problema, não afeta os 
+cadastro e se milhares de pessoas acessarem a solução ao mesmo tempo, não há o problema de o site cair, pois a escalabilidade é quase zero.
+
+Pergunta 11 - Onde está disponível o projeto teste que é mencionado no tutorial do git?
+
+Resposta 11 -  Estão na plataforma de ensino, na disciplina. Temos, também um FAQ, com perguntas e comentários: 
+https://github.com/empucrs/DesenvolvimentoFullStack
