@@ -22,3 +22,8 @@ Pergunta 1 - Ao final desta aula o professor comenta sobre uma outra apresentaç
 
 Resposta 1 - Os demais assuntos serão tratados nas próximas disciplinas, principalmente as relacionadas a interface.
 
+Pergunta 2 - Não estou conseguindo rodar meu código do JSON no exemplo Objeto de Classe. Você explica essa parte no min 12:45. Quando rodo no node js aparece a seguinte 
+mensagem: "Cannot use import stattement outside a module". Ele aponta para o "import" como erro. Sabe oq pode estar acontecendo?
+
+Resposta 2 - Estás usando o npm para rodar o código? npm node index.js, por exemplo.
+
