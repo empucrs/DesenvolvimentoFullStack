@@ -17,14 +17,8 @@ Resposta 2 - Quando tu instala o node.js, por padrão o npm já é instalado em 
 
 Pergunta 3 - Vcs poderiam disponibilizar o arquivo '.github/workflows/main.yml' utilizado no Actions do Github para execução do pipeline de CI? 
 
-Resposta 3 - O tutorial com o github Action já está elaborado conforme a aula do professor Manga. Como ficou muito grande estou reduzindo, pois pesa muito devido as 
-imagens. Assim que passar pela nossa coordenação peso para colocar na sala de aula virtual e no github: https://github.com/empucrs/DesenvolvimentoFullStack.
-
-Comentário 3 - Estou te enviando o modelo que eu utilizei leia os comentários para fazer as alterações para se adequar ao seu projeto e a sua conta no dockerhub e 
-github você também vai ter que trocar a extensão de .txt para .yml.
-
-Resposta 3 - Ao verificar teu arquivo, constatei que faz muito sentido, mas veja, o projeto de DevOps Básico foi desenvolvido em Java, nas aulas do professor Manga, e 
-não Node.js.
+Resposta 3 - Estou te enviando o modelo que eu utilizei leia os comentários para fazer as alterações para se adequar ao seu projeto e a sua conta no dockerhub e 
+github você também vai ter que trocar a extensão de .txt para .yml. (O modelo foi enviado pelo aluno Paulo Giovani Lim de Carvalho e está no matrix).
 
 Pergunta 4 - Qual a ferramenta de hospedagem de sistemas web será utilizada: O Heroku ou outra? Recentemente o Heroku tornou-se pago e, se possível, gostaria de saber 
 qual a sugestão será dada em nossa pós-graduação. 
