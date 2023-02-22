@@ -30,3 +30,13 @@ Pergunta 5 - Não consegui encontrar o projeto de conversão de temperatura no s
 as mudanças feitas ao longo da aula 2 assim como a parte do YAML do GitHub Actions que você configurou?
 
 Resposta 5 - O projeto está em Conteúdo --> Disciplina. Enviei arquivo solicitado no Matrix.
+
+Pergunta 6 - Com relação à parte de ferramentas de CI/CD, você comentou sobre GitHub Actions (até utilizou nas aulas), e falou de outras. Eu uso o Azure DevOps 
+Pipelines na empresa onde trabalho e sempre foi dito bastante que um grande benefício é a questão de que o DevOps Pipelines tem seu agente próprio para execução de 
+código. Qual sua opinião sobre o estado atual de outras ferramentas como o GitHub Actions e até mesmo o TravisCI / Bitbucket Pipelines / Jenkins no que diz respeito 
+à disponibilidade de agentes para execução de código, que é importante principalmente nas rotinas de CI?
+
+Resposta 6 - Quando tu começa a usar o GitHub Actions em conjunto com o Azure Pipelines, o GitHub te ajuda a automatizar os fluxos de trabalho de desenvolvimento de 
+software de dentro do GitHub. Assim, tu podes implantar fluxos de trabalho no mesmo local onde armazena código, colaborando em solicitações pull e problemas. Se tu 
+tiveres fluxos de trabalho da Azure Pipelines e GitHub Actions, é conveniente disparar uma execução de pipeline de dentro do GitHub. Exemplo: Tu tens um conjunto 
+específico de tarefas de pipeline que quer disparar do fluxo de trabalho do GitHub Actions, tu podes disparar uma execução de pipeline com a ação do Azure.
