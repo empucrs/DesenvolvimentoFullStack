@@ -36,7 +36,40 @@ Pipelines na empresa onde trabalho e sempre foi dito bastante que um grande bene
 código. Qual sua opinião sobre o estado atual de outras ferramentas como o GitHub Actions e até mesmo o TravisCI / Bitbucket Pipelines / Jenkins no que diz respeito 
 à disponibilidade de agentes para execução de código, que é importante principalmente nas rotinas de CI?
 
-Resposta 6 - Quando tu começa a usar o GitHub Actions em conjunto com o Azure Pipelines, o GitHub te ajuda a automatizar os fluxos de trabalho de desenvolvimento de 
-software de dentro do GitHub. Assim, tu podes implantar fluxos de trabalho no mesmo local onde armazena código, colaborando em solicitações pull e problemas. Se tu 
-tiveres fluxos de trabalho da Azure Pipelines e GitHub Actions, é conveniente disparar uma execução de pipeline de dentro do GitHub. Exemplo: Tu tens um conjunto 
-específico de tarefas de pipeline que quer disparar do fluxo de trabalho do GitHub Actions, tu podes disparar uma execução de pipeline com a ação do Azure.
+Resposta 6 - A questão é interessante e complexa. É muito difícil obter e manter um comparativo atualizado sobre um conjunto de ferramentas complexas e em constante 
+evolução. Faço alguns comentários que podem ajudar a colocar essa preocupação em um contexto mais prático, de escolha de uma ferramenta em um projeto em particular. 
+No caso de uma necessidade de migração, temos comparativos entre a ferramenta atual e a pretendida (ex., Yermakhanov, 2023). As equipes especializadas monitoram 
+regularmente diversos parâmetros da execução das automações utilizadas. Somente com dados concretos de um projeto específico se pode ter certeza dos benefícios 
+alcançados pela adoção de uma função particular. Do ponto de vista prático, na maior parte do tempo estamos empenhados em usar melhor a ferramenta escolhida o que 
+ocorre com ajustes e estudos constantes. Em geral, seria recomendado utilizar as funções de mais alto nível disponíveis. Dessa forma se pode completar a tarefa mais 
+rapidamente e obter um referência (“baseline"). Com essa referência se pode avaliar se as mudanças sendo realizadas trazem os benefícios esperados. No nível de maior 
+controle, “self-hosted”, o desempenho depende da habilidade do participante da equipe que escreve os roteiros automatizados. Nesse nível, existe pouca diferença 
+entre as ferramentas citadas. A rotina transcorre como foi prevista. No caso de menor controle, “Microsoft-host”, podemos contar com a habilidade de um especialista 
+da Microsoft que fará uma configuração adequada para maior parte dos projetos. Nesses casos em que se transfere parte da responsabilidade para o fornecedor da solução 
+de nuvem se pode obter maior produtividade. Seria o caso ideal para um projeto recente, equipes pequenas ou com pouca experiência. (Microsoft, 2023). Nesse caso de 
+menor controle, uma das vantagens está no compartilhamento de pastas e registro de aplicações de uma etapa para outra da rotina de CI. (Microsoft, 2023). Todas as 
+plataformas oferecem imagens de disco, contêneires e máquinas virtuais pré-configuradas. O código do agente pode ser proveniente do fornecedor do serviço ou de 
+membros da comunidade. No caso do GitHub Actions existe um destaque e uma facilidade de localizar “actions" que foram configuradas por especialistas das mais diversas 
+tecnologias. No restante, acaba se encontrando um recurso que compensa uma ausência (ver exemplos em Yermakhanov, 2023). Note-se que as ferramentas tem um compromisso 
+de compatibilidade com versões anteriores. Isso ajuda a explicar as pequenas variações entre ferramentas que precisam manter o investimento feito pelas equipes. A 
+vantagem em se utilizar, o Azure DevOps Pipelines dependeria da complexidade das rotinas de CI utilizadas pelo projeto e da oportunidade em se utilizar funções 
+exclusivas do Azure.  Neste ponto do curso, em utilização básica, acredito que encontraremos demandas simples e resultados igualmente satisfatórios em todas as 
+ferramentas indicadas. Em um uso mais avançado, se poderia notar a ausência de uma função que o projeto teria demanda ou uma diferença maior em desempenho e, 
+principalmente, em custos. Por exemplo, é muito provável que o GitHub Actions execute sobre a nuvem pública do Azure, dado que o GitHub foi adquirido pela Microsoft. 
+Sendo assim, a capacidade de utilizar de forma mais eficiente os agentes de execução depende do engenheiro que configura a execução do GitHub Actions e da capacidade 
+da interface do GitHub Actions em acessar a parametrização do Azure. Realizar testes com diferentes ferramentas sobre as rotinas de CI de um projeto seria a maneira 
+mais correta de determinar se existe diferença significativa entre as alternativas, considerando as demandas específicas. A migração é uma tarefa demorada e com 
+seus próprios riscos e custos. Na maior parte das vezes, o projeto não tem autonomia para solicitar a migração, exceto se puder argumentar concretamente sobre as 
+vantagens obtidas. No momento, o maior limitador é o custo. Com um maior custo, se pode obter maior controle e maior desempenho. Raramente esse seria o caso, 
+exceto em aplicações extensas e com demandas muito altas de disponibilidade. Cenários esses que não se incluem no DevOps Básico. Na maior parte dos projetos a 
+escolha entre as alternativas citadas depende mais de ecossistemas e custos. No caso de uma organização de implanta software na nuvem pública da Amazon ou da Google, 
+talvez o uso da nuvem pública do Azure possa ter menores vantagens. No caso oposto, se a hospedagem de itens de desenvolvimento, teste e de operação ocorrem todos 
+no Azure, parece nos indicar que um único fornecedor e um único contrato traria os maiores benefícios. É uma constante preocupação monitorar e decidir pela migração 
+por uma melhor ferramenta. Essa é uma decisão arquitetural e se espera que o projeto permaneça em uma mesma ferramenta por um longo tempo (cinco anos ou mais). As 
+ferramentas estão em constante evolução. Uma função que se destaca em uma ferramenta acaba por ser imitada por outras ferramentas em um prazo curto (inferior a um 
+ano). O “roadmap" da ferramenta utilizada esclarece as funções que serão oferecidas nas próximas atualizações. Mesmo dando falta de uma função, podemos decidir 
+aguardar pela próxima atualização e evitar migrar para outra ferramenta. Outra forma de evitar a necessidade de uma rotina de CI muito extensa e complexa seria 
+adotar arquiteturas adequadas para sistemas extensos como arquitetura modular e arquitetura de microserviços. Nessas arquiteturas, o projeto é dividido em componentes 
+que são integrados, testados e implantados sob demanda e em paralelo por se tratarem de projetos independentes. Referência: MICROSOFT. Azure Pipelines agents. Consulta em fevereiro de 2023.
+https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser e Yermakhanov, Max. Azure Pipelines vs. GitHub Actions: Key 
+Differences. Consulta em fevereiro de 2023. https://medium.com/objectsharp/azure-pipelines-vs-github-actions-key-differences-45390ab132ee
