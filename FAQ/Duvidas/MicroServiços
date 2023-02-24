@@ -8,3 +8,14 @@ Pergunta 2 - Tu teria alguma indicação de livro para ler sobre o assunto? fiqu
 broker, filas... achei alguns livros, mas não sei quais realmente são bons. Se puder me ajudar, por gentileza. 
 
 Resposta 2 - Tens a Bibliografia básica e complementar para te auxiliar. Esta na sala de aula virtual. 
+
+Pergunta 3 - Em relação a aplicação MONOLITO, a afirma de "quanto mais cliente tiver, mas aumenta o custo com servidores". Não consegui entender quais as circunstâncias 
+que causariam esse efeito. 
+
+Resposta 3 - Aplicações Monolíticas são sistemas únicos, que não são divididos e rodam em um único processo, ou seja, é uma aplicação onde diferentes componentes estão 
+ligados a um único programa dentro de uma única plataforma. Com isso, seu nível de complexidade é muito menor que a arquitetura de monosserviços, mas desenvolvido em um 
+único código, onde um pequeno problema pode causar a queda completa do serviço.  Assim, dependendo do número de acessos diários dos clientes, se faz necessário o 
+investimento maior em servidores para que a aplicação única ou monolítica possa rodar, sem comprometimento, devido ao foto do código ser único. Conforme ocorrerem 
+atualizações, esse sistema acaba aumentando e fica ainda mais complexo, exigindo reinicialização de todo sistema que pode causar perda temporária de funcionalidades. 
+Logo, quando se trabalha com aplicações monolíticas, e sua abrangência, em relação a número de clientes e acessos aumenta, se faz necessário investir em servidores para 
+que o monólito atenda de forma eficaz e eficiente aos clientes.
