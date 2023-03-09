@@ -72,4 +72,10 @@ aguardar pela próxima atualização e evitar migrar para outra ferramenta. Outr
 adotar arquiteturas adequadas para sistemas extensos como arquitetura modular e arquitetura de microserviços. Nessas arquiteturas, o projeto é dividido em componentes 
 que são integrados, testados e implantados sob demanda e em paralelo por se tratarem de projetos independentes. Referência: MICROSOFT. Azure Pipelines agents. Consulta em fevereiro de 2023.
 https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser e Yermakhanov, Max. Azure Pipelines vs. GitHub Actions: Key 
-Differences. Consulta em fevereiro de 2023. https://medium.com/objectsharp/azure-pipelines-vs-github-actions-key-differences-45390ab132ee
+Differences. Consulta em fevereiro de 2023. https://medium.com/objectsharp/azure-pipelines-vs-github-actions-key-differences-45390ab132ee.
+
+Pergunta 7 - Fazendo o projeto junto com a aula acabei encontrando dificuldade ao escrever os camando do github-actions. No momento de instalar o mocha ao ir para o 
+diretório src acontece um erro em que o github diz não existir tal arquivo ou diretório. Alguém já passou por isso e conseguiu resolver?
+
+Resposta 7 - Por o que pude notar, não há configuração do CI. Estou te enviando arquivo para te auxiliar nesta dúvida. Este arquivo é uma contribuição de um colega de 
+curso. 
