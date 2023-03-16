@@ -62,10 +62,10 @@ web.
 
 Pergunta 10 - Microservices diminui a escabilidade, é isso? 
 
-Resposta 10 - Sim, quando se trabalha com Microsservices, pode-se usar bancos de dados múltiplos e cada serviço fica independente, por exemplo: Ao realizar o cadastro 
-em uma determinada solução, esses dados vão para um banco de dados que se comunica com os demais, mas é único para cadastros. Esse formulário de cadastro fica 
-completamente independente dos demais serviços oferecidos, logo, se por algum motivo, compras, por exemplo sair do ar ou der qualquer outro problema, não afeta os 
-cadastro e se milhares de pessoas acessarem a solução ao mesmo tempo, não há o problema de o site cair, pois a escalabilidade é quase zero.
+Resposta 10 - Entendo que microservices seja uma segmentação de funcionalidades de sistemas que podem estar distribuídas e de alguma forma disponíveis via rede para 
+compor um sistema. A escalabilidade já dependeria da infraestrutura utilizada para disponibilizar cada microsserviço. A relação microservices x escalabilidade entendo 
+ser fraca, embora um sistema dividido em microsserviços pareça ser mais fácil de escalar, pois demandaria menos recursos você prover mais capacidades pra um serviço 
+do que para um sistema inteiro (Contribuição de um de nossos alunos. A perguta foi enviada a Coordenação).
 
 Pergunta 11 - Onde está disponível o projeto teste que é mencionado no tutorial do git?
 
