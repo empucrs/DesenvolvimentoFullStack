@@ -67,6 +67,14 @@ compor um sistema. A escalabilidade já dependeria da infraestrutura utilizada p
 ser fraca, embora um sistema dividido em microsserviços pareça ser mais fácil de escalar, pois demandaria menos recursos você prover mais capacidades pra um serviço 
 do que para um sistema inteiro (Contribuição de um de nossos alunos. A perguta foi enviada a Coordenação).
 
+Resposta 10(2) - A arquitetura de microsserviços é uma abordagem de desenvolvimento, cuja ideia é “fazer apenas uma coisa e fazê-la bem”. Ou seja, em vez de construir 
+uma aplicação em forma de monólito, é feito um desmembramento dos serviços em partes menores. Os benefícios dessa arquitetura são alta escalabilidade, resiliência, 
+facilidade de implantação e aumento na eficiência da manutenção dos sistemas. Existem alguns itens que são fundamentais para o sucesso das operações dos microsserviços. São eles:  Estabilidade;  Escalabilidade;  Padronização;  Alta tolerância a falhas;  Infraestrutura confiável.  
+Atualmente, existem vários modelos de como um ecossistema de microsserviços pode ser organizado. Um deles, que é interessante e bem estruturado, foi criado por 
+Susan J. Fowler, uma engenheira de software americana. Em seu livro intitulado Production-Ready Microservices, Susan divide o ecossistema de microsserviços em quatro 
+camadas, sendo elas: Hardware;  Comunicação;  Plataforma de aplicações;  Microsserviços. Apesar dessas camadas estarem interligadas, estabelecer essa divisão nos 
+ajuda a entender melhor quais são as responsabilidades de cada uma e os diferentes módulos que compõem o ecossistema da arquitetura de microsserviços.
+
 Pergunta 11 - Onde está disponível o projeto teste que é mencionado no tutorial do git?
 
 Resposta 11 -  Estão na plataforma de ensino, na disciplina. Temos, também um FAQ, com perguntas e comentários: 
