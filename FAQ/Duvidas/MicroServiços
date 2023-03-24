@@ -24,3 +24,16 @@ Pergunta 4 -  O conteúdo do portal (as aulas mais especificamente) fica disponi
 acesso a esse portal?
 
 Resposta 4 - Ficam disponíveis até 6 meses depois do término do curso. 
+
+Pergunta 5 - or conta propria criei na empresa onde trabalho servicos para cada base de dados, por exemplo, base de dados Cadastro para o setor de cadastro, base 
+Faturamento para o setor de faturamento, qualquer comunicação com essa s bases de dados criei um servico (no .Net um controller/API) é apenas comunicação interna, entao 
+questões de segurando não foquei muito, pq o sistem só roda local. Enfim, o que acha disso? Criar servicos para comunicar com base de dados? Os servicos se comunicam 
+entre si quando necessário. Isso são microserviços? Está correto isso ou poderia fazer de outra forma?
+
+Resposta 5 - Esta correto sim. Os Controllers e Data Base devem está no Container da API e colocar o banco de dados no mesmo host do Docker pode ser bom para o 
+desenvolvimento. Quando estiver desenvolvendo esse tipo de serviço, tu precisarás somente do ASP.NET Core da API de acesso a dados ou de um ORM (mapeador relacional 
+de objeto) como o Entity Framework Core. Observe que executar um servidor de banco de dados como o SQL Server em um contêiner do Docker é ótimo para ambientes de 
+desenvolvimento, porque todas as dependências podem funcionar sem precisar provisionar um banco de dados na nuvem ou localmente. Essa abordagem é conveniente ao 
+executar testes de integração. No entanto, para ambientes de produção, executar um servidor de banco de dados em um contêiner não é recomendável, porque, geralmente, 
+essa abordagem não oferece alta disponibilidade. Para um ambiente de produção no Azure, é recomendável usar o BD SQL do Azure ou qualquer outra tecnologia de banco de 
+dados que possa fornecer alta disponibilidade e alta escalabilidade. Por exemplo, para uma abordagem NoSQL, você pode escolher o CosmosDB ou MongoDB ou Cassandra. 
