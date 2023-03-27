@@ -37,3 +37,10 @@ desenvolvimento, porque todas as dependências podem funcionar sem precisar prov
 executar testes de integração. No entanto, para ambientes de produção, executar um servidor de banco de dados em um contêiner não é recomendável, porque, geralmente, 
 essa abordagem não oferece alta disponibilidade. Para um ambiente de produção no Azure, é recomendável usar o BD SQL do Azure ou qualquer outra tecnologia de banco de 
 dados que possa fornecer alta disponibilidade e alta escalabilidade. Por exemplo, para uma abordagem NoSQL, você pode escolher o CosmosDB ou MongoDB ou Cassandra. 
+
+Comentário 1 - Para aplicações monolíticas, devemos optar pela escalabilidade vertical. Certo? No entanto, utilizar aplicações com recursos centralizados pode ser uma 
+grande dor de cabeça, tendo em vista que devemos desenvolver uma aplicação pensando sempre em manter o estado dos objetos (recuperar informações) mesmo que o servidor 
+seja derrubado por algum motivo. Meu raciocínio está correto?
+
+Resposta 1 - Sim, teu raciocínio também está correto! Mas veja, para que o servidor não seja derrubado, conforme a complexidade do sistema monolítico é imprescindível 
+o investimento em equipamentos para mantê-lo rodando normalmente, assim como em qualquer outra solução, investimentos para upgrade ou melhorias sempre são necessários.
