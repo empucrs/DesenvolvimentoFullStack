@@ -44,3 +44,13 @@ seja derrubado por algum motivo. Meu raciocínio está correto?
 
 Resposta 1 - Sim, teu raciocínio também está correto! Mas veja, para que o servidor não seja derrubado, conforme a complexidade do sistema monolítico é imprescindível 
 o investimento em equipamentos para mantê-lo rodando normalmente, assim como em qualquer outra solução, investimentos para upgrade ou melhorias sempre são necessários.
+
+Comentário 2 - Eu discordo do fato que devemos optar pela escalabilidade vertical em aplicações monolíticas. Se você optar apenas em escalabilidade vertical, quando 
+seu sistema for derrubado, derrubaria todos seus clientes, o que não é o ideal. Mas a escala horizontal em aplicações monolíticas costumam ser mais custosas, pois 
+dependem de uma duplicação ou cópia completa do seu sistema.  O ideal seria optar por ambas as formas de escalagem adaptando a necessidade da sua aplicação monolítica.
+Por isso que escalabilidade em si é problemática em sistemas monolíticos. Verticalmente seu sistema fica mais sugestível a falha total, e horizontalmente fica muito 
+mais custoso de realizar a expansão. Vale lembrar também que expansão vertical é limitada, pois existe um limite físico para a quantidade de componentes que uma única 
+maquina pode ter.
+
+Resposta 2 - Sim, tens razão também, mas a escala vertical pode ser usada sim e o sistema irá rodar. O ideal nesses casos é que o dev full stack observe e perceba 
+qual a melhor forma de trabalhar, e se necessário aplicar as mudanças necessárias.
