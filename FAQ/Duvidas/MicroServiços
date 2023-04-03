@@ -54,3 +54,12 @@ maquina pode ter.
 
 Resposta 2 - Sim, tens razão também, mas a escala vertical pode ser usada sim e o sistema irá rodar. O ideal nesses casos é que o dev full stack observe e perceba 
 qual a melhor forma de trabalhar, e se necessário aplicar as mudanças necessárias.
+
+Pergunta 6 - Onde trabalho estou implementando microssevicos para comunicação com banco de dados, ainda não estamos usando Docker, os microsservicos apenas estão 
+rodando no iis. Depois dessa materia vi que uma API Gateway é um facilitador (vou implementar isso com docker) e salvar strings de conexão em variaveis de ambiente 
+tbm. Hoje temos uma maquina que roda prod e homolog (sistema de pequeno ou médio porte) é necessário ou recomendável criar uma maquina para cada ambiente? Sistema 
+roda somente local, porém, temos a pretenção de colocar o sistema em algum cloud.
+
+Resposta 6 - Os ambientes de homologação e produção devem sim ser isolados. A questão é que eles podem ser isolados e ainda assim rodar na mesma máquina física, 
+utilizando containers (podem usar redes distintas do docker, por exemplo). Mas, geralmente rodam em máquinas diferentes. Isso evita problemas, como degradar a 
+performance do sistema de produção enquanto uma operação pesada está rodando no ambiente de homologação.
