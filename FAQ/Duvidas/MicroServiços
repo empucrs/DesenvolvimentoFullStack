@@ -63,3 +63,20 @@ roda somente local, porém, temos a pretenção de colocar o sistema em algum cl
 Resposta 6 - Os ambientes de homologação e produção devem sim ser isolados. A questão é que eles podem ser isolados e ainda assim rodar na mesma máquina física, 
 utilizando containers (podem usar redes distintas do docker, por exemplo). Mas, geralmente rodam em máquinas diferentes. Isso evita problemas, como degradar a 
 performance do sistema de produção enquanto uma operação pesada está rodando no ambiente de homologação.
+
+Comentário 3 - A definição de "PAYLOAD" escrita na parte 3 do video está totalmente errada se comparada a situação em que ela está sendo usada. Parece que quem edita 
+os videos sequer entende do assunto abordado, e também não pesquisou adequadamente. 
+
+Resposta 3 - O curso busca constantemente a excelência em sua elaboração. Tal excelência é alcançada a partir da busca de profissionais de notório conhecimento, seja 
+na sua vida acadêmica ou no mercado de trabalho. A escolha de cada profissional é feita a partir de um trabalho conjunto e minucioso conduzido pela coordenação deste 
+curso (representado por mim e pelo prof. Julio Machado) em parceria com a equipe da UOL. Além da busca dos bons profissionais, o curso foi construído a partir da 
+escolha dos assuntos atuais e pertinentes, que são explorados nas diferentes disciplina. Por fim, o curso conta com o suporte aos alunos que está constatemente em 
+alerta para responder dúvidas, provendo assim meios para que todos alunos alcancem as habilidade técnicas expostas no curso. Apesar de todo o cuidado que temos, 
+entendemos que pequenas falhas podem ocorrer, afinal de contas são muitas horas de gravação e conteúdo gerado por diferentes profissionais de diferentes áreas do 
+conhecimento. Especificamente sobre a edição dos vídeos, esta é conduzida por um profissional que não necessariamente é da área de computação. Este profissional faz a 
+edição de vídeo das mais diferentes áreas do conhecimento. Mesmo acompanhando os artefatos que lhe são entregues, é possível que um ou outro detalhe nos escape. E 
+neste ponto que entendemos que vários olhos atentos, como o seu, podem contribuir para corrigirmos tais falhas. Como coordenador deste curso entendo que uma falha 
+corrigível, como a definição textual errada de payload, não desfaz trabalho bem conduzido por uma grande equipe, tão pouco o propósito deste curso. Darei o 
+encaminhamento a sua observação, solicitando a correção do ponto referido. Adicionalmente peço que nos interpele com dúvidas ou apontamentos sempre que julgar 
+necessário, para que possamos de forma coesa garantir a qualidade do curso que construímos. 
+
