@@ -27,3 +27,26 @@ mensagem: "Cannot use import stattement outside a module". Ele aponta para o "im
 
 Resposta 2 - Estás usando o npm para rodar o código? npm node index.js, por exemplo.
 
+Pergunta 3 - Fiz um teste aqui protegendo o atributo matricula, mas não deu certo. Consegui alterar sem utilizar métodos internos ao objeto (como imagem anexa). 
+Poderia me ajudar a encontrar o erro? 
+
+Resposta 3 -  Vou responder por detalhado para ficar bem claro, certo? 1 - Criaste a Classe Pessoa, enviando os atributos, por parâmetro e setando, com o "this" para 
+a variável declarada nos parâmetros ou entre os parênteses e criaste dois métodos para imprimir na tela o nome da pessoa e o calculo da idade - Correto; 2 - Criastes 
+a classe Estudante que herda, através da palavra "extends" as variáveis da classe Pessoa. Encapsulaste a matricula e criaste o método "getMatricula()", justamente 
+para imprimir o que está dentro da variável, que se encontra encapsulada, Criaste, também o método "ola()" para imprimir "colega!"  - Neste caso, como a variável 
+está privada tu podes chamar o método "getMatricula()", que é público e no "return" (eu desencapsularia a variável matricula para não haver problemas, visto que está 
+privada). 3 - Criaste uma variável constante, chamada aluno, que é o objeto e enviaste por parâmetro os dados - correto. Com o "console.log" tu estás imprimindo a 
+matricula original, chamando, com auxílio o objeto a variável matricula que está privada. Depois tu insere um valor constante na variável matricula, ou seja, o 2. E 
+pede sua impressão no "console.log()" - Neste momento tu estás alterando de forma estática o valor contigo na variável e por isso ele acaba recebendo um novo valor e 
+altera a matricula original  que é 120901 - Essa dado está na linha onde crias o construtor, dentro dos parênteses ou parâmetros. Quando tu alteras o número da 
+matricula na linha aluno.#matricula = 2 tu estás alterando o valor original para um novo valor, ou seja 2. Se nesta linha tu chamares o método "getMatricula()" e 
+alterar o valor da matricula dentro dos parentes, tu vais deixar de usar a variável que está privada e passará a usar o método, que é o que comumente se faz quando 
+se trabalha com variável privadas - devemos sempre priorizar o uso do método publico.  Assim, tu podes alterar, dentro do método o valor da matricula, em 
+"aluno.getMatricula(2)" e imprimir a nova matricula usando o objeto + o método getMatricula(2). A matricula será alterada e não vais precisar utilizar a variável 
+privada, o que soluciona teu problema.
+
+Pergunta 4 - Queria entender por que o atributo notas da classe Estudante foi declarado fora do construtor e sem a palavra this. QUal é a diferença desta forma de 
+declaração para as demais que foram feitas até agora (dentro dos construtores das classes recedidos por this.)?
+
+Resposta 4 - Não encontrei o atributo notas na classe Estudante, terás de declará-la nos parênteses e utilizar o "this". Utilizamos o "this " justamente para linkar 
+o que o atributo recebe com o que está sendo enviando por parâmetro. 
