@@ -30,11 +30,16 @@ Resposta 2 - Estás usando o npm para rodar o código? npm node index.js, por ex
 Pergunta 3 - Fiz um teste aqui protegendo o atributo matricula, mas não deu certo. Consegui alterar sem utilizar métodos internos ao objeto (como imagem anexa). 
 Poderia me ajudar a encontrar o erro? 
 
-Resposta 3 - Se eu chamar a variável que está encapsulada, não roda o teste, se eu chamo a matrícula que foi enviada por parâmetro, dentro dos parênteses do 
-construtor de Estudante roda. Quando eu rodo o teu teste, sobrescreve o valor da matricula original, se declarada a original e a nova matricula.
+Resposta 3 - Está faltando o método setMatricula(matricula) e podes tirar o # a partir da linha onde crias a const aluno. De todas as linhas, certo inclusive quando 
+tu chama o valor da matricula em ${aluno.#matricula}, esse não pode ser o atributo e sim o valor da variável matricula que está sendo enviada por parâmetro, sem o #.
 
 Pergunta 4 - Queria entender por que o atributo notas da classe Estudante foi declarado fora do construtor e sem a palavra this. QUal é a diferença desta forma de 
 declaração para as demais que foram feitas até agora (dentro dos construtores das classes recedidos por this.)?
 
-Resposta 4 - Não encontrei o atributo notas na classe Estudante, terás de declará-la nos parênteses e utilizar o "this". Utilizamos o "this " justamente para linkar 
-o que o atributo recebe com o que está sendo enviando por parâmetro. 
+Resposta 4 - Nota é uma classe, dentro da classe há o construtor, enviando por parâmetro disciplina e grau. Nesta classe há o uso do this, que seta o atributo para 
+que este receba o valor que está sendo enviando por parâmetro. Na classe Estudante há a Herança para a Classe Pessoa, onde foi criado o atributo matricula e um vetor 
+para notas. No construtor se envia por parâmetro nome, anoDeNascimento, profissão e matricula. O super chama o construtor da superclasse. O this.#matricula indica que 
+o atributo matricula vai receber o valor enviado pro parâmetro. Veja que no exemplo o professor utiliza o método getMatricula() (retornando o atributo) e 
+setMatricula() (enviando o valor do atributo que foi definido no parâmetro. Ao criar o método addNota(valor) o professor está enviando a nota por parâmetro, então 
+temos o this.notas.push(nota) que vai enviar o valor da nota. Neste caso, como está se usando a propriedade push, não há a necessidade de encapsulamento do vetor 
+notas= [ ] , mas o this de e ser usado, pois no método addNota(nota) seu valor está sendo enviado para o vetor, através da proriedade push. 
