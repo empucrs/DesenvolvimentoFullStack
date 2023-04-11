@@ -40,6 +40,6 @@ Resposta 4 - Nota é uma classe, dentro da classe há o construtor, enviando por
 que este receba o valor que está sendo enviando por parâmetro. Na classe Estudante há a Herança para a Classe Pessoa, onde foi criado o atributo matricula e um vetor 
 para notas. No construtor se envia por parâmetro nome, anoDeNascimento, profissão e matricula. O super chama o construtor da superclasse. O this.#matricula indica que 
 o atributo matricula vai receber o valor enviado pro parâmetro. Veja que no exemplo o professor utiliza o método getMatricula() (retornando o atributo) e 
-setMatricula() (enviando o valor do atributo que foi definido no parâmetro. Ao criar o método addNota(valor) o professor está enviando a nota por parâmetro, então 
-temos o this.notas.push(nota) que vai enviar o valor da nota. Neste caso, como está se usando a propriedade push, não há a necessidade de encapsulamento do vetor 
-notas= [ ] , mas o this de e ser usado, pois no método addNota(nota) seu valor está sendo enviado para o vetor, através da proriedade push. 
+setMatricula() (enviando o valor do atributo que foi definido no parâmetro). Ao criar o método addNota(valor) o professor está enviando a nota por parâmetro, então 
+temos o this.nota.push(nota) que vai enviar o valor da nota para o vetor. No caso do atributo nota, não há a necessidade de encapsulamento do vetor notas= [ ] , mas 
+o this deve e ser usado, pois no método addNota(nota) seu valor está sendo enviadopor parâmetro para o vetor, através da proriedade push.
