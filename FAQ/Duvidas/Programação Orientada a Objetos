@@ -43,3 +43,13 @@ o atributo matricula vai receber o valor enviado pro parâmetro. Veja que no exe
 setMatricula() (enviando o valor do atributo que foi definido no parâmetro). Ao criar o método addNota(valor) o professor está enviando a nota por parâmetro, então 
 temos o this.nota.push(nota) que vai enviar o valor da nota para o vetor. No caso do atributo nota, não há a necessidade de encapsulamento do vetor notas= [ ] , mas 
 o this deve e ser usado, pois no método addNota(nota) seu valor está sendo enviadopor parâmetro para o vetor, através da proriedade push.
+
+Pergunta 5 - O professor Edson nos apresentou na terceira aula uma forma de organizar as classes, cada uma em um arquivo .mjs. Estas classes são exportadas ou 
+importadas por outros arquivos na medida que forem necessárias. Instalei o Node.JS e, utilizando as informações da aula, consegui rodar alguns módulos integrados 
+no próprio Visual Studio (integrado com o Node). Contudo, os mesmos arquivos não funcionam no navegador. Posso entender que essa forma de improtação/exportação para 
+rodar em ambiente do Node.JS é para Back-end?
+
+Resposta 5 -Por política de segurança, nem todas operações que exploramos com javascript na disciplina pode ser reproduzida no navegador. Isto não é uma recomendação, 
+mas sim uma restrição de funcionamento. Antigamente tal tipo de manipulação era possível, como foi apontado nos exemplos postados nas respostas anteriores. Porém, 
+com o avançar da tecnologia e das possibilidades de manipulação, tais limitações foram impostas. Como resultado, é necessário que seja rodado sua solução a partir de 
+um ambiente segura (pode chamar de back-end, servidor, etc) de forma mais plena. Porém, no navegador isso se torna mais restrito.
