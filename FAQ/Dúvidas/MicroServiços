@@ -1,1 +1,83 @@
+## Comentários e Perguntas:
+
+Pergunta 1 - Existe gerenciador de dependência para projetos C++?
+
+Resposta 1 - Existe sim, se chama Nuget. Dá uma olhada neste link, está bem ilustrativo: https://www.treinaweb.com.br/blog/o-que-e-gerenciador-de-dependencias.
+
+Pergunta 2 - Tu teria alguma indicação de livro para ler sobre o assunto? fiquei interessado em aprofundas mais o conhecimento principalmente no funcionamento do message 
+broker, filas... achei alguns livros, mas não sei quais realmente são bons. Se puder me ajudar, por gentileza. 
+
+Resposta 2 - Tens a Bibliografia básica e complementar para te auxiliar. Esta na sala de aula virtual. 
+
+Pergunta 3 - Em relação a aplicação MONOLITO, a afirma de "quanto mais cliente tiver, mas aumenta o custo com servidores". Não consegui entender quais as circunstâncias 
+que causariam esse efeito. 
+
+Resposta 3 - Aplicações Monolíticas são sistemas únicos, que não são divididos e rodam em um único processo, ou seja, é uma aplicação onde diferentes componentes estão 
+ligados a um único programa dentro de uma única plataforma. Com isso, seu nível de complexidade é muito menor que a arquitetura de monosserviços, mas desenvolvido em um 
+único código, onde um pequeno problema pode causar a queda completa do serviço.  Assim, dependendo do número de acessos diários dos clientes, se faz necessário o 
+investimento maior em servidores para que a aplicação única ou monolítica possa rodar, sem comprometimento, devido ao foto do código ser único. Conforme ocorrerem 
+atualizações, esse sistema acaba aumentando e fica ainda mais complexo, exigindo reinicialização de todo sistema que pode causar perda temporária de funcionalidades. 
+Logo, quando se trabalha com aplicações monolíticas, e sua abrangência, em relação a número de clientes e acessos aumenta, se faz necessário investir em servidores para 
+que o monólito atenda de forma eficaz e eficiente aos clientes.
+
+Pergunta 4 -  O conteúdo do portal (as aulas mais especificamente) fica disponivel por algum tempo depois que nós terminamos o curso da pós graduação ou ele encerra o 
+acesso a esse portal?
+
+Resposta 4 - Ficam disponíveis até 6 meses depois do término do curso. 
+
+Pergunta 5 - or conta propria criei na empresa onde trabalho servicos para cada base de dados, por exemplo, base de dados Cadastro para o setor de cadastro, base 
+Faturamento para o setor de faturamento, qualquer comunicação com essa s bases de dados criei um servico (no .Net um controller/API) é apenas comunicação interna, entao 
+questões de segurando não foquei muito, pq o sistem só roda local. Enfim, o que acha disso? Criar servicos para comunicar com base de dados? Os servicos se comunicam 
+entre si quando necessário. Isso são microserviços? Está correto isso ou poderia fazer de outra forma?
+
+Resposta 5 - Esta correto sim. Os Controllers e Data Base devem está no Container da API e colocar o banco de dados no mesmo host do Docker pode ser bom para o 
+desenvolvimento. Quando estiver desenvolvendo esse tipo de serviço, tu precisarás somente do ASP.NET Core da API de acesso a dados ou de um ORM (mapeador relacional 
+de objeto) como o Entity Framework Core. Observe que executar um servidor de banco de dados como o SQL Server em um contêiner do Docker é ótimo para ambientes de 
+desenvolvimento, porque todas as dependências podem funcionar sem precisar provisionar um banco de dados na nuvem ou localmente. Essa abordagem é conveniente ao 
+executar testes de integração. No entanto, para ambientes de produção, executar um servidor de banco de dados em um contêiner não é recomendável, porque, geralmente, 
+essa abordagem não oferece alta disponibilidade. Para um ambiente de produção no Azure, é recomendável usar o BD SQL do Azure ou qualquer outra tecnologia de banco de 
+dados que possa fornecer alta disponibilidade e alta escalabilidade. Por exemplo, para uma abordagem NoSQL, você pode escolher o CosmosDB ou MongoDB ou Cassandra. 
+
+Comentário 1 - Para aplicações monolíticas, devemos optar pela escalabilidade vertical. Certo? No entanto, utilizar aplicações com recursos centralizados pode ser uma 
+grande dor de cabeça, tendo em vista que devemos desenvolver uma aplicação pensando sempre em manter o estado dos objetos (recuperar informações) mesmo que o servidor 
+seja derrubado por algum motivo. Meu raciocínio está correto?
+
+Resposta 1 - Sim, teu raciocínio também está correto! Mas veja, para que o servidor não seja derrubado, conforme a complexidade do sistema monolítico é imprescindível 
+o investimento em equipamentos para mantê-lo rodando normalmente, assim como em qualquer outra solução, investimentos para upgrade ou melhorias sempre são necessários.
+
+Comentário 2 - Eu discordo do fato que devemos optar pela escalabilidade vertical em aplicações monolíticas. Se você optar apenas em escalabilidade vertical, quando 
+seu sistema for derrubado, derrubaria todos seus clientes, o que não é o ideal. Mas a escala horizontal em aplicações monolíticas costumam ser mais custosas, pois 
+dependem de uma duplicação ou cópia completa do seu sistema.  O ideal seria optar por ambas as formas de escalagem adaptando a necessidade da sua aplicação monolítica.
+Por isso que escalabilidade em si é problemática em sistemas monolíticos. Verticalmente seu sistema fica mais sugestível a falha total, e horizontalmente fica muito 
+mais custoso de realizar a expansão. Vale lembrar também que expansão vertical é limitada, pois existe um limite físico para a quantidade de componentes que uma única 
+maquina pode ter.
+
+Resposta 2 - Sim, tens razão também, mas a escala vertical pode ser usada sim e o sistema irá rodar. O ideal nesses casos é que o dev full stack observe e perceba 
+qual a melhor forma de trabalhar, e se necessário aplicar as mudanças necessárias.
+
+Pergunta 6 - Onde trabalho estou implementando microssevicos para comunicação com banco de dados, ainda não estamos usando Docker, os microsservicos apenas estão 
+rodando no iis. Depois dessa materia vi que uma API Gateway é um facilitador (vou implementar isso com docker) e salvar strings de conexão em variaveis de ambiente 
+tbm. Hoje temos uma maquina que roda prod e homolog (sistema de pequeno ou médio porte) é necessário ou recomendável criar uma maquina para cada ambiente? Sistema 
+roda somente local, porém, temos a pretenção de colocar o sistema em algum cloud.
+
+Resposta 6 - Os ambientes de homologação e produção devem sim ser isolados. A questão é que eles podem ser isolados e ainda assim rodar na mesma máquina física, 
+utilizando containers (podem usar redes distintas do docker, por exemplo). Mas, geralmente rodam em máquinas diferentes. Isso evita problemas, como degradar a 
+performance do sistema de produção enquanto uma operação pesada está rodando no ambiente de homologação.
+
+Comentário 3 - A definição de "PAYLOAD" escrita na parte 3 do video está totalmente errada se comparada a situação em que ela está sendo usada. Parece que quem edita 
+os videos sequer entende do assunto abordado, e também não pesquisou adequadamente. 
+
+Resposta 3 - O curso busca constantemente a excelência em sua elaboração. Tal excelência é alcançada a partir da busca de profissionais de notório conhecimento, seja 
+na sua vida acadêmica ou no mercado de trabalho. A escolha de cada profissional é feita a partir de um trabalho conjunto e minucioso conduzido pela coordenação deste 
+curso (representado por mim e pelo prof. Julio Machado) em parceria com a equipe da UOL. Além da busca dos bons profissionais, o curso foi construído a partir da 
+escolha dos assuntos atuais e pertinentes, que são explorados nas diferentes disciplina. Por fim, o curso conta com o suporte aos alunos que está constatemente em 
+alerta para responder dúvidas, provendo assim meios para que todos alunos alcancem as habilidade técnicas expostas no curso. Apesar de todo o cuidado que temos, 
+entendemos que pequenas falhas podem ocorrer, afinal de contas são muitas horas de gravação e conteúdo gerado por diferentes profissionais de diferentes áreas do 
+conhecimento. Especificamente sobre a edição dos vídeos, esta é conduzida por um profissional que não necessariamente é da área de computação. Este profissional faz a 
+edição de vídeo das mais diferentes áreas do conhecimento. Mesmo acompanhando os artefatos que lhe são entregues, é possível que um ou outro detalhe nos escape. E 
+neste ponto que entendemos que vários olhos atentos, como o seu, podem contribuir para corrigirmos tais falhas. Como coordenador deste curso entendo que uma falha 
+corrigível, como a definição textual errada de payload, não desfaz trabalho bem conduzido por uma grande equipe, tão pouco o propósito deste curso. Darei o 
+encaminhamento a sua observação, solicitando a correção do ponto referido. Adicionalmente peço que nos interpele com dúvidas ou apontamentos sempre que julgar 
+necessário, para que possamos de forma coesa garantir a qualidade do curso que construímos. 
+
 
