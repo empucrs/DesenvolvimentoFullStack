@@ -5,7 +5,8 @@ Durante a leitura da página 14 do artigo ele mostra no item 3.1 (Creating An Ab
 framework. 
 Minha dúvida é: 
 1° - Durante a refatoração de alguma aplicação por exemplo eu posso adicionar mais de uma Superclasse de maneira abstrata como foi feito no exemplo, ou seja, eu 
-tenho uma superclasse no meu framework e posso adicionar aquela superclasse mais uma funcionalidade sempre buscando a ideia de abstração? Como foi realizado na ideia do Inode(BSD) e depois adicionado mais uma classe SystemVInode
+tenho uma superclasse no meu framework e posso adicionar aquela superclasse mais uma funcionalidade sempre buscando a ideia de abstração? Como foi realizado na ideia 
+do Inode(BSD) e depois adicionado mais uma classe SystemVInode.
 2° - Eu posso na refatoração mudar o comportamento de um framework ou devo sempre evitar isso? E mais eu poderia mudar sua natureza? 
 Essa pergunta seria mais uma afirmação por que se não entendi errado no artigo ele fala que durante a refatoração deve-se evitar a mudança de comportamento de 
 uma aplicação.(Ele cita isso na página iii da apresentação do artigo "The refactorings are defined to be behavior preserving, provided that their preconditions are met.")?
