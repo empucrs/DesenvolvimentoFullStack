@@ -1,1 +1,203 @@
+## Comentários e orientações:
+
+1 - Apresentação dos Alunos;
+
+2 - Apresentação da Tutora;
+
+3 - Criação de grupo no Whatsapp, com alunos do Curso - Entre em: https://chat.whatsapp.com/Hq0URLZQ1QAEPC62cdk0HJ para participar;
+
+4 - Divulgação do GitHub com FAQ e passo a passo para auxiliar os alunos na instalação das tecnologias e uso do GitHub. 
+Veja em: Segue Github: https://github.com/marciafloress/Desenvolvimento-Full-Stack-PUCRS/wiki;
+
+5 - Orientações para uso do GitHub - veja em: https://github.com/skills/introduction-to-github.
+
+Pergunta 1 - Vi que no cronograma do curso esta previsto o estudo de REACT e isso me gerou uma dúvida, é obrigatório que o projeto seja desenvolvido em React? 
+Pergunto isso pois atualmente já tenho um conhecimento em VueJs e teria que aprender totalmente do zero React?
+
+Resposta 1 - Vocês terão aulas de React para aprender a utilizar no desenvolvimento dos projetos, logo, o ideal é que utilize React. 
+
+Pergunta 2 - Se fizer em outra tecnologia teria alguma penalidade na nota final? 
+
+Resposta 2 - Podes usar Vue.js sim, não acarreta nenhuma penalidade na nota final.
+
+Pergunta 3 - Eu estou me atualizando do curso pois estive ausente por problemas de saúde na família. Consigo um link ativo do grupo do Whatsapp? 
+
+Resposta 3 - O link para o Whatsapp é https://chat.whatsapp.com/Hq0URLZQ1QAEPC62cdk0HJ.
+
+Pergunta 4 - Os alunos tem acesso ao repositório das soluções apresentadas na aula? Gostaria de ler o código com calma. 
+
+Resposta 4 - Os códigos estão na Sala Virtual , em materiais de aula.
+
+Pergunta 5 - Onde ficam armazenados os downloads realizados, via App do Curso, no caso de IOS?
+
+Resposta 5 - Em IOS os arquivos ficam em: arquivos (default da apple) -> meu iphone -> ﻿pasta pucrs online.
+
+Pergunta 6 - Eu fiquei com dúvida em relação a entrega, trabalho de fechamento de curso. Hoje finalizei o módulo de Programação Orientada a Objetos, 
+e essa dúvida se deu justamente por não saber se eu deveria já atuar em algum ponto visando o trabalho final. Tenho acompanhado as aulas, 
+replicando "alguns" códigos demonstrados (somente os que tenho mais dúvidas), e outros códigos eu executo do próprio material fornecido via repo 
+no github. Entendi que temos 2 opções: - Desenvolver uma solução aplicando tudo que aprendemos durante o curso; 
+- Entregar um portfolio com tudo desenvolvido no curso. A entrega pode ser de um ou dos dois itens. Correto?
+A dúvida sobre a questão do portfolio com o desenvolvido durante o curso, é se deveria ser somente o código 
+replicado das aulas? Ou se tem alguma área com desafios ou coisas do tipo de códigos que precisaríamos desenvolver para entregar?
+
+Resposta 6 - Esclarecendo: temos duas opões de TCC, uma que é a solução em si e a outra o memorial, certo? No TCC os alunos terão 
+professores orientadores, que darão um auxílio nas dúvidas. Importante, no caso de escolheres desenvolver a solução, deves sim, 
+utilizar todas as tecnologias vistas no curso, já no caso do memorial, deves, da mesma formar escrever, o TCC mencionando as tecnologias. 
+Essa questão de replica das aulas , no memorial fica a cargo do orientador, que lhes orientará, como já mencionei.
+
+Pergunta 7 - Já podemos começar a desenvolver o TCC, ou precisamos esperar a conclusão de todos os modulos primeiro? Exemplo: Criar o github para armazenar o projeto, idealização, começar a levantar requisitos, e etc.?
+
+Resposta 7 -  O ideal é terminar todos os módulos, visto que vocês terão orientador. Exemplo: Criar o github para armazenar o projeto, idealização, começar a levantar requisitos, e etc... A documentação e criação de contas, etc... Pode ser feita sim, mas sempre lembrando que a ideia deverá ser exposta ao orientador.
+
+Pergunta 8 - Vocês possuem algum template Latex do projeto escrito?
+
+Resposta 8 -  Quando vocês iniciarem o TCC, junto com o orientador, todas as informações serão passadas.
+
+Pergunta 9 - Gostaria de saber qual é a opinião dos professores, em termos de stack, sobre as diferenças entre frameworks back-end como Django e Node, tirando a parte 
+da linguagem dos frameworks. Existe alguma diferença perceptível em termos de escalabilidade, segurança e até mesmo performance?
+
+Resposta 9 - O Django é utilizado em analise de dados, junto ao Phyton, Já o Node.js é um framework para desenvolvimento de soluções web. Dito isso, não vejo 
+diferença em relação a escalabilidade, segurança e performance, mas veja, nosso curso é voltado para microservices, o que diminui muito a escalabilidade de soluções 
+web.
+
+Pergunta 10 - Microservices diminui a escabilidade, é isso? 
+
+Resposta 10 - Entendo que microservices seja uma segmentação de funcionalidades de sistemas que podem estar distribuídas e de alguma forma disponíveis via rede para 
+compor um sistema. A escalabilidade já dependeria da infraestrutura utilizada para disponibilizar cada microsserviço. A relação microservices x escalabilidade entendo 
+ser fraca, embora um sistema dividido em microsserviços pareça ser mais fácil de escalar, pois demandaria menos recursos você prover mais capacidades pra um serviço 
+do que para um sistema inteiro (Contribuição de um de nossos alunos. A perguta foi enviada a Coordenação).
+
+Resposta 10(2) - A arquitetura de microsserviços é uma abordagem de desenvolvimento, cuja ideia é “fazer apenas uma coisa e fazê-la bem”. Ou seja, em vez de construir 
+uma aplicação em forma de monólito, é feito um desmembramento dos serviços em partes menores. Os benefícios dessa arquitetura são alta escalabilidade, resiliência, 
+facilidade de implantação e aumento na eficiência da manutenção dos sistemas. Existem alguns itens que são fundamentais para o sucesso das operações dos microsserviços.
+São eles:  Estabilidade;  Escalabilidade;  Padronização;  Alta tolerância a falhas;  Infraestrutura confiável.  
+Atualmente, existem vários modelos de como um ecossistema de microsserviços pode ser organizado. Um deles, que é interessante e bem estruturado, foi criado por 
+Susan J. Fowler, uma engenheira de software americana. Em seu livro intitulado Production-Ready Microservices, Susan divide o ecossistema de microsserviços em quatro 
+camadas, sendo elas: Hardware;  Comunicação;  Plataforma de aplicações;  Microsserviços. Apesar dessas camadas estarem interligadas, estabelecer essa divisão nos 
+ajuda a entender melhor quais são as responsabilidades de cada uma e os diferentes módulos que compõem o ecossistema da arquitetura de microsserviços.
+
+Pergunta 11 - Onde está disponível o projeto teste que é mencionado no tutorial do git?
+
+Resposta 11 -  Estão na plataforma de ensino, na disciplina. Temos, também um FAQ, com perguntas e comentários: 
+https://github.com/empucrs/DesenvolvimentoFullStack
+
+Pergunta 12 - Confesso que estou meio perdido.... Onde se encontra essa plataforma de ensino? Já mexi aqui na plataforma e não encontrei referência a esse GitHub... 
+Só encontrei os materiais da aula (Slides, complementares e o Tutorial do GitHub).
+
+Resposta 12 - Na plataforma de ensino ou sala virtual, onde tu vê os vídeos e faz o teste, clica em Conteúdo --> Disciplina Projeto em Desenvolvimento de aplicações 
+WEB - Parte 1 --> Materiais e faz o donwload de tudo. No Github, basta clicar no link: https://github.com/empucrs/DesenvolvimentoFullStack. Neste link tens acesso 
+aos tutoriais, FAQ, projetos desenvolvidos na disciplina e desafio de Programação orientada a Objetos. Coloquei o ProjetoTeste na sala de aula virtual --> Nome da 
+Disciplina --> Materiais . Acho que assim fica mais fácil.
+
+Comentário 1 - Desculpe mas de fato não consigo encontrar esse Projeto teste. Além dele já não encontro mais o tutorial do Git. Não sei se é só comigo mas parece que 
+os locais que estou acessando conforme as orientações não tem os materiais ou estão em outro que não encontro. O link do github acima eu não encontro o Projeto Teste, 
+conforme anexo. Aqui nesse link: Conteúdo --> "Disciplina Projeto em Desenvolvimento de aplicações WEB - Parte 1 --> Materiais" So vejo dois materiais. Os slides e o 
+material complementar que tem 4 links. Dois para os github sobre Javascript e dois para sites sobre algoritmos de ordenação (sorting).  Um tutorial que eu tinha visto 
+não encontro. Estou achando bastante confuso essa sala.Acho que deveriam ter uma aula sobre o Git e github para auxiliar a quem não tem tanta familiaridade, estou 
+consultando outros materiais para entender.
+
+Reposta 1 - Foi tirado do sala virtual o ProjetoTeste e o tutorial para ajustes, no github, foi feito o mesmo processo. Estou aguardando a validação da coordenação 
+para reenviar. A aula sobre git e github estão na disciplina de DevOps Básico, com os professores Fabricio Veronez e Marco Aurélio souza Mangan.
+
+Pergunta 13 - Já vi os 4 vídeos e o Livro Online da disciplina, mas fiquei na dúvida: essa disciplina terá algum material a ser entregue nesse momento? Terá uma 
+avaliação nesse momento?
+
+Resposta 13 -Projeto em Desenvolvimento de Aplicações Web foram divididas em duas partes, a 1, que já viste e a 2, nesta conterá um teste online para finalização da 
+disciplina. Para finalização do Curso de pós graduação, vocês terão orientadores e decidirão junto com eles se desenvolverão uma solução utilizando todas as 
+ferramentas do curso ou se farão um memorial. 
+
+Pergunta 14 - Posso fazer o Back-End da aplicação com Spring/Java?
+
+Resposta 14 - Podes usar sim Spring/Java.
+
+Pergunta 15 - É possível marcar uma conversa para tratar sobre TCC? Quanto ao orientador, temos opção de escolha ou já está predefinido?
+
+Resposta 15 - Todas essas questões referentes a orientadores e orientações serão tratadas com os alunos. Atualmente o professor Edson, nosso Coordenador está 
+organizando estes processos e vocês serão avisados.
+
+Pergunta 16 - Ja temos a definição de quem será o orientador do TCC? Ou temos uma previsão? Quando devemos começar a desenvolver o TCC? 
+
+Resposta 16 - Os orientadores serão escolhidos por vocês, que conversarão com estes para definir orientação. No teu caso, que iniciou o curso em setembro de 2022, 
+provavelmente entrarás em TCC em agosto/setembro de 2023, mas ressalto que serão avisados. 
+
+Pergunta 17 - Como vocês vêem o mercado para o desenvolvedor full stack frente ao aparecimento de inteligências artificiais capazes de montar algorítmos, como o 
+chatGPT?
+
+Resposta 17 - O Mercado para desenvolvimento full stack continua aquecido, são milhares de vagas, que não são preenchidas devida a falta de pessoal especializado. O 
+uso de Inteligências artificiais, está aquecido, mas ainda é necessário a interação humana, Quanto ao chatGPT, nem todas as empresas ou Startups utilizam essa 
+tecnologia, mas ainda assim, por mais que o chatGPT esteja em alta, existe a falta do profissional para elaborar os requisitos junto ao cliente, elaborar o diagrama 
+de Entidade para o banco de dados e os demais diagramas ou estórias para documentação. Logo, não há substituição, pois o fator humano é imprescindível na nossa área.
+
+Pergunta 18 - Gostaria de fazer mais uma pergunta. Dentre os assuntos que veremos nestas mais de 20 disciplinas, será abordada a Lei Geral de Proteção de Dados 
+Pessoais (LGPD)?
+
+Resposta 18 - Ela é mencionada, mas não totalmente abordada.
+
+Pergunta 19 - Como vocês enxergam o mercado de Desenvolvimento de Software daqui para frente dado a crise que estamos vivendo. Layoffs para todos os lados, 
+unicornios caindo, ofertas salarias abaixando, exigencias das vagas subindo, e etc? 
+
+Resposta 19 - Como comentado anteriormente, temos, desde a alguns anos o aquecimento no mercado de desenvolvimento de software, onde há milhares de vagas e poucas 
+pessoas qualificadas para o trabalho. Normalmente startups, unicórnios, etc... caem devido a falta de investimento ou até mesmo, devido a solução proposta ao mercado, 
+que não atende e não atraem o cliente. Esse último é um fator determinante para a sobrevivência dessas empresas. diante disto, inovar e pivotar é essencial para 
+qualquer empresa. A própria Amazon passou por esse tipo de problema, pivotaram e hoje são os "grandes" do mercado. Sendo assim, e diante da realidade em que vivemos 
+tanto os desenvolvedores, quanto os gestores devem estar focados para desenvolver soluções bem testadas e entregarem um software robusto que atenda a demanda dos 
+clientes, bem como  investir em educação continuada, pesquisa de mercado, pivotagem para poderem se manter neste mercado tão competitivo, que sim... Tens toda 
+razão... onde as exigências das vagas sobem devido ao mercado que essas empresas atendem e as novas tecnologias que surgem constantemente.
+
+IMPORTANTE - Todas as turmas podem criar seus grupos no Whatsapp e no Discord para se conectarem. O ideal é o grupo por turma. 
+
+Pergunta 20 - Não sei se ainda é o momento, mas fiquei com uma dúvida, referente ao projeto final, caso eu decida por fazer a solução web para  as tecnologias tanto 
+de front-end como de back-end, vai ficar a livre escolha, ou terá que ser exatamente as tecnologias vistas no curso? Pergunto isso, porque pelo que vi na grade, para 
+front-end vocês vão mostrar o React como framework principal, mas eu já possuo mais facilidade com angular, vi até que o professor apresentou um projetinho em angular,
+gostaria de saber se vou poder utilizar ou será estritamente Reac.
+
+Resposta 20 - As tecnologias utilizadas no projetos final devem ser as vistas no curso, mas Angular é um framework de JavaScript, então podes utilizar no teu projeto 
+final sim.
+
+Comentário 2 - Boa tarde pessoal, Se voce tem ingles e ja é desenvolvedor front/back, por favor me adicione no linkedIn, pois a empresa onde trabalho sempre esta 
+procurando por colaboradores. (Trabalho 100% remoto) pois empresa é na Inglaterra.
+
+Resposta 2 -  A tua turma tem grupo no WhatsApp? Vocês podem criar para o Curso e para essas informações. A turma criou grupo do discord. 
+
+Pergunta 21 - Confirmando se eu entendi corretamente, a conclusão do curso se da mediante a entrega de UM dos trabalhos, memorial ou projeto, certo? Não há 
+necessidade de fazer os dois, correto?
+
+Resposta 21 - Correto! Quando vocês entrarem em TCC e conversarem com os orientadores para o aceite de orientação, será definido em conjunto com o orientador(a) se 
+será desenvolvida a solução ou memorial. Não há necessidade de fazer os dois. 
+
+Pergunta 22 - Estou muito preocupada com o trabalho final do curso. Eu não sou programadora nem formada na área de ciências da computação. Apesar disso, estou há 1 
+ano trabalhando na equipe de desenvolvimento da CAIXA ECONOMICA FEDERAL, onde trabalho há 15 anos. O meu intuito de fazer esta pós é conhecer os conceitos que 
+permeiam o meu dia a dia. Especialmente escolhi a PUC/RS pois percebi que as matérias estão alinhadas com práticas de mercado e futuro. Porém, estou muito insegura, 
+pois ainda não sei programar, então não vejo como farei o trabalho. Tendo sentido esta necessidade, de saber o básico, iniciei uma graduação tecnológica mas não dará 
+tempo de aprender até a data da entrega do TCC. Podem me orientar?
+
+Resposta 22 - O TCC pode ser desenvolvido de duas formas: Uma solução com todas as ferramentas do curso ou um memorial escrito sobre o uso das ferramentas. No curso 
+vocês terão orientadores que auxiliarão tanto no projeto do TCC, quando na sua elaboração ou desenvolvimento. Então, fica tranquila, pois terás ajuda.
+
+Pergunta 23 - Na parte 2 da aula o professor fala que está disponível um template de documento a ser elaborado para o Memorial da Jornada de Formação. Onde posso 
+encotnrar esse template?
+
+Resposta 23 - O material ainda não está disponível na Sala de Aula Virtual. Será disponibilizado no final das disciplinas, pois vocês terão orientadores, que serão 
+escolhidos por vocês, para desenvolver o TCC.
+
+Pergunta 24 - Surgiu uma dúvida em relação ao exemplo de código mostrado nessa aula no Github. Ele está todo em português e não vejo problema algum nisso, porém, 
+gostaria de saber se é possível entregar em inglês?
+
+Resposta 24 - Sim, é possível.
+
+Pergunta 25 - Gostaria de adiantar o TCC, porém não sei o que posso fazer?  Preciso Desenvolver uma aplicação? Se sim, é necessário que ela tenha toda a parte 
+teórica de engenharia de software,  analise de requisitos, diagramas, casos de uso etc.., e essa aplicação precisa ser entregue funcionando? como? Quais linguagens 
+posso utilizar? Atuo como Desenvolvedor na Linguagem Progress 4gl/ABL, posso desenvolver uma aplicação utilizando essa linguagem em que trabalho? Existe outra opção 
+de TCC que não seja o desenvolvimento de uma aplicação? Se sim qual é e como funciona? O que pode ser feito, e o que precisa constar no trabalho?  Aguardo retorno 
+para que eu possa dar o Start nas pesquisas, pensar no tema, e iniciar o desenvolvimento do assunto.   
+
+Resposta 25 - Respondendo as tuas dúvidas: Vocês terão orientadores, logo o ideal é aguardar o final das disciplinas para alinharem os TCCs, com os respectivos 
+orientadores. Tu podes optar pelo desenvolvimento de uma aplicação, que deverá estar rodando, com todas as tecnologias vistas ou curso ou escrever um memorial, 
+reforço que deves aguardar pelo orientador para alinhar essas questões. Podes desenvolver uma solução para teu trabalho sim. Em relação ao tema e pesquisas, essas tu 
+já pode realizar sim, visto que se optares pelo desenvolvimento da solução ou memorial, terás que escrever o TCC. 
+
+Pergunta 26 - Estou com uma dúvida em relação ao projeto f inal. É possível utilizar o Next.js ou Remix, ambos em React, para desenvolver o projeto final pois ambos 
+possuem back-end integrado?
+
+Resposta 26 - Sim, é possível.
 
