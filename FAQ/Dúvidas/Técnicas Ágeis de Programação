@@ -1,1 +1,28 @@
+## Comentários e Perguntas:
+
+Pergunta 1 - Durante a leitura do artigo Refactoring Object Oriented Framework me vieram algumas dúvidas que gostaria de saber se vocês conseguem me ajudar: 
+Durante a leitura da página 14 do artigo ele mostra no item 3.1 (Creating An Abstract Superclass) ele mostra o exemplo de uma refatoração que foi realizada no 
+framework. 
+Minha dúvida é: 
+1° - Durante a refatoração de alguma aplicação por exemplo eu posso adicionar mais de uma Superclasse de maneira abstrata como foi feito no exemplo, ou seja, eu 
+tenho uma superclasse no meu framework e posso adicionar aquela superclasse mais uma funcionalidade sempre buscando a ideia de abstração? Como foi realizado na ideia do Inode(BSD) e depois adicionado mais uma classe SystemVInode
+2° - Eu posso na refatoração mudar o comportamento de um framework ou devo sempre evitar isso? E mais eu poderia mudar sua natureza? 
+Essa pergunta seria mais uma afirmação por que se não entendi errado no artigo ele fala que durante a refatoração deve-se evitar a mudança de comportamento de 
+uma aplicação.(Ele cita isso na página iii da apresentação do artigo "The refactorings are defined to be behavior preserving, provided that their preconditions are met.")?
+
+Resposta 1 -  1° - Durante a refatoração de alguma aplicação por exemplo eu posso adicionar mais de uma Superclasse de maneira abstrata como foi feito no exemplo, 
+ou seja, eu tenho uma superclasse no meu framework e posso adicionar aquela superclasse mais uma funcionalidade sempre buscando a ideia de abstração? Como foi 
+realizado na ideia do Inode(BSD) e depois adicionado mais uma classe SystemVInode - Pode sim, veja o link: https://www.devmedia.com.br/introducao-a-refatoracao/21377 
+e https://engsoftmoderna.info/cap9.html. Eu posso na refatoração mudar o comportamento de um framework ou devo sempre evitar isso? E mais eu poderia mudar sua 
+natureza? Na refatoração não se deve mudar o comportamento do framework. Veja o link: https://www.digite.com/pt-br/agile/refatorando-no-agile/. Se possível, envie 
+mensagem para comunicar se a resposta as suas dúvidas ficaram claras.
+
+Pergunta 2 -  Qual a opinião dos professores sobre quem deveria implementar os testes de uma feature e porque? - O próprio desenvolvedor da feature? - Outro 
+desenvolvedor do mesmo time? - Um time externo focado em fazer testes?
+
+Resposta 2 -  Em empresas que utilizam métodos ágeis de desenvolvimento, o plano de testes é elaborado, desde o inicio do projeto, Quando o analista de sistemas está 
+documentando a solução, o analista de testes participar para poder elaborar o plano de testes. Mudanças ocorrem  em meio a este processo, devido a alteração nos 
+requisitos, que ocorrem com muita frequência, já que o cliente participa de todo o processo de desenvolvimento, avaliando o que está sendo desenvolvido desde o início, 
+através de sprints. Então, a resposta correta é o time focado em testes, justamente porque o analista de testes participa desde o início da coleta dos requisitos, 
+que podem ser alterados, como já mencionei, e alterar os planos de testes, incluindo novos testes relacionados a features.
 
