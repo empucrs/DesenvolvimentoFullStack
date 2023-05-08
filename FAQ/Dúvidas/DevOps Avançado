@@ -1,1 +1,14 @@
+## Comentários e Perguntas:
 
+Comentário 1 - Sobre a questão 7, não entendi por que a resposta correta não é "Melhorar a capacidade de identificar e solucionar problemas rapidamente." Não é 
+justamente esse o propósito da observabilidade? Já na questão 8, não entendi por que não seria "Realizar revisões de código para identificar possíveis erros de 
+configuração antes da implantação." uma vez que as outras alternativas não contemplam formas de identificar >>E<< resolver o problema. "Usar a infraestrutura 
+imutável para evitar alterações na configuração durante a implantação." pode até inibir certas falhas, mas não ajuda a IDENTIFICAR o problema, como consta no 
+enunciado. Faltaram comentários na revisão da prova. Aliás, nem o gabarito aparece para mim.
+
+Resposta 1 -  você está correto em relação à questão 7: "Melhorar a capacidade de identificar e solucionar problemas rapidamente" é precisamente o objetivo da 
+observabilidade e deveria ser a resposta adequada. Investigarei se houve algum equívoco no gabarito. Quanto à questão 8, "Realizar revisões de código para 
+identificar possíveis erros de configuração antes da implantação" pode auxiliar na detecção e correção de problemas de código, entretanto, é menos eficiente para 
+identificar questões de configuração, particularmente aquelas que se manifestam somente em ambiente de produção. O monitoramento em tempo real facilita a 
+identificação de problemas e fornece informações úteis para solucioná-los. Ainda assim, concordo que essa questão merece uma revisão para eliminar ambiguidades 
+nas respostas.
