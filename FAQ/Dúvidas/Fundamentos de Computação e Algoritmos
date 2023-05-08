@@ -12,17 +12,21 @@ São eles: ﻿
 
 * https://www.dropbox.com/sh/iabpto6xkhjd5bd/AADxVhltjBDSUu3DP8eYAjkxa?dl=0. Façam os downloads e códigos, abrir com notepad++. Abraço!!!
 
-Comentário 1 - Galera tenho uma dica pra vocês, no vídeo o professor mostrar a execução utilizando o prompt de comando (cmd) , sempre rodando o comando "node" e chamando o arquivo a ser executado, tem uma extensão no vscode chamada de Code Runner,  que facilita muito a execução desse comando, basta instalar a extensão e utilizar as teclas de atalho  Ctrl+Alt+N.
+Comentário 1 - Galera tenho uma dica pra vocês, no vídeo o professor mostrar a execução utilizando o prompt de comando (cmd) , sempre rodando o comando "node" e chamando o arquivo a ser executado, 
+tem uma extensão no vscode chamada de Code Runner,  que facilita muito a execução desse comando, basta instalar a extensão e utilizar as teclas de atalho  Ctrl+Alt+N.
 
 Resposta 1 - Nodemon também é bastante utilizado... Só instalar via terminar. 
 
 Pergunta 3: Professor, no exemplo sobre Vetor (array), o senhor iniciou a sequência de fibonacci a partir do índice 1. Isso irá deixar o primeiro índice do vetor vazio, certo? Isso era planejado no exemplo?
 
-Resposta 3: No exemplo do Vetor (Array) da sequência Fibonacci, sabendo que Array é um recurso indexado e podendo acessar a posição que se quer, para se ter o acesso tanto a leitura quanto a escrita, foram incluídos 2 valores na vetor, mesmo este sendo criado como nulo. O vetor parte da posição três e vai até a posição 20, sem a inclusão do valor 20. O cálculo do Fibonacci na posição i começa em três e vai aumentando conforme o cálculo para esta sequência. Assim, os índices não ficarão vazios, pois o vetor é iniciado na posição três e não na zero, com o valor 1. Abraço!! 
+Resposta 3: No exemplo do Vetor (Array) da sequência Fibonacci, sabendo que Array é um recurso indexado e podendo acessar a posição que se quer, para se ter o acesso tanto a leitura quanto a escrita, 
+foram incluídos 2 valores na vetor, mesmo este sendo criado como nulo. O vetor parte da posição três e vai até a posição 20, sem a inclusão do valor 20. O cálculo do Fibonacci na posição i começa em três 
+e vai aumentando conforme o cálculo para esta sequência. Assim, os índices não ficarão vazios, pois o vetor é iniciado na posição três e não na zero, com o valor 1. Abraço!! 
 
 Pergunta 4: Se tentarmos acessar o índice fibonacci[0], o retorno é undefined. Fiquei na dúvida se isso era proposital?
 
-Resposta 4: Na verdade é proposital, levando em consideração que o Fibonacci inicia com 0, 1, 1, 2 e assim, sucessivamente. Diante disto se inicializar o i com 3 no for, realmente não haverá índice 0 e 1 no vetor, certo? Me explica, com um pouco mais de clareza, tu inicializou o i com zero? ou com três? Aguardo. Abraço!
+Resposta 4: Na verdade é proposital, levando em consideração que o Fibonacci inicia com 0, 1, 1, 2 e assim, sucessivamente. Diante disto se inicializar o i com 3 no for, realmente não haverá índice 0 e 
+1 no vetor, certo? Me explica, com um pouco mais de clareza, tu inicializou o i com zero? ou com três? Aguardo. Abraço!
 
 Pergunta 5: A apresentação do professor estará disponível para download?
 
@@ -32,19 +36,26 @@ Pergunta 6 -  Fiz o download do material no app, mas não encontro onde ficou gr
 
 Resposta 6 - Está em File --> Downloads.
 
-Comentário 2 - Essas aulas são muito importantes, porém as explicações do conteúdo dos slides, principalmente dos códigos, deveriam aparecer em tela cheia pra gente. O pessoal da edição deveria se atentar a isso. Abriram muito a câmera e não enxergamos nada.
+Comentário 2 - Essas aulas são muito importantes, porém as explicações do conteúdo dos slides, principalmente dos códigos, deveriam aparecer em tela cheia pra gente. O pessoal da edição deveria se atentar 
+a isso. Abriram muito a câmera e não enxergamos nada.
 
 Resposta 2 - Se tu forem em Material da disciplina terás acesso aos códigos.
 
-Pergunta 7 - Eu tenho uma pergunta sobre a questão onde se questiona o nome de entrada e saida de dados, onde em geral entrada e saída de dados são ditas como: INPUT como entrada e OUTPUT como saída e na pergunta diz como, Prompt e Alert. Já que, sempre que questionamos uma entrada de dados, dizemos INPUT e Saída como OUTPUT. Eu realmente não entendi a abordagem desta questão. Bem, Prompt e Alert também não são as melhores formas dentro de um sistema web para trabalhar com entrada e saída de dados, mesmo que, usados de uma forma clara e explicativa durante a aula.
+Pergunta 7 - Eu tenho uma pergunta sobre a questão onde se questiona o nome de entrada e saida de dados, onde em geral entrada e saída de dados são ditas como: INPUT como entrada e OUTPUT como saída e 
+na pergunta diz como, Prompt e Alert. Já que, sempre que questionamos uma entrada de dados, dizemos INPUT e Saída como OUTPUT. Eu realmente não entendi a abordagem desta questão. Bem, Prompt e Alert 
+também não são as melhores formas dentro de um sistema web para trabalhar com entrada e saída de dados, mesmo que, usados de uma forma clara e explicativa durante a aula.
 
-Resposta 7 - O Prompt e Alert são utilizadas em soluções que utilizam Javascript. é uma forma de retorna uma mensagem para o usuário final, que funciona muito bem, pois o mesmo, tem a resposta de saída em uma caixa padrão do Javascript, logo é uma outra forma de "fazer" diferente de Input e Output.
+Resposta 7 - O Prompt e Alert são utilizadas em soluções que utilizam Javascript. é uma forma de retorna uma mensagem para o usuário final, que funciona muito bem, pois o mesmo, tem a resposta de 
+saída em uma caixa padrão do Javascript, logo é uma outra forma de "fazer" diferente de Input e Output.
 
 Pergunta 8 - No switch, onde o case não possui o break, e considerando que a condição dele é atendida, além de entrar nos demais cases, ele ainda acessa o default também?
 
-Resposta 8 -  O comportamento do Switch, ao executar o código, ocorre a partir do case de sucesso, até encontrar o Break, em qualquer linguagem, Assim, sem o Break, o Switch faz o que chamamos de "Fall Through", ou seja, ele entra na condição que estiver abaixo dele. Logo, sem o Break, ele não irá cair no Default, mesmo com as condições dos cases sendo falsas. Você pode, ao invés de usar um Break, colocar um Return, que retorna a função e para o código naquele ponto, sem executar os demais Cases.
+Resposta 8 -  O comportamento do Switch, ao executar o código, ocorre a partir do case de sucesso, até encontrar o Break, em qualquer linguagem, Assim, sem o Break, o Switch faz o que chamamos de 
+"Fall Through", ou seja, ele entra na condição que estiver abaixo dele. Logo, sem o Break, ele não irá cair no Default, mesmo com as condições dos cases sendo falsas. Você pode, ao invés de usar um Break, 
+colocar um Return, que retorna a função e para o código naquele ponto, sem executar os demais Cases.
 
-Pergunta 9 - Na linha 31 do algoritmo de lista encadeada (var MyLL = new LinkedList();), se por uma questão de boas práticas eu quisesse declarar esta variável como const, os métodos da classe de adição ainda funcionariam corretamente?
+Pergunta 9 - Na linha 31 do algoritmo de lista encadeada (var MyLL = new LinkedList();), se por uma questão de boas práticas eu quisesse declarar esta variável como const, os métodos da classe 
+de adição ainda funcionariam corretamente?
 
 Resposta 9 - Sim, pode ser declarada como const. Os métodos da classe funcionam corretamente
 
@@ -81,7 +92,7 @@ Resposta 12 -  Assim que finalizarem as disciplinas.
 Pergunta 13 - No github não esta o codigo desse mini browser:
 https://github.com/empucrs/DesenvolvimentoFullStack/tree/main/D01-FundamentoDeComputacaoEAlgoritmos/code01_Hello. Onde encontro?
 
-Resposta 13 - Vou te enviar os links do github que estão no material: javascript-datastructures-algorithms/binary-search-tree.js at main · 
-loiane/javascript-datastructures-algorithms · GitHub e dsa.js-data-structures-algorithms-javascript/binary-tree-node.js at master · 
+Resposta 13 - Vou te enviar os links do github que estão no material: javascript-datastructures-algorithms/binary-search-tree.js at main· 
+loiane/javascript-datastructures-algorithms · GitHub e dsa.js-data-structures-algorithms-javascript/binary-tree-node.js at master· 
 amejiarosario/dsa.js-data-structures-algorithms-javascript · GitHub. 
 
