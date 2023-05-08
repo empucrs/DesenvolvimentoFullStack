@@ -1,1 +1,56 @@
+## Comentários e Perguntas:
+
+Comentário 1 -  Ainda vemos em vários sistemas (utilitários do windows, visual studio, delphi, etc) o uso de programação estruturada, usando o "velho" GOTO e tudo mais, como exemplo nos arquivos BATCH (*.BAT):
+
+* O exemplo abaixo exibe computadores na rede e seus usuários conectados:
+https://www.robvanderwoude.com/sourcecode.php?src=actusr_nt
+
+* Outros:
+https://www.robvanderwoude.com/batexamples.php
+
+Resposta 1 - Sim, algumas empresas trabalham com soluções legadas ou desenvolvendo com programação estruturada, ainda, é bem comum no mercado de trabalho.
+
+Comentário 2 - Corroborando com um dos itens exposto pelo professor, em uma das empresas que trabalhei a pouco tempo (a uns 3 anos atrás), mais de 90% do trabalho era de manutenção de códigos. Trabalhava com a linguagem Natural para computadores de grande porte (Mainframe). 
+
+Resposta 2-  Isso mesmo. Outro exemplo de Empresa que trabalha com Mainframe ainda, é o Banrisul.
+
+Comentário 3 - Turma segue grupo de estudos e networking que criei para a nossa disciplina: https://chat.whatsapp.com/JcCzfnUjLcRI7ZOEahJFn0.
+
+Resposta 3 - Ótima iniciativa! Perfeito.
+
+Pergunta 1 - Ao final desta aula o professor comenta sobre uma outra apresentação com novos conteúdos como as interfaces, porém nenhuma outra aula esta disponível. Este material sobre interfaces existe ou foi removido? Porque ele cita abranger assuntos de alta importância, mas não esta disponível para os alunos.
+
+Resposta 1 - Os demais assuntos serão tratados nas próximas disciplinas, principalmente as relacionadas a interface.
+
+Pergunta 2 - Não estou conseguindo rodar meu código do JSON no exemplo Objeto de Classe. Você explica essa parte no min 12:45. Quando rodo no node js aparece a seguinte 
+mensagem: "Cannot use import stattement outside a module". Ele aponta para o "import" como erro. Sabe oq pode estar acontecendo?
+
+Resposta 2 - Estás usando o npm para rodar o código? npm node index.js, por exemplo.
+
+Pergunta 3 - Fiz um teste aqui protegendo o atributo matricula, mas não deu certo. Consegui alterar sem utilizar métodos internos ao objeto (como imagem anexa). 
+Poderia me ajudar a encontrar o erro? 
+
+Resposta 3 - Está faltando o método setMatricula(matricula) e podes tirar o # a partir da linha onde crias a const aluno. De todas as linhas, certo inclusive quando 
+tu chama o valor da matricula em ${aluno.#matricula}, esse não pode ser o atributo e sim o valor da variável matricula que está sendo enviada por parâmetro, sem o #.
+
+Pergunta 4 - Queria entender por que o atributo notas da classe Estudante foi declarado fora do construtor e sem a palavra this. QUal é a diferença desta forma de 
+declaração para as demais que foram feitas até agora (dentro dos construtores das classes recedidos por this.)?
+
+Resposta 4 - Nota é uma classe, dentro da classe há o construtor, enviando por parâmetro disciplina e grau. Nesta classe há o uso do this, que seta o atributo para 
+que este receba o valor que está sendo enviando por parâmetro. Na classe Estudante há a Herança para a Classe Pessoa, onde foi criado o atributo matricula e um vetor 
+para notas. No construtor se envia por parâmetro nome, anoDeNascimento, profissão e matricula. O super chama o construtor da superclasse. O this.#matricula indica que 
+o atributo matricula vai receber o valor enviado pro parâmetro. Veja que no exemplo o professor utiliza o método getMatricula() (retornando o atributo) e 
+setMatricula() (enviando o valor do atributo que foi definido no parâmetro). Ao criar o método addNota(valor) o professor está enviando a nota por parâmetro, então 
+temos o this.nota.push(nota) que vai enviar o valor da nota para o vetor. No caso do atributo nota, não há a necessidade de encapsulamento do vetor notas= [ ] , mas 
+o this deve e ser usado, pois no método addNota(nota) seu valor está sendo enviadopor parâmetro para o vetor, através da proriedade push.
+
+Pergunta 5 - O professor Edson nos apresentou na terceira aula uma forma de organizar as classes, cada uma em um arquivo .mjs. Estas classes são exportadas ou 
+importadas por outros arquivos na medida que forem necessárias. Instalei o Node.JS e, utilizando as informações da aula, consegui rodar alguns módulos integrados 
+no próprio Visual Studio (integrado com o Node). Contudo, os mesmos arquivos não funcionam no navegador. Posso entender que essa forma de improtação/exportação para 
+rodar em ambiente do Node.JS é para Back-end?
+
+Resposta 5 -Por política de segurança, nem todas operações que exploramos com javascript na disciplina pode ser reproduzida no navegador. Isto não é uma recomendação, 
+mas sim uma restrição de funcionamento. Antigamente tal tipo de manipulação era possível, como foi apontado nos exemplos postados nas respostas anteriores. Porém, 
+com o avançar da tecnologia e das possibilidades de manipulação, tais limitações foram impostas. Como resultado, é necessário que seja rodado sua solução a partir de 
+um ambiente segura (pode chamar de back-end, servidor, etc) de forma mais plena. Porém, no navegador isso se torna mais restrito.
 
