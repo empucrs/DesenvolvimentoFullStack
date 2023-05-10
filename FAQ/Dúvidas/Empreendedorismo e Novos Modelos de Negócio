@@ -1,0 +1,16 @@
+## Comentários e Perguntas:
+
+Comentário 1 - Tem que avisar ao professor que o site http://www.brazil.thefailcon.com/ está com diversos problemas de caracteres especiais. Este é um problema com o seu 
+servidor web enviando um cabeçalho HTTP que não corresponde ao que você definiu. Para obter instruções sobre como fazer o servidor enviar os cabeçalhos corretos, 
+consulte https://www.w3.org/International/questions/qa-changing-encoding#serverCaso contrário, você também pode usar o PHP para modificar os cabeçalhos, mas isso deve ser 
+feito antes de enviar qualquer texto usando este código:header('Content-Type: text/html; charset=utf-8'); Mais informações sobre como enviar cabeçalhos usando PHP podem ser 
+encontradas na https://www.php.net/manual/en/function.header.php
+
+Resposta 1 - Nós estamos cientes do problema. O "problema" é que eu não tenho controle sobre o site; já avisei os responsáveis várias vezes e não ajustaram. 
+
+Pergunta 1 - Gostaria de saber se o senhor poderia ser meu orientador no TCC, por favor. Acredito que sua visão de mercado unido com suas skills serão importantes para construirmos 
+junto um projeto bem bacana. Por favor, se puder me dar essa oportunidade. 
+
+Resposta 1 - Vocês serão avisados dos professores orientadores e poderão entrar em contato para seus TCCs, assim que terminarem as disciplinas.
+
+
