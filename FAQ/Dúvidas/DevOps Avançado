@@ -6,25 +6,35 @@ configuração antes da implantação." uma vez que as outras alternativas não 
 imutável para evitar alterações na configuração durante a implantação." pode até inibir certas falhas, mas não ajuda a IDENTIFICAR o problema, como consta no 
 enunciado. Faltaram comentários na revisão da prova. Aliás, nem o gabarito aparece para mim.
 
-Resposta 1 -  você está correto em relação à questão 7: "Melhorar a capacidade de identificar e solucionar problemas rapidamente" é precisamente o objetivo da 
+Resposta 1 -  Você está correto em relação à questão 7: "Melhorar a capacidade de identificar e solucionar problemas rapidamente" é precisamente o objetivo da 
 observabilidade e deveria ser a resposta adequada. Investigarei se houve algum equívoco no gabarito. Quanto à questão 8, "Realizar revisões de código para 
 identificar possíveis erros de configuração antes da implantação" pode auxiliar na detecção e correção de problemas de código, entretanto, é menos eficiente para 
 identificar questões de configuração, particularmente aquelas que se manifestam somente em ambiente de produção. O monitoramento em tempo real facilita a 
 identificação de problemas e fornece informações úteis para solucioná-los. Ainda assim, concordo que essa questão merece uma revisão para eliminar ambiguidades 
 nas respostas.
 
-Pergunta 1 -  atualmente a trabalho em umas empresas onde temos servidores próprios, temos dois data center. Utilizamos o github para armazenar os códigos, e temos docker dentro 
+Pergunta 1 -  Atualmente a trabalho em umas empresas onde temos servidores próprios, temos dois data center. Utilizamos o github para armazenar os códigos, e temos docker dentro 
 de nossa virtualização em VMware. Gostaria de saber, uma ferramenta que quando o codigo realizado o commit para a main do github, ao detectar isso já realizar o procedimento ci/cd 
 que atualmente fazemos uma parte na mão? Segue abaixo como é feito hoje(o que a ferramenta ia precisar fazer):-> Baixa o código num servidor linux on-primess. -> Executa nosso 
 processo de teste-> Monta o docker de teste. -> depois de tudo validado, ele montar o contêiner para produção-> encaminha para o servidor de produção de executa o processo de 
 down no antigo contêiner e sobe o novo.Atualmente temos um shell script que faz tudo, mas acho que da para fazer melhor. Gostaria de dicas de ferramentas? Lembrando trabalharemos 
 em servidor próprio.
 
-Resposta 2 - Você pode utilizar o serviço GitHub Actions [1] para automatizar todo esse processo. Basta criar um pipeline com todos os passos que o seu script está fazendo atualmente. 
+Resposta 1 - Você pode utilizar o serviço GitHub Actions [1] para automatizar todo esse processo. Basta criar um pipeline com todos os passos que o seu script está fazendo atualmente. 
 Uma maneira simplificada de testar/validar isso em poucos passos poderia ser criar um pipeline com os seguintes passos: cria a imagem do container docker a partir do repositório 
 (imagino que você já tem um Dockerfile para isso no repositório e se não tiver, sugiro que crie um arquivo desses para descrever a criação automatizada da imagem)publica a imagem em 
 um registro imagens (ex: DockerHub, AWS ECR, etc.)executa um script remotamente o servidor alvo, via ssh, para subir a nova no servidorVocê pode expandir essa ideia para incluir também 
 as etapas de teste. O segundo passo é opcional, mas facilita bastante a transferência da imagem pois basta dar um "docker push" de dentro no step para publicar no registro e um 
 "docker pull" no servidor alvo para obter a última versão da imagem. Para executar o script remotamente via SSH você pode usar um par de chaves de autenticação e salvar a chave privada
 de forma protegida nas variáveis Secrets [2] do GitHub Actions.Referências:1. https://docs.github.com/en/actions/publishing-packages/publishing-docker-images2. 
-https://docs.github.com/en/actions/security-guides/encrypted-secrets
+https://docs.github.com/en/actions/security-guides/encrypted-secrets.
+
+Pergunta 2 - Não entendi o motivo pelo qual a questão 10 "Em um ambiente de DevOps, qual é o PRINCIPAL objetivo do feedback contínuo?" a opção correta seria sobre melhorar a qualidade e 
+a eficiência do processo de desenvolvimento. Entendo que o feedback contínuo seria a última etapa do ciclo de DevOps, dando insumos para o planejamento com base no software que foi 
+colocado em produção. Pra mim, então, faria mais sentido dizer que o feedback contínuo, por ter a ver com transparência e comunicação, estaria melhor relacionado à facilitar a 
+colaboração entre as equipes de desenvolvimento e de operações, não? A minha percepção pessoal seria de que "as primeiras etapas" do ciclo são mais relacionadas à qualidade e 
+eficiência do processo de desenvolvimento, pois envolvem processos como revisão de código, testes automatizados, builds automatizados, etc.
+
+Resposta 2 -  A resposta está correta, visto que O principal objetivo do feedback contínuo em um ambiente de DevOps é melhorar a qualidade e a eficiência do processo de
+desenvolvimento, permitindo a identificação e resolução rápida de problemas e melhorando a comunicação entre as equipes. Logo está resposta envolve revisão de código, testes e bulds, 
+além da comunicação continua entre as equipes. 
