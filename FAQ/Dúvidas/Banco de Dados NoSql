@@ -12,3 +12,11 @@ Pergunta 2 - Noo caso do Cassandra, ele tem as keys e as réplicas que são util
 utilizava pra fazer a busca de mensagens, por estas questões deveria ser mais rápida a leitura, não?
 
 Resposta 2 - Sim, neste sentido tens razão, mas ainda assim, a leitura não é demorada não, é questão de segundos. 
+
+Resposta 2 - Contribuição: fiquei curioso com sua observação e encontrei esse trecho: "Primeiro, gravar dados é muito rápido no Cassandra, porque seu design não requer a realização 
+de leituras ou buscas em disco. muitos bancos de dados. Todas as gravações no Cassandra são apenas anexadas. Devido ao log de confirmação do banco de dados e ao design de transferência 
+sugerido, o banco de dados é sempre gravável e, dentro de uma família de colunas, as gravações são sempre atômicas." (https://www.oreilly.com/library/view/cassandra-the-definitive/9781491933657/ch09.html). 
+Tem esse outro trecho de outro site que explica melhor ainda: "Cassandra não se preocupa com o valor existente da coluna que está sendo modificada, ela pula a parte lida completamente 
+e cria um registro na memória incluindo coluna e valor atualizado. Em seguida, agrupa inserções e atualiza na memória e, em intervalos, grava sequencialmente os dados no disco no modo de anexação. 
+A cada descarga, os dados são gravados em arquivos imutáveis ​​e nunca são substituídos. Como resultado, ao pular a verificação de arquivos de dados longos e adicionar novamente mesmos arquivos 
+de dados longos, as gravações levam muito menos tempo no Cassandra." (https://www.linkedin.com/pulse/why-cassandra-writes-faster-than-traditional-rdbms-vishal-kharjul/).
