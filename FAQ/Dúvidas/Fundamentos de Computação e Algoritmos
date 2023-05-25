@@ -96,3 +96,10 @@ Resposta 13 - Vou te enviar os links do github que estão no material: javascrip
 loiane/javascript-datastructures-algorithms · GitHub e dsa.js-data-structures-algorithms-javascript/binary-tree-node.js at master· 
 amejiarosario/dsa.js-data-structures-algorithms-javascript · GitHub. 
 
+Pergunta 14 - Professor, sobre o caso do projeto na Vercel que você explicou por volta do min 09:00, poderia explicar melhor de que forma um erro na aplicação gerou mais custo?
+
+Resposta 14 - O professor contraiu a dívida, pois não desligou o servidor que ele subiu o que gerou custo e não fez o monitoramento corretamente. como ele contratou o plano básico, 
+segundo o professor, não havia o controle de Cap. Para solucionar o problema, ele entrou em contato com a empresa para negociar o problema. É importante também sempre tratar erros, 
+pois estes também geram mais custos, aumentando a dívida. De qualquer forma, caso isso ocorra é necessário verificar o tipo de plano contratado e entrar em  contato com a Empresa para 
+negociar  a divida, caso ela seja gerada. 
+
