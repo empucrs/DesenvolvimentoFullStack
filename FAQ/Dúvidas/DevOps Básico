@@ -79,3 +79,8 @@ diretório src acontece um erro em que o github diz não existir tal arquivo ou 
 
 Resposta 7 - Por o que pude notar, não há configuração do CI. Estou te enviando arquivo para te auxiliar nesta dúvida. Este arquivo é uma contribuição de um colega de 
 curso. 
+
+Pergunta 8 - Quando você cria uma imagem do NODE pra rodar a aplicação, qual sistema operacional ele vai rodar? Porque você tinha criado uma imagem LINUX pra rodar o banco de dados.
+
+Resposta 8 - Como se trata de uma imagem e existe a necessidade de criar o container, a aplicação rodará no teu Sistema Operacional, não precisando ser, necessariamente, Linux. Dá uma 
+olhadinha neste link: https://blog.rocketseat.com.br/introducao-ao-docker-criando-um-servidor-web-com-node-js-e-subindo-para-o-container/ .
