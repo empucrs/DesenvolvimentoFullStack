@@ -154,3 +154,8 @@ foi utilizando o projeto nodepipeline-devops da aula do professor Cassio, mais s
 acontecendo com o projeto da aula.Mas ja agraço muito a sua ajuda, consegui avançar mais um passo no entendimento do assunto.
 
 Resposta 6 - A pesquisa sempre é importante na nossa área. Rever as aulas igualmente, logo, caso a dúvida persista, nos envia mensagem que te ajudo sim.
+
+Pergunta 7 - Minha dúvida é referente ao IAM, eu não possuo esse Service Role, qual a maneira que foi criado e configurado?
+
+Resposta 7 - Para criar uma função vinculada ao serviço (console), primeiro -> Faça login no AWS Management Console; segundo-> abra O CONSOLE DO iam EM HTTPS://CONSOLE.AWS.AMAZON.COM/IAM/. ; 
+Depois no painel de navegação do console do IAM, escolha o perfil Roles; escolha create role para criar o perfil e logo após, escolha o tipo de função AWS Service que precisas.
