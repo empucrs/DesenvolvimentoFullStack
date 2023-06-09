@@ -70,3 +70,87 @@ Temos que aguardar a resolução da Coordenação do Curso, estou em contato. Ou
 Após o final das disciplinas isso será alinhado com vocês. Qual o tempo total que teremos para desenvolver o TCC, 2 meses, 10 meses? 6 meses. Como a PUC tem a informação da "Disciplina 
 que teve maior descontentamento" é através da opção "Avalie a Disciplina" disponível no portal? Eu prefiro que envie para o mau e-mail. marcia.flores@pucrs.br, para eu coletar os feedbacks 
 e poder acionar a coordenação para as melhorias.
+
+Pergunta 5 - Estou tentando reproduzir a montagem do pipeline que o professor Cassio esta mostrando na aula mas não estou conseguindo. Fiz um fork do projeto nodepipeline-devops do github do professor
+e segui as orientações como foi relatado na aula. Com muita dificulda consegui passar no codebuild da fase pre_build, pois estava faltando uma permissão no role iam  que estava utilizando que 
+o professor não comentou. Agora estou parado na fase buid e o codebuild esta dando log de erro: [Container] 2023/06/06 16:01:41 Phase complete: BUILD State: FAILED[Container] 2023/06/06 16:01:41 
+Phase context status code: COMMAND_EXECUTION_ERROR Message: Error while executing command: docker build -t nodepipeline-devops .. Reason: exit status 1
+[Container] 2023/06/06 16:01:41 Command did not exit successfully docker push 189450513220.dkr.ecr.us-east-1.amazonaws.com/nodepipeline-devops:latest exit status 1[Container] 
+2023/06/06 16:01:41 Phase complete: POST_BUILD State: FAILED[Container] 2023/06/06 16:01:41 Phase context status code: COMMAND_EXECUTION_ERROR Message: Error while executing 
+command: docker push 189450513220.dkr.ecr.us-east-1.amazonaws.com/nodepipeline-devops:latest. Reason: exit status 1. Por favor preciso de sua ajuda.
+
+Resposta 5 - Quando se usam vários containers, com arquivo yaml Docker-compose, deve-se ativar o modo privilegiado para o seu CodeBuild, para o paipeline poder fazer login na AWX, 
+criar e marcar as imagens. Estás usando o Docker? Me parece que falta o comando Docker push, estás utilizando o Docker. Se fores no serviço CodeBuild e anexar as políticas necessárias e 
+permissões acredito que pode dar certo: { "Version": "2012-10-17",
+"Statement": [
+{
+"Action": [
+"ecr:BatchCheckLayerAvailability",
+"ecr:BatchGetImage",
+"ecr:CompleteLayerUpload",
+"ecr:GetDownloadUrlForLayer",
+"ecr:InitiateLayerUpload",
+"ecr:PutImage",
+"ecr:UploadLayerPart",
+"ecr:SetRepositoryPolicy",
+"ecr:DescribeImages",
+"ecr:DescribeRepositories",
+"ecr:ListImages",
+"ecr:DeleteRepositoryPolicy",
+"ecr:GetRepositoryPolicy",
+"ecr:GetAuthorizationToken"
+],
+"Effect": "Allow",
+"Resource": "arn:aws:ecr:us-east-1:<ACCOUNT_ID>:repository/dev-repo"
+},
+{
+"Action": [
+"ecr:GetAuthorizationToken"
+],
+"Effect": "Allow",
+"Resource": "*"
+},
+{
+"Effect": "Allow",
+"Action": [
+"ecr-public:GetAuthorizationToken",
+"sts:GetServiceBearerToken"
+],
+"Resource": "*"
+}
+]
+}
+Quanto ao segundo erro: Vou te passar esse link para que possas auxiliar na solução, pois menciona, justamente o mesmo status de saída:  
+https://stackoverflow.com/questions/67950091/docker-push-with-aws-codebuild-fails-with-exit-status-1.
+
+Pergunta 6 - Vendo um outro exemplo na internet, resolvi testar o projeto nodepipeline-devops na minha máquina e notei que está falhando na construção da imagem.
+Estou executando o seguinte comando:
+docker
+build -t nodepipeline-devops -f Dockerfile .
+O docker começa a executar e quando chega no comando "RUN 
+apt-get update && apt-get install git -y && apt-get
+install imagemagick -y;"
+o processo para a execução e emite a seguinte mensagem:
+"Dockerfile:7
+--------------------
+5
+| # RUN apt-get install imagemagick -y
+6
+|
+7
+| >>> RUN apt-get update && apt-get install git -y
+&& apt-get install imagemagick -y
+8
+9
+| WORKDIR /ecs-app
+--------------------
+ERROR:
+failed to solve: process "/bin/sh -c apt-get update && apt-get install git -y && apt-get install imagemagick -y" did not complete successfully: exit code: 100"
+Neste momento estou pesquisando outros comandos que possam substituir o que está provocando o erro. Parece que a versão da imagem node:12 no docker hub está com uma versão 
+diferente do linux e mão esta aceitando os comandos apt-get update e nem o apt update. Você consegue me ajudar nesta questão. Obs.: já testei subindo as imagens que foram utilizadas 
+na aula de devops básica do professor Fabricio Veronez, tando do exemplo ubuntu quando do CI que criamos do coversao-temperatura no meu docker instalado e funcionou.
+Estou aqui so pra te da um feedback, realmente as permissões do role iam e o pagina do forum me ajudaram, consegui reproduzir a parte da aula que eu estava agarrada, mas não 
+foi utilizando o projeto nodepipeline-devops da aula do professor Cassio, mais sim o projeto conversao-temperatura do professo fabricio. Vou continuar tentando entender o que esta 
+acontecendo com o projeto da aula.Mas ja agraço muito a sua ajuda, consegui avançar mais um passo no entendimento do assunto.
+
+Resposta 6 - A pesquisa sempre é importante na nossa área. Rever as aulas igualmente, logo, caso a dúvida persista, nos envia mensagem que te ajudo sim.
