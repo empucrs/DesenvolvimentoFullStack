@@ -103,3 +103,9 @@ segundo o professor, não havia o controle de Cap. Para solucionar o problema, e
 pois estes também geram mais custos, aumentando a dívida. De qualquer forma, caso isso ocorra é necessário verificar o tipo de plano contratado e entrar em  contato com a Empresa para 
 negociar  a divida, caso ela seja gerada. 
 
+Pergunta 15 - Li recentemente na documentação da MDN, na parte que trata assuntos acerca de JS, que a declaração de variável no modelo var é ultrapassada, e que a ler é sua substituta. 
+É correto afirmar isto?
+
+Resposta 15 - De certa forma sim. Se formos construir o código, seguindo boas práticas de programação, o correto é utilizar o Let ao declarar uma variável, mas o Node.js ainda aceitar 
+var na declaração das variáveis, sem prejuízo ao código. Ele roda da mesma forma. É só uma questão de padronização. 
+
