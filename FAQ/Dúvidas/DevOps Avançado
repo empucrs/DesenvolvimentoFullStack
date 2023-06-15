@@ -159,3 +159,12 @@ Pergunta 7 - Minha dúvida é referente ao IAM, eu não possuo esse Service Role
 
 Resposta 7 - Para criar uma função vinculada ao serviço (console), primeiro -> Faça login no AWS Management Console; segundo-> abra O CONSOLE DO iam EM HTTPS://CONSOLE.AWS.AMAZON.COM/IAM/. ; 
 Depois no painel de navegação do console do IAM, escolha o perfil Roles; escolha create role para criar o perfil e logo após, escolha o tipo de função AWS Service que precisas.
+
+Pergunta 8 - na fase de pre-build estou recebendo um erro, identifiquei que o build falha na linha 9 do arquivo buildspec.yml, a principio é um erro de acesso negado, mas não sei 
+onde configuro este acesso. Comando: [Container] 2023/06/15 00:45:24 Running command aws ecr get-login-password --region us-east-1 | docker login --username 
+AWS --password-stdin 508995340562.dkr.ecr.us-east-1.amazonaws.com. Erro recebido: An error occurred (AccessDeniedException) when calling the GetAuthorizationToken operation: 
+User: arn:aws:sts::508995340562:assumed-role/00-nodepipeline-devops-service-role/AWSCodeBuild-324b639b-ef79-4439-8fcb-42b36e56a7fa is not authorized to perform: ecr:GetAuthorizationToken 
+on resource: * because no identity-based policy allows the ecr:GetAuthorizationToken action Error: Cannot perform an interactive login from a non TTY device.
+
+Resposta 8 - Na fase pré-build são necessários o acesso ao Docker, devido a o uso da imagem e do AWS, criastes a conta, certo? Estou enviando arquivo com a configuração do CI e 
+Docker. Usa essa configuração para o yml que teu pré-build dará certo - Foi enviado aruqivo de configuração para o aluno.
