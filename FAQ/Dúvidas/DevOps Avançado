@@ -168,3 +168,30 @@ on resource: * because no identity-based policy allows the ecr:GetAuthorizationT
 
 Resposta 8 - Na fase pré-build são necessários o acesso ao Docker, devido a o uso da imagem e do AWS, criastes a conta, certo? Estou enviando arquivo com a configuração do CI e 
 Docker. Usa essa configuração para o yml que teu pré-build dará certo - Foi enviado aruqivo de configuração para o aluno.
+
+Pergunta 9 - Poderia passar qual o repositorio do professor Fabricio? Estou mesmo erro do colega.
+
+Resposta 9 - O projeto elaborado na aula do professor Fabrício (DevOps Básico) está em conteúdo -> Disciplina -> Aula 1 --> Workflow, na sala de aula virtual. 
+
+Pergunta 10 - Fiquei em dúvida quanto a questão 5 do teste da disciplina e não sei qual dos professores poderia me ajudar (Cassio ou Marcelo). Pergunta: Questão 5
+A integração contínua (CI) é uma prática fundamental no processo DevOps. Qual das seguintes opções descreve a Integração Contínua?
+Respostas:
+a. A implantação automática de código em produção sempre que um desenvolvedor faz um commit.
+b. A prática de combinar frequentemente as mudanças de código em um repositório central e executar testes automatizados para identificar problemas o mais rápido possível.
+c. O processo de monitoramento e análise do desempenho do sistema em tempo real.
+d. A gestão do versionamento de configurações de infraestrutura e aplicativos.
+As respostas c e d, não não dos respeito a CI. As respostas a. e b. ao meu ver são verdadeiras. Marquei a letra a, com base nas explicações do professor Cassio (Video Aula 01 parte 3, 10:08), 
+que diz claramente o processo da Integração Contínua, inclusive deu ênfase o que diferencia CI de CD.
+A opção b, pode ser aplicada tanto para CI como para CD, não sendo assim exclusiva da primeira. Fico no aguardo de uma melhor explicação para a resposta e ajustes no resultado, se justificar.
+
+Resposta 10 - Segundo professor Edson, Integração Contínua (CI) e Entrega Contínua (CD) são conceitos intimamente relacionados. Na prática de DevOps, ambos trabalham juntos para melhorar 
+a eficiência e a qualidade do processo de desenvolvimento de software. Dito isso, vou explicar a diferença crucial entre os dois para esclarecer a resposta correta para a questão do teste. CI 
+refere-se ao processo de combinar frequentemente as mudanças de código em um repositório central e depois realizar testes automatizados para identificar e resolver problemas o mais rápido possível. 
+Isso evita o "inferno da integração", um problema que ocorre quando os desenvolvedores trabalham isoladamente e combinam suas alterações de uma vez, levando a conflitos de código e bugs. Por outro 
+lado, CD estende o conceito de CI para garantir que o software possa ser liberado a qualquer momento. Isso implica na implantação automática de código em um ambiente de produção sempre que um 
+desenvolvedor faz um commit, dado que todos os testes sejam aprovados. Portanto, em resposta à questão 5, a opção "b" descreve corretamente a prática de CI, enquanto a opção "a" se refere mais 
+apropriadamente à prática de CD. É uma distinção sutil, mas crucial no processo DevOps.
+
+Pergunta 11 - Estas configurações são do projeto de devops básico, é isso mesmo? 
+
+Resposta 11 - Sim, mas sem essa configuração básica, tu podes ter problemas da buildar teu projeto. 
