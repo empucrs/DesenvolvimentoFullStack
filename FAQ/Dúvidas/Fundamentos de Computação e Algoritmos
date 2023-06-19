@@ -109,3 +109,8 @@ Pergunta 15 - Li recentemente na documentação da MDN, na parte que trata assun
 Resposta 15 - De certa forma sim. Se formos construir o código, seguindo boas práticas de programação, o correto é utilizar o Let ao declarar uma variável, mas o Node.js ainda aceitar 
 var na declaração das variáveis, sem prejuízo ao código. Ele roda da mesma forma. É só uma questão de padronização. 
 
+Pergunta 16 - Uma dúvida, na aula introdutória foi dito que seria entregue no final de cada módulo uma questão ou projeto para ser realizado e postado no GitHub. Mas nessa em especifico 
+ficou muito aberto a entender os algoritmos e colocar no Github, seria isso mesmo? 
+
+Resposta 16 - Sim, é isso mesmo, até porque são as questões serão avaliadas para nota.
+
