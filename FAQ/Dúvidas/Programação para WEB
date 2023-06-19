@@ -1,1 +1,30 @@
+## Comentários e Perguntas:
 
+Pergunta 1 - No vídeo da parte 4, aula 1, tempo 07:30, descreve que uma SPA é mais segura. Mas sempre vemos que o lado do cliente e todas suas entradas de dados devem ser tratadas como 
+passíveis de uso indevido (exploração por um hacker, por exemplo), e portanto deve ser tratado no lado do servidor (se necessário até refazer uma validação, por exemplo, se eu valido com 
+javascript do lado do cliente um CPF eu o faço novamente no backend pois não devo confiar no que vem do cliente, ou se eu tenho uma entrada de 10 caracteres que eu valido no campo de um form, 
+quando eu recebo no backend eu checo se a string enviada não foi maior). Eu não entendi essa afirmação, poderia tirar essa dúvida, por favor?
+
+Respsota 1 - Com uso de JavaScript pode-se criar um arquivo externo ou interno ao código font-end, abrindo as tags <script></script>. No primeiro caso, e o mais comumente utilizado, tua 
+cria uma função verifica CPF() onde tu especifica o número máximo de caracteres que aquele campo aceitará. Por exemplo: 
+function validaCPF(cpf) { var Soma = 0 var Resto
+var strCPF = String(cpf).replace(/[^\d]/g, '') 
+  if (strCPF.length !== 11) 
+      return false 
+  if ([ '00000000000', '11111111111', '22222222222', '33333333333', '44444444444', '55555555555', '66666666666', '77777777777', '88888888888', '99999999999', ].indexOf(strCPF) !== -1) 
+    return false
+    for (i=1; i<=9; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (11 - i);
+      Resto = (Soma * 10) % 11
+  if ((Resto == 10) || (Resto == 11)) Resto = 0
+    if (Resto != parseInt(strCPF.substring(9, 10)) ) 
+      return false
+  Soma = 0
+  for (i = 1; i <= 10; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (12 - i)
+    Resto = (Soma * 10) % 11
+      if ((Resto == 10) || (Resto == 11)) 
+        Resto = 0
+      if (Resto != parseInt(strCPF.substring(10, 11) ) ) 
+        return false
+    return true} 
+Nesta função não é possível digitar os números do CPF iguais, o retorno terá como resposta, cpf inválido e cpf com mais de 11 caracteres. Veja que esse é um Script externo em uma folha js. 
+Tu podes abrir as tags <script></script> dentro do front-end e chamar no botão o evento de onclick, que vai receber essa função. das duas formas pode-se fazer a verificação de tamanho e de CPF válido.
