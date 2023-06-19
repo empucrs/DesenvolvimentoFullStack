@@ -84,3 +84,18 @@ Pergunta 8 - Quando você cria uma imagem do NODE pra rodar a aplicação, qual 
 
 Resposta 8 - Como se trata de uma imagem e existe a necessidade de criar o container, a aplicação rodará no teu Sistema Operacional, não precisando ser, necessariamente, Linux. Dá uma 
 olhadinha neste link: https://blog.rocketseat.com.br/introducao-ao-docker-criando-um-servidor-web-com-node-js-e-subindo-para-o-container/ .
+
+Pergunta 9 - No código utilizado pelo professor do arquivo Dockerfile (17min e 20 seg) está com o código abaixo transcrito: Chat, tenho uma dúvida sobre comandos dentro de um Dockerfile. Poderia me ajduar?
+Os comandos são:
+1 FROM node:16.13.2
+2 WORKDIR /app
+3 COPY package*.json ./
+4 RUN npm install
+5 COPY . .
+6 CMD ["node", "server.js"]
+Na linah 3 ele copia os arquivos ".json" para "/app" utilizando o comando "./" , Já na linah 5, ele copia todos arquivos para ".app" utilizando apenas "." . Existe diferença entre 
+esses comandos? Por que foi utilizado "./" no primeiro e apenas "." no segundo?
+
+Resposta 9 - No primeiro caso tu estas indicando a cópia do arquivo que queres copiar e por isso do uso do comando  COPY package*.json ./. Já no segundo caso COPY . . tu estas fazendo 
+a cópia de todos os arquivos, logo há diferença sim. No COPY da linha 3 tu indica, daquela forma como fazer cópia de um arquivo específico, Agora ao utilizar o comando COPY. . tu 
+estás solicitado a copia de tudo e não especificando apenas um ou outro arquivo.
