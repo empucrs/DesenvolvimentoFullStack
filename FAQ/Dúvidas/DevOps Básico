@@ -101,3 +101,8 @@ esses comandos? Por que foi utilizado "./" no primeiro e apenas "." no segundo?
 Resposta 9 - No primeiro caso tu estas indicando a cópia do arquivo que queres copiar e por isso do uso do comando  COPY package*.json ./. Já no segundo caso COPY . . tu estas fazendo 
 a cópia de todos os arquivos, logo há diferença sim. No COPY da linha 3 tu indica, daquela forma como fazer cópia de um arquivo específico, Agora ao utilizar o comando COPY. . tu 
 estás solicitado a copia de tudo e não especificando apenas um ou outro arquivo.
+
+Pergunta 10 - Eu havia entendido que noprimeiro caso estávamos copiando arquivos específicos e no segundo estavamos copiando tudo. Minha dúvida está na última parte do cópido das linhas 
+3 e 5. Por que na linha 3 eu utilizo "./" para indicar o destino dos arquivo copiados e na linha 5 utilizo apenas "." para indicar o destino?
+
+Resposta 10 - Sim, é isso.
