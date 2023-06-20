@@ -195,3 +195,15 @@ apropriadamente à prática de CD. É uma distinção sutil, mas crucial no proc
 Pergunta 11 - Estas configurações são do projeto de devops básico, é isso mesmo? 
 
 Resposta 11 - Sim, mas sem essa configuração básica, tu podes ter problemas da buildar teu projeto. 
+
+Comentário 2 - O repositorio nodepipeline-devops, consegui realizar o exemplo completo, mas tive que fazer as seguintes modificações:
+1º claro foi colocar as permissões que você me passou no role iam;
+2° foi modificar o Dockerfile: onde estava "From node:12"  mudei para "FROM node:18.15.0"
+3º no codebuild marquei a opção de usar "opções avançadas do docker" no momendo que especificamos o sistema operacional a ser utilizado.
+Quando fiz isso o exemplo passou igual o exemplo da aula.
+
+Resposta 2 - Perfeito! O Node.js deve sempre conter a versão que estás usando.
+
+Comentário 3 - Errata: no 3º marquei foi "Habilite esse indicador se quiser criar imagens do Docker ou quiser que suas compilações obtenham privilégios elevados".
+
+Resposta 3 -  Ajudou sim! Obrigada pela contribuição.
