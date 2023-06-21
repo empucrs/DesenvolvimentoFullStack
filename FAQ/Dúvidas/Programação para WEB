@@ -28,3 +28,17 @@ var strCPF = String(cpf).replace(/[^\d]/g, '')
     return true} 
 Nesta função não é possível digitar os números do CPF iguais, o retorno terá como resposta, cpf inválido e cpf com mais de 11 caracteres. Veja que esse é um Script externo em uma folha js. 
 Tu podes abrir as tags <script></script> dentro do front-end e chamar no botão o evento de onclick, que vai receber essa função. das duas formas pode-se fazer a verificação de tamanho e de CPF válido.
+
+Pergunta 2 - Minha dúvida não era sobre a validação ou a forma de fazer isso, essa parte eu sei. Minha dúvida foi sobre a afirmação que uma SPA é mais segura, sendo que ela executa 
+do lado do cliente e via de regra não se deve confiar no que roda ou vem do lado do cliente. Daí meu exemplo que no caso do CPF se faz dupla validação, uma vez no lado do cliente e outra 
+do lado do servidor. Queria entender esse ponto de vista de segurança onde a lógica do lado do cliente é mais segura, será que ficou certo no slide esse texto? 
+
+Resposta 2 - Professor Luís Fernando: "A questão da segurança neste caso não diz respeito à validação dos dados, que devem sempre ser validados no servidor, independente de terem ou 
+não sido validados no cliente, ou do tipo de aplicação web (SPA ou MPA). A principal diferença em relação à segurança em um SPA vs MPA é que em um SPA, o navegador realiza uma 
+requisição GET para o servidor web para baixar a página da aplicação. São também baixados arquivos estáticos, como imagens, scripts, estilos, etc (assim como em um MPA). Muitas vezes, 
+inclusive, a própria página inicial de um SPA também é estática. Todas as outras requisições são realizadas a um ou mais servidores de API, compondo o sistema web. Muitas vezes 
+aplicações MPA também utilizam APIs, porém estas são invocadas pelo servidor web ao invés do cliente. Assim, vamos assumir que os servidores de API seguem boas práticas de segurança, 
+já que devem estar publicados na Internet de qualquer forma. Então, do ponto de vista da aplicação web em si o SPA possui, em relação a um MPA:
+Menor superfície de ataque. Em um SPA há um único endpoint publicado que serve a página (que talvez seja apenas um arquivo estático), enquanto em um MPA, cada URL de cada página é 
+um endpoint que deve ser protegido no servidor, aumentando a superfície de ataque. Menor risco de ataques de injeção de SQL, cross-site scripting, etc. Um MPA precisa validar e normalizar 
+os parâmetros de entrada de cada página, que é um endpoint separado. Os parâmetros podem ser passados na URL (query string), em cabeçalhos HTTP, cookies ou corpo da requisição.
