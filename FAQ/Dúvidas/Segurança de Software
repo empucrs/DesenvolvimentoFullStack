@@ -15,3 +15,22 @@ Resposta 1 - Em todas as disciplinas os professor disponibilizam projetos, para 
 em materiais complementares, ora na aula em que o professor usou o projeto. Podes baixar todos. Como te disse anteriormente, exemplos das disciplinas que requerem projetos estão disponíveis 
 e sim, a disciplina de Projeto WEB 2 é justamente para o desenvolvimento da solução, deveria ser a última disciplinas, mas pro questões de cronograma e da própria  covid-19, acabou sendo 
 apresentada antes. Gostaria de relembrar que vocês terão orientadores, escreverão um projeto que pode ser para o desenvolvimento de uma solução ou memorial, logo, vocês terão ajuda. 
+
+Pergunta 2 - Por volta do min 26 a 27 na aula 3, o professor fala sobre o uso de salting. A aplicação gera uma sequencia aleatória (salt) que é adicionada à senha para gerar o hash 
+armazenado no banco de dados. Segundo a aula, isso impede que alguém acesse a aplicação mesmo que descubra a senha, pois não tem acesso ao salt. O que não entendi bem é como esse salt 
+fica disponível ao usuário e não a quem está atacando?
+
+Resposta 2 - Vou ser bem minuciosa: O Salt é utilizado para evitar que duas senhas idênticas produzam hashes idênticos, certo?! O fato de produzirem dois hashes idênticos facilita muito 
+o trabalho dos atacantes, por isso hashes diferentes com uso do Salt. Assim, o uso da criptografia na proteção de senhas se dá por meio de uma função de hash ou "embaralhamento". Uma  função 
+de "mão única" transforma a senha em um valor distinto, de modo que se um atacante obtiver uma cópia desse valor ele não consegue, a princípio, descobrir a senha original com facilidade. 
+Isso é útil porque na maioria dos casos o atacante só tem uma copia do BD, obtida por meio de uma Injeção de SQL ou de algum backup mal gerenciado. Para ganhar acesso de fato ao sistema ele 
+ainda precisa logar normalmente na aplicação, e para isso a senha original é necessária (o hash sozinho não serve, o sistema não aceita o hash como credencial). Forçar usuários a adotarem 
+senhas mais complexas não é uma tarefa fácil, uma alternativa é fazer com que uma mesma senha cadastrada em sistemas diferentes e/ou por usuários diferentes gere não o mesmo hash, mas hashes 
+diferentes. Isso impede que hashes pré-computados sejam usados nos novos ataques, exigindo que o trabalho para quebrá-los seja feito todo de novo cada vez que se quiser descobrir a senha de um 
+único usuário. Então a técnica do Salt consiste em simplesmente prefixar a senha com um dado aleatório antes que a mesma seja hasheada. Esse Salt é criado durante o registro da senha, e então 
+armazenado junto à mesma no BD (não é necessário que o Salt seja secreto, somente que ele seja único. Sobre a forma correta de usá-los, isso depende muito do caso, e existem situações em que o 
+uso incorreto dos mesmos pode causar problemas. No entanto, todos os algoritmos modernos concebidos especificamente visando a proteção de senhas já incorporam em si o uso do Salt, de modo que basta 
+passar o Salt como parâmetro quando requisitado (se requisitado - alguns algoritmos já geram o sal pra você) e deixar que o próprio algoritmo cuide dos detalhes. Evite expor publicamente o Salt de 
+qualquer usuário, mas não se preocupe demais com isso caso essa exposição seja inevitável (ex.: quando Salt precisa ser enviado ao cliente, como no protocolo SRP). Prefira um Salt aleatório e 
+razoavelmente longo em vez de um facilmente previsível (ex.: o ID do usuário no banco ou mesmo seu username). E toda vez que um usuário mudar sua senha, mude também o Salt - importante sobretudo 
+caso o usuário troque sua senha para outra que ele já usou anteriormente. 
