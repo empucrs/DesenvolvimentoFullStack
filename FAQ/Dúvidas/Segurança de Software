@@ -34,3 +34,10 @@ passar o Salt como parâmetro quando requisitado (se requisitado - alguns algori
 qualquer usuário, mas não se preocupe demais com isso caso essa exposição seja inevitável (ex.: quando Salt precisa ser enviado ao cliente, como no protocolo SRP). Prefira um Salt aleatório e 
 razoavelmente longo em vez de um facilmente previsível (ex.: o ID do usuário no banco ou mesmo seu username). E toda vez que um usuário mudar sua senha, mude também o Salt - importante sobretudo 
 caso o usuário troque sua senha para outra que ele já usou anteriormente. 
+
+Pergunta 3 - Você comentou que o WhatsApp mantém a confidencialidade das msgs, e apenas o remetente e destinatário conseguem decifrá-la. Mas, e as notícias que chegam até nós de que a polícia 
+consegue se antecipar a crimes uma vez que tiveram acesso a informações trocadas em aplicativos como este?
+
+Resposta 3 - Normalmente, quando a polícia está envolvida e tem conhecimento de mensagens suspeitas é por que alguma denúncia foi realizada e judicialmente ela obteve a liminar para ter 
+acesso ao uso do Whatsapp da vítima, desta forma, ela consegue sim rastrear e acessar as suas mensagens. No caso, de não haver denúncia, mas suspeita de algum crime, a polícia, por lei, deve 
+entrar em contato com as Instituições legais, para obter essa liminar, visto que senão o fizer, estará cometendo crime de invasão de privacidade e outros mais. 
