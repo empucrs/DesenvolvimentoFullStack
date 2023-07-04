@@ -112,3 +112,21 @@ que há um link, mas onde?? mo pdf não tem. As coisas não estão batendo. Como
 muito menos o professor. Descobri que o problema estava entre o teclado e a cadeira... Tudo que o Fabricio passou funciona perfeitamente, Peço desculpas pelo inconveninte. 
 
 Resposta 11 - Que bom que conseguiste.
+
+Pergunta 12 - O código git clone não é reconhecido, conseguem me ajudar?
+Mensagem de erro:
+git : O termo 'git' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável. Verifique a grafia do nome ou, se um caminho tiver sido incluído, 
+veja se o caminho está correto e tente novamente.No linha:1 caractere:1+ git clone git@github.com:leandrooborges/aula_devops.git+ ~~~    + CategoryInfo          : ObjectNotFound: (git:String) [], 
+CommandNotFoundException    + FullyQualifiedErrorId : CommandNotFoundException.
+
+Resposta 12 - Tu fez o Download e instalou o Git na tua máquina? Caso não tenha instalado, faça o processo e depois execute esse comando novamente. Caso já tenha p Git instalado será 
+necessário adicioná-lo às variáveis de ambiente do Windows, assim: Para acessar as variáveis de ambiente basta seguir os passos abaixo:
+1 - Clique no campo de pesquisa do Windows e pesquise por variáveis de ambiente, clique no primeiro resultado da pesquisa.
+Será aberto uma nova janela com o nome Propriedades do sistema, clique na aba Avançado.
+2 - Nesta aba clique no botão Variáveis de Ambiente encontra-se abaixo e a direita.
+Uma nova janela com o nome Variáveis de ambiente será aberta, no campo Variáveis do usuário procure e clique em Path.
+3 - Clique no botão Editar que está à direita da tela.
+4 - Nesse momento será aberto a janela Editar a Variável de Ambiente, clique no botão Novo à direita da janela.
+5 - No campo de edição que será ativo, informe o caminho da instalação do Git, por padrão a instalação ocorre no seguinte caminho, C:\Program Files\Git.
+6 - Clique em OK nas janelas que foram abertas, Editar a Variável de Ambiente, Variáveis de ambiente e Propriedades do sistema.
+7 - Nesse momento, reinicie o terminal caso esteja aberto e execute um comando git. 
