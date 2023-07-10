@@ -130,3 +130,10 @@ Uma nova janela com o nome Variáveis de ambiente será aberta, no campo Variáv
 5 - No campo de edição que será ativo, informe o caminho da instalação do Git, por padrão a instalação ocorre no seguinte caminho, C:\Program Files\Git.
 6 - Clique em OK nas janelas que foram abertas, Editar a Variável de Ambiente, Variáveis de ambiente e Propriedades do sistema.
 7 - Nesse momento, reinicie o terminal caso esteja aberto e execute um comando git. 
+
+Pergunta 13 - Estou assistindo as aulas e estou tendo certa dificuldade de assimilar tudo pois não tenho experiência como desenvolvedor e minha primeira 
+graduação não é da área de TI, e a maioria dos ensinamentos não são voltados à novatos. Você poderia indicar algum material auxiliar para ser utilizado 
+como background para as aulas não apenas deste módulo como dos anteriores também? Principalmente sobre a questão de Análise de Sistemas.
+
+Resposta 13 - Olha a bibliografia básica e complementar da disciplina, ela vai te dar um bom parâmetro para retirada de dúvidas. Tu podes ainda, 
+enviar tuas dúvidas de forma pontual para que eu possa te ajudar.
