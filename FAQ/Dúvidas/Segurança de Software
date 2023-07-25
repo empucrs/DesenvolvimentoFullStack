@@ -59,3 +59,9 @@ não deveria ser capaz de ler as mensagens trocadas entre os pares. Algumas poss
 A empresa sempre é um destinatário, tem sua própria chave privada e recebe uma cópia de qualquer mensagem - Sim, está correto, mesmo porque só a empresa tem 
 a chave criptografada para isso. O algoritmo tem alguma vulnerabilidade, apenas a empresa conhece até o momento - Na verdade como são geradas duas chaves, 
 uma delas deve ser repassada pela empresa, ao cliente para que não ocorra problemas.
+
+Comentário 2 - A questão sobre a cifra de césar na avaliação está incorreta, marquei a opção correta que seria VRIWZDUH e mesmo assim a questão foi invalidada, peço que revisem todas 
+as questões.
+
+Resposta 2 - Segue resposta do professor: "Conferi e a resposta indicada como correta é a letra A mesmo e o gabarito está correto. O aluno fez um deslocamento para frente e não seguiu a 
+figura da questão.".
