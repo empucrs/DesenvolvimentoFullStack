@@ -118,3 +118,11 @@ Comentário 2 - Em muitos momentos o professor mostra alguns códigos no monitor
 
 Resposta 2 - Entra no nosso GitHub: https://github.com/empucrs/DesenvolvimentoFullStack. Aqui tu vais encontrar os códigos do professor, tutoriais, desafio e o nosso FAQ. 
 
+Pergunta 17 - Gostaria de saber se na hora de fazer um código que utiliza funções existe a "melhor" boa pratica para se estruturar. Por exemplo estou fazendo um código Vue agora, e tenho 
+que criar validações para campos. Existe a melhor ferramenta para isso ou a melhor prática? Muitas vezes não construimos uma estrutura do que queremos e vamos direto para a ação.
+Gostaria de saber o que precisamos fazer para sempre construir um código limpo, bem estruturado, que tem um bom desempenho e que precise o mínimo de ter que fazer manutenções futuras?
+
+Resposta 17 - Um código bem estruturado, normalmente ocupa poucas linhas e deve ser comentado. Uma boa saída é o uso de Arrow Function, pois são mais simples, ocupam poucas linhas e desempenham 
+o papel que tu precisas, desde que a lógica esteja correta. Segue link para maiores dúvidas em relação ao assunto: https://www.w3schools.com/js/js_arrow_function.asp. 
+
+
