@@ -1,0 +1,9 @@
+## Comentários e Perguntas:
+
+Pergunta 1 - Fique com uma dúvida no minuto 14:06, onde o senhor cita "Jamais invente de gerar um valor de id programaticamente", nesse caso o senhor está se referindo a 
+não utilizar um valor index (posição do item dentro do array) como key? E por qual motivo? Caso meu objeto não tenha um identificador único, e não seja possível modificar este 
+objeto, qual a melhor abordagem?
+
+Resposta 1 - Quer dizer dizer que não se deve gerar id na digitação, esse id deve ser gerado automaticamente. Motivo: para não haver erros humanos na criação do id e correr o 
+risco de duplicar. A melhor abordagem é criar a tabela com id auto-increment, ou auto incrementável, no banco de dados. Esclarecendo: No caso de Array, os índices são criados 
+conforme o seu tamanho e iniciam no índice zero.
