@@ -150,3 +150,17 @@ Resposta 14 - Entendo. No final de cada slide de aula ou livro, temos a bibliogr
 São os mais indicados para retirada das dúvidas. Me faz uma gentileza? Pontua as tuas dúvidas, por exemplo: Como eu instalo o Ubundo? Quais comandos utilizo, via terminal para instalar programas 
 no Ubunto? O que são banco de dados Mysql e Nosql? Como programo com o backend Node,js. Assim, fica mais fácil de te auxiliar na dúvidas. Se quiseres reunir todas tuas dúvidas e enviar por e-mail, 
 segue: marcia.flores@pucrs.br. Vou aguardar teu e-mail para poder te auxiliar.
+
+Pergunta 15 - Achei essa questão da prova um tanto estranha. Pois geralmente quando se é utilizado um pull request a equipe ira analisar o código e verificar os problemas, quando um push vou 
+empurrar para o repositório remoto as alterações. "Ao utilizar o GitHub Actions podem ser realizadas automações com as mais variadas tarefas. Esta é uma equipe  com  5 desenvolvedores 
+trabalhando em um mesmo ramo (branch), em que todos trabalham em um mesmo repositório. Um dos  desenvolvedores  recebeu a informação  de que o código recém enviado apresenta possíveis 
+"falhas de segurança". Os demais desenvolvedores perceberam  o problema e interromperam suas tarefas para estudar o ocorrido e auxiliar na solução do problema. A equipe resolveu o 
+problema e aprendeu bastante sobre a situação indicada. Todos estão satisfeitos por terem configurado a ação para executar o mais cedo possível, para evitar que a falha fosse descoberta muito tarde.
+O evento configurado no workflow para iniciar a execução dessa ação (action) é:"
+1 - pull.
+2 - push.
+3 - release.
+4 - pull_request.
+
+Resposta 15 - Na verdade o pull_request é, realmente a última ação do GitAction, visto que deves criar a branch, realizar o pull, o push, release para novo versão e só depois fazer 
+o commit e o pull resquest. 
