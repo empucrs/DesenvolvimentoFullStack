@@ -7,3 +7,16 @@ objeto, qual a melhor abordagem?
 Resposta 1 - Quer dizer dizer que não se deve gerar id na digitação, esse id deve ser gerado automaticamente. Motivo: para não haver erros humanos na criação do id e correr o 
 risco de duplicar. A melhor abordagem é criar a tabela com id auto-increment, ou auto incrementável, no banco de dados. Esclarecendo: No caso de Array, os índices são criados 
 conforme o seu tamanho e iniciam no índice zero.
+
+Pergunta 2 - Gostaria de um suporte com a questão abaixo, não entendi muito bem, temos um alternativa com digitação errada? Questão 4 - Existem diferentes estratégias de organização do
+código de implementação de um frontend para o lado cliente de uma aplicação web. Microfrontend é um estilo arquitetural que estende o conceito de microsserviços no backend para o frontend.
+Selecione a alternativa que descreve uma característica dos microfrontends:Tratam de dividir interfaces de usuários grandes monolíticas em pedaços menores e mais gerenciáveis com fronteiras 
+bem definidas. Se baseiam em utilizar uma única tecnologia (biblioteca ou framework) compartilhada entre todas as equipes que trabalham em cada fragmento do frontend. 
+Preconizam a implantação dependente de cada fragmento do frontend. -- FRASE MONTADA ERRADA? Necessitam de suporte nativo de um framework de desenvolvimento web para sua implantação.
+
+Resposta 2 - Resposta do professor: Não entendi qual das seguintes alternativas o aluno aponta um erro de “montagem”. Pela anotação seria a alternativa “C” ou “D” que estariam escritas de forma incorreta.
+a) Tratam de dividir interfaces de usuários grandes monolíticas em pedaços menores e mais gerenciáveis com fronteiras bem definidas.
+b) Se baseiam em utilizar uma única tecnologia (biblioteca ou framework) compartilhada entre todas as equipes que trabalham em cada fragmento do frontend.
+c) Preconizam a implantação dependente de cada fragmento do frontend.
+d) Necessitam de suporte nativo de um framework de desenvolvimento web para sua implantação.
+Meu ponto de vista é que todas estão corretamente escritas. A resposta da questão é a “A”. 
