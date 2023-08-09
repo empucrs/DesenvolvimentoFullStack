@@ -164,3 +164,7 @@ O evento configurado no workflow para iniciar a execução dessa ação (action)
 
 Resposta 15 - Segundo o professor: Entendo que todos estão no mesmo repositório. Neste caso, o evento é o push. Mesmo caso de quando o repositório apresenta um único desenvolvedor.
 Este é talvez o fluxo de trabalho mais simples. Equipes professionais costumam utilizar ramos separados para cada solicitação, entretanto, não é o fluxo descrito na questão.
+
+Pergunta 16 - Pra cada imagem teria um repositório no Docker Hub?
+
+Resposta 16 - Sim, para cada imagem deve haver um repositório no Docker Hub. 
