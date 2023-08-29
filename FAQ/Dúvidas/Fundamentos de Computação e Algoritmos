@@ -125,4 +125,25 @@ Gostaria de saber o que precisamos fazer para sempre construir um código limpo,
 Resposta 17 - Um código bem estruturado, normalmente ocupa poucas linhas e deve ser comentado. Uma boa saída é o uso de Arrow Function, pois são mais simples, ocupam poucas linhas e desempenham 
 o papel que tu precisas, desde que a lógica esteja correta. Segue link para maiores dúvidas em relação ao assunto: https://www.w3schools.com/js/js_arrow_function.asp. 
 
+Pergunta 18 - Sempre que rodo o script abaixo, recebo a informação de que a função "calculaCorrida()" não está definida. Onde está o erro?<input placeholder="Distancia em KM" 
+id="campoDistanciaEmKM"/><input placeholder="Tempo em minutos" id="campoTempoEmMin"/><button onclick="calculaCorrida()">Calcula</button><script>    
+function formataMoeda() {        var valorFormatado = algumValor.toFixed(2).replace('.'), (',');        
+return valorFormatado;}function calculaCorrida() {        //organizar as entradas e fazer a regra de negocio       
+var tarifaDinamica = 1.4;        var distanciaEmkm = campoDistanciaEmKM.value * tarifaDinamica;        
+var tempoEmMin = campoTempoEmMin.value * 0.26;        var valorDaCorrida = distanciaEmkm + tempoEmMin;        
+alert("O valor da corrida e:" + formataMoeda(valorDaCorrida)); // executa na hora    } /*#app de corridaPreço Base da corridaCusto fixohorarios e regioes de maior movimento-distancia KM  - 
+Tempo em minutos/*</script>
+
+Resposta 18 - Veremos:  <script>    
+function formataMoeda() {
+var valorFormatado = algumValor.toFixed(2).replace('.'), (',');        
+return valorFormatado;}function calculaCorrida() 
+{  //organizar as entradas e fazer a regra de negocio       
+var tarifaDinamica = 1.4;        
+var distanciaEmkm = campoDistanciaEmKM.value * tarifaDinamica;        
+var tempoEmMin = campoTempoEmMin.value * 0.26;        
+var valorDaCorrida = distanciaEmkm + tempoEmMin;        
+alert("O valor da corrida e:" + formataMoeda(valorDaCorrida)); // executa na hora    } /*#app de corridaPreço Base da corridaCusto fixohorarios e regioes de maior movimento-distancia KM  - 
+Tempo em minutos/*</script> Na função calculaCorrida() não encontrei o "return" de nada.  Pede para retorna formataMoeda(valorDaCorrida); 
+
 
