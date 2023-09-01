@@ -146,4 +146,13 @@ var valorDaCorrida = distanciaEmkm + tempoEmMin;
 alert("O valor da corrida e:" + formataMoeda(valorDaCorrida)); // executa na hora    } /*#app de corridaPreço Base da corridaCusto fixohorarios e regioes de maior movimento-distancia KM  - 
 Tempo em minutos/*</script> Na função calculaCorrida() não encontrei o "return" de nada.  Pede para retorna formataMoeda(valorDaCorrida); 
 
+Pergunta 19 - Acredito que a questão não tinha uma resposta correta, marquei a que menos me parecia errada, pois a palavra "requerem" na opção sinalizada como correta me fez 
+acreditar que a mesma invalidasse essa resposta, pois não é uma necessidade que os dados estejam ordenados, acredito sim que ajude no desempenho, mas não impede que o método seja utilizado. 
+Aluno enviou print da questão.
+
+Resposta 19 - Resposta do Professor: A interpretação do aluno está inadequada. A indicação original da resposta para a questão está correta e não existe ambiguidade alguma 
+na utilização da palavra “requerem”. O algoritmo de busca binária possui uma precondição que deve ser verdadeira para que funcione corretamente e tal precondição indica que os dados 
+devem apresentar uma relação de ordem. Tal informação pode ser encontrada em qualquer livro sobre estruturas de dados e algoritmos. Talvez seja importante indicar para o aluno um exemplo 
+de fonte bibliográfica (daquelas indicadas na bibliografia da disciplina) onde a indicação de ordenação dos dados apareça.
+
 
