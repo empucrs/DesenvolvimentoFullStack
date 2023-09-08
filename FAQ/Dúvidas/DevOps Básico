@@ -168,3 +168,7 @@ Este é talvez o fluxo de trabalho mais simples. Equipes professionais costumam 
 Pergunta 16 - Pra cada imagem teria um repositório no Docker Hub?
 
 Resposta 16 - Sim, para cada imagem deve haver um repositório no Docker Hub. 
+
+Pergunta 17 - Toda imagem do docker vai precisar ter uma imagem do Ubunto e do curl? Seria a base da imagem? Seria como um ubunto rodando dentro de um ISO?
+
+Resposta 17 - Sim. É a base da imagem. Seria como um Ubunto rodando dentro de um ISO? Sim.
