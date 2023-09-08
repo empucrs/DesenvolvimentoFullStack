@@ -20,3 +20,8 @@ b) Se baseiam em utilizar uma única tecnologia (biblioteca ou framework) compar
 c) Preconizam a implantação dependente de cada fragmento do frontend.
 d) Necessitam de suporte nativo de um framework de desenvolvimento web para sua implantação.
 Meu ponto de vista é que todas estão corretamente escritas. A resposta da questão é a “A”. 
+
+Pergunta 3 - Conseguem verificar a questão 9 do teste que fala sobre Static Generation e Static Generation? Acredito que não está correta a resposta que vocês colocaram - Static Generation e
+Server-Side Rendering? 
+
+Resposta 3 -  A resposta está correta. Veja o print que lhe foi enviado.
