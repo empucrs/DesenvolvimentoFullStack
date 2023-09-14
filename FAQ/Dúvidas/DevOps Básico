@@ -172,3 +172,33 @@ Resposta 16 - Sim, para cada imagem deve haver um repositório no Docker Hub.
 Pergunta 17 - Toda imagem do docker vai precisar ter uma imagem do Ubunto e do curl? Seria a base da imagem? Seria como um ubunto rodando dentro de um ISO?
 
 Resposta 17 - Sim. É a base da imagem. Seria como um Ubunto rodando dentro de um ISO? Sim.
+
+Pergunta 18 - Teste Online: Questão 2 --> Aborda conceitos aborda conceitos de integração contínua, ou seja para evitar probelmas relacionados a inconcistências nas dependências 
+de bibliotecas seria necessário utilizar ferramentas de gerenciamento de ambiente e automação, como GitHub Actions, Jenkins, Travi, pois seriam ferramentas de para integração contínua.
+No meu entendimento, Maven, Gradle, Npm e Yarn são gerenciadores de dependências que podem auxiliar na gestão das bibliotecas e dependências do projeto, mas não são a solução para o 
+problema de manter ambientes consistentes.
+
+Resposta 18 - Segundo comentário do professor "A diferença entre as configurações de dependências é a causa do problema. As versões de automação de construções podem ser utilizadas para 
+instalar as versões corretas de bibliotecas em todos os ambiente. As ferramentas de quadro de tarefas teriam que ser usadas regularmente para indicar a necessidade de atualizar dependências, 
+com maior demora e chance de erros. As ferramentas de integração contínua estavam instaladas e dependem de utilizar a mesma configuração de bibliotecas, tanto nos servidores de integração 
+quanto nos computadores de cada desenvolvedor. Assim, neste caso, a ferramenta de integração contínua não controla a configuração do desenvolvedor e por isso as ferramentas de contêiners são, 
+geralmente utilizadas para a instalação de dependências externas. O uso de contêiners para configurar bibliotecas não é típico em computadores de desenvolvedores.".
+
+Pergunta 19 - Teste Online 10 --> Entendo que a resposta mais adequada não consta nas opções:
+- git add, git commit, git pull e git push.
+Pois o a sequência correta seria: 
+git add 
+- Seria utilzado par aincluiro arquivo e preparar para envio
+git commit 
+- Confirmar as mudanças localmento com a descrição da mudança.
+git pull 
+- Antes de "git push", é importante verificar se houveram mudanças no repositório remoto que ainda não foram sincronizadas com o repositório local. O comando "git pull" trará as 
+últimas alterações do repositório remoto para o repositório local.
+git push
+- Após ter certeza de que o repositório local está atualizado, o desenvolvedor pode usar "git push" para enviar as mudanças para o repositório remoto.
+
+Resposta 19 - Segundo comentário do Professsor: "Não é necessário o comando git pull - O arquivo ausente deve ser enviado ao repositório remoto, certo? Para isso se faz o uso do comando git add para reparar o 
+arquivo que será inserido no histórico local com o uso do comando git commit. É necessário enviar o histórico local com o uso do comando git push, que atualiza a comunicação 
+de rede com o repositório remoto. O uso do comando git add sem o uso do git commit não completa a escrita no histórico local. O uso do comando git commit sem o uso do git push
+não completa a transferência para o repositório remoto.". 
+
