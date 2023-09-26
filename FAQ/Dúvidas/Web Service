@@ -11,5 +11,12 @@ referências para indicar!). Exemplo: W3Schools ensina como fazer as coisas, mas
 Resposta 1 - No Node.js poder ser padronizado através arquitetura MVC - Models, Views, Controllers (em português: Módulos, visões e controladores), Na pasta Router 
 inserimos arquivos com as rotas, ou seja, se estou em uma página, ao clicar em um hiperlink, qual é a próxima página que serei redirecionado ou se me trará alguma 
 mensagem. Já a pasta Controllers, gerencia ações realizadas, qual model e qual view devem ser utilizadas para que a ação ocorra perfeitamente e seja completada. Ficou 
-mais claro? Te indico para leitura: https://irias.com.br/blog/mvc-conceito-e-exemplo-em-node-js/
+mais claro? Te indico para leitura: https://irias.com.br/blog/mvc-conceito-e-exemplo-em-node-js/.
+
+Pergunta 2 - Gostaria de sanar uma duvida relacionada à posse do projeto de tcc quando concluido. Esse projeto/ideia passa a ser da PUCRS ou permanece de posso do aluno, 
+sendo possivel o mesmo dar continuidade com o projeto após o curso?
+
+Resposta 2 - O projeto/ideia é da PUCRS até o momento da conclusão. Como a ideia é tua e tu fizeste o curso e entregou o trabalho/projeto, foi avaliado e aprovado. 
+Terás tua nota e a partir daí podes seguir implementando teu projeto/ideia dando continuidade a este. Seria o tópicos sobre Estudos Futuros, muito utilizado em 
+Mestrados e Doutorados. Muitos alunos já deixam esse "gancho" para seguirem suas pesquisas em Pós Graduação Strict Sensu ou para seguirem desenvolvendo para as empresas que trabalham.
 
