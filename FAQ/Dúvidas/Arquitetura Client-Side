@@ -29,3 +29,12 @@ Resposta 3 -  A resposta está correta. Veja o print que lhe foi enviado.
 Pergunta 4 (Referente a pergunta 3) - Voce consegue me enviar a fonte ou algum lugar que referencia essa resposta? 
 
 Resposta 4 (Referente a pergunta 3) - As fontes estão na bibliográfica básica e complementar do curso e na própria aula.
+
+Comentário 1 - Gostaria apenas de solicitar um modelo de sistema completo com integração de banco de dados e front-end. Pode ser código aberto. Não vou copiar para o TCC do curso. 
+É que quando o aluno tenta conectar o banco de dados com o front-end da aplicação, e vice-e-versa, aparecem muito erros. O que torna desanimador, porque o mercado de trabalho, hoje, 
+exige que o aluno recém formado saiba como fazer todo o sistema web completo, mesmo que simples, funcionando perfeitamente. Na internet não tem cursos pagos que apresentam um sistema 
+completo decente, geralmente aparece muitos erros e travamentos. Se for possível, favor compartilhar. 
+
+Resposta 1 - O curso não disponibiliza sistemas completos, vistos que são várias disciplinas que abordam temas diferentes e que no final devem ser comtemplados na solução 
+completa conforme necessidade no desenvolvimento desta. Vou te passar alguns links que podem te ajudar e que são indicados pelo 
+professor: https://github.com/Yazdun/mini-projects e https://www.freecodecamp.org/news/build-a-full-stack-application-with-nextjs/. 
