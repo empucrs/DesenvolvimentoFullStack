@@ -38,3 +38,23 @@ completo decente, geralmente aparece muitos erros e travamentos. Se for possíve
 Resposta 1 - O curso não disponibiliza sistemas completos, vistos que são várias disciplinas que abordam temas diferentes e que no final devem ser comtemplados na solução 
 completa conforme necessidade no desenvolvimento desta. Vou te passar alguns links que podem te ajudar e que são indicados pelo 
 professor: https://github.com/Yazdun/mini-projects e https://www.freecodecamp.org/news/build-a-full-stack-application-with-nextjs/. 
+
+Pergunta 5 - Sobre as questões 06 teste Online - Questão 06: Complete as lacunas com a palavra correta: O Typescript é um ______________ do JavaScript
+que adiciona recursos como tipagem _________, interfaces, classes e outros recursos de programação _____________________. Pergunta do aluno: Acredito que exista uma questão 
+errada, que diz que o Typescript é subconjunto de JS. No slide 45 da aula 1 consta que "O TypeScript é considerado uma linguagem superset do JavaScript", ou seja, 
+superconjuno e não subconjunto.
+
+Resposta 5 - A resposta da questão está correta, pois a linguagem de programação do TypeScript é subconjunto adequado do JavaScript, ou seja, é um conjunto de ferramentas que contém o objetivo de 
+escrever código Javascript de forma mais eficiente, segura e dinâmica. O Typescript também é chamado de superset e neste ponto em que o aluno pode estar confundindo. 
+
+PerguntAa 6 - Sobre as questões 07 teste Online - questão 7: Selecione a alternativa que mencione somente bibliotecas e /ou frameworks de desenvolvimento do lado do cliente
+para aplicativos web baseados em JavaScript. Pergunta do aluno: Perguntar sobre protocolo de segurança do HTTP/HTTPs e nenhuma pergunta sobre React em um disciplina chamada 
+"Arquitetura Client-Side"? Sério? Isso é pergunta pra disciplina de segurança da informação. Além disso, de acordo com a própria disciplina de Segurança da Informação, o correto é TLS e não SSL.
+Além disso, tecnicamente falando, Angular não é um framework JavaScript - é TypeScript. AngularJS é um framework JavaScript. Acredito que 
+essa pergunta (sobre o trio de frameworks client side JS) deveria ser re-escrita para dar maior clareza em relação à isso.
+
+Resposta 6 - A resposta da questão está correta, pois A linguagem de programação do TypeScript é subconjunto adequado do JavaScript, ou seja, é um conjunto de ferramentas que contém 
+o objetivo de escrever código Javascript de forma mais eficiente, segura e dinâmica. O Typescript também é chamado de superset e neste ponto em que o aluno pode estar confundindo. Questão 7 
+a questão também está correta - O AngularJS é um framework JavaScript que os desenvolvedores usam para criar aplicações de páginas únicas para a internet. Quanto a pergunta sobre os protocolos 
+de segurança, na disciplina são abordados, de forma correta, justamente por se tratar de arquitetura Client-Side, onde é necessário abordar esses protocolos por questões de segurança da Informação.
+
