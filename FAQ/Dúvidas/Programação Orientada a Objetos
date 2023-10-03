@@ -73,3 +73,9 @@ e tirar as dúvidas (envia mensagem sempre que achares necessário, não fica co
 Pergunta 8 - Gostaria de saber se teremos algum desafio para realizar para disciplina, não encontrei esse material nas aulas.
 
 Resposta 8 - No nosso GitHub, foi deixado um desafio sim. Segue o link: https://github.com/empucrs/DesenvolvimentoFullStack/commit/dd3b8a7446bef47f4573bfca7b541a837e9a60ae. 
+
+Comentário 4 - Acho que seria interessante tudo que for ensinado na aula ser feito na IDE ja, no caso do JavaScript usar o Vscode, fazer tudo no console do browser não é tão 
+interessante, se é pra mostrar algo rápido e etc ok, até entendo!! Mas usar todas as aulas no console do browser não ficou tão legal.
+
+Resposta 4 - Às vezes é necessário usar o console devido ao nível de dificuldade do projeto. Verás que em outras disciplinas outras formas de rodar o projeto, como ao utilizar o 
+localhost também estão comtempladas no curso.
