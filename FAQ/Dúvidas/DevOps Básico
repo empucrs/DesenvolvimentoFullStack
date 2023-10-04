@@ -202,3 +202,8 @@ arquivo que será inserido no histórico local com o uso do comando git commit. 
 de rede com o repositório remoto. O uso do comando git add sem o uso do git commit não completa a escrita no histórico local. O uso do comando git commit sem o uso do git push
 não completa a transferência para o repositório remoto.". 
 
+Comentário 3 - Achei o conteúdo e a forma que o mesmo foi entregue muito pesados. Venho de Plataforma Alta e fiquei assustado. Espero que ao ser colocado em pratica no decorrer das outras
+disciplinas o assunto DevOps vá se teornando mais claro pra mim.
+
+Resposta 3 - Vocês terão a disciplina de DevOps Avançado o que complementa essa disciplina. Logo, tudo ficará mais claro.
+
