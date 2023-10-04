@@ -27,3 +27,10 @@ Resposta 1 - Os alunos devem fazer perguntas e comentários utilizando a #Ajuda_
 Arquitetura na década de 70. Nesta época a programação estava iniciando padronizações, como, por exemplo criar uma metodologia de desenvolvimento de software para programação, 
 etc. Só na década de 1990 que Design Patterns foi proposto na área da computação como forma de auxiliar na programação, nesta mesma época surgem as metodologias ágeis de programação de 
 corroboram com a padronização e uso de Programação Orientada a Objetos, bem como a criação de IDEs para criar um ambiente especifico para programação. 
+
+Comentário 4 - Uma coisa interessante na questão de existir a necessidade de menos botões nas interfaces para pessoas com deficiência visual, eu observo que muitas ferramentas 
+hoje em dia possuem um atalho onde é possível procurar comandos escrevendo. No VSCode, o atalho para abrir a caixa de comandos é Ctrl+Shift+P, em outra ferramenta que 
+utilizo para realizar anotações, é Ctrl+P. É mais rápido utilizar esses comandos de forma escrita, do que navegar pela interface usando tab. É um padrão relativamente novo que 
+é utilizado em ferramentas técnicas hoje em dia.
+
+Resposta 4 - Ótima Observação! Os comandos de teclado sempre auxiliam muito.
