@@ -211,3 +211,7 @@ Pergunta 20 - Professor diz que há um link, mas onde?? No PDF não tem. As cois
 
 Resposta 20 -  Vai em Desenvolvimento Full Stack, na sala de aula virtual --> Conteúdo --> Material de Apoio. Lá encontrarás o link. 
 
+Comentário 4 - Segunda tentativa frustrada. Quando vc faz o git clone entra num diretório q não estava no script e tento fazer o mesmo mas dá erro. Não aceita o clone.
+
+Resposta 4 - Tu deves entrar no GitHub --> Abrir o projeto para clonagem --> Abrir o VC Code --> Ir na opção de Clone de Projeto --> Baixar para tua máquina. 
+
