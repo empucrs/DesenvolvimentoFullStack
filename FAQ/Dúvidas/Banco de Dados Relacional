@@ -21,3 +21,26 @@ Um município pode possuir uma ou várias DP que possuem várias ocorrências.
 Resposta 3 -  No exercício a entidade Município foi relacionada a ocorrências, justamente para facilitar a consulta de número de ocorrências por Município. No caso da 
 relação de Município com DP seria necessário elaborar uma consulta um pouco mais robusta, visto que o que realmente interessa no exercício é o número de ocorrências por 
 Município, sem sem desconsiderar a DP onde ocorreu a ocorrência, caso haja necessidade de verificação destes dados. 
+
+Pergunta 4 - Estou tentando replicar o código do arquivo "inserindoDadosVendas.py". Ao executar o código, estou recebendo a seguinte mensagem de erro:
+Dados inseridos na tbVendedorTraceback (most recent call last):  File "d:\OneDrive\Cursos_Superiores\5_-_Desenvolvimento_Full_Stack\16- Banco de Dados 
+Relacional\Exercicios\inserindoDadosVendas.py", line 40, in <module>    
+metadata = sa.schema.MetaData(bind=engine)               
+TypeError: MetaData.__init__() got an unexpected keyword argument 'bind'
+Poderiam me ajudar? Meu código segue abaixo:
+import pandas as pdimport sqlalchemy as saimport sqlalchemy.orm as ormimport vendas as vdendereco = "D:\\OneDrive\\Cursos_Superiores\\5_-_Desenvolvimento_Full_Stack\\16- Banco de 
+Dados Relacional\\Exercicios\\Dados\\"#tb_vendedorvendedor = pd.read_csv(endereco + "vendedor.csv", sep=";")tbVendedor = pd.DataFrame(vendedor)engine = sa.create_engine
+("sqlite:///Database/vendas.db")sessao = orm.sessionmaker(bind=engine)sessao=sessao()for i in range(len(tbVendedor)):    
+dados_vendedor = vd.vendedor(registro_vendedor = int(tbVendedor['registro_vendedor'][i]),        
+cpf = tbVendedor['cpf'][i],        
+nome = tbVendedor['nome'][i],        
+genero = tbVendedor['genero'][i],        
+email = tbVendedor['email'][i]    )    
+try: sessao.add(dados_vendedor)
+sessao.commit()    
+except ValueError: ValueError()print("Dados inseridos na tbVendedor")#tb_produto (outra abordagem de carga de dado - mais rápida e sem testes)produto = pd.read_excel
+(endereco + "produto.xlsx")tbProduto = pd.DataFrame(produto)conn = engine.connect()  de conecção com o bancometadata = sa.schema.MetaData(bind=engine)DadosProduto = 
+tbProduto.to_dict(orient="records")  dicionário orientado pelos registrostabela_produto = sa.Table(vd.produto.__tablename__.metadata, autoload=True)try:   
+conn.execute(tabela_produto.insert(),DadosProduto)    sessao.commit()except ValueError:    ValueError()print("Dados inseridos na tbProduto")sessao.close_all(). 
+
+Resposta 4 - Existe link para os arquivos nos slides da aula. É só baixar e utilizar o arquivo.
