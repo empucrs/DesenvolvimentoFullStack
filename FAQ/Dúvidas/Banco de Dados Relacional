@@ -44,3 +44,16 @@ tbProduto.to_dict(orient="records")  dicionário orientado pelos registrostabela
 conn.execute(tabela_produto.insert(),DadosProduto)    sessao.commit()except ValueError:    ValueError()print("Dados inseridos na tbProduto")sessao.close_all(). 
 
 Resposta 4 - Existe link para os arquivos nos slides da aula. É só baixar e utilizar o arquivo.
+
+Pergunta 5 - Continua aparecendo a mensagem de erro. Inclusive baixei o código do professor do git, fiz ajustes apenas para indicar o local dos arquivos em meu computador e 
+continuo recebendo a mesma mensagem de erro.
+
+Resposta 5 - Entra na primeira aula do professor Azriel, em Baixar arquivos, clica em materiais complementares e Baixa a pasta compactada. Nesta pasta vais encontrar dois 
+arquivos autores.sql e autores_produtos. sql Descompacta este arquivo, abre a aba de código e insere todos, faz control + C e Control V, nas tabelas respectivas. Vai funcionar. 
+
+Pergunta 6 - Quanto as chaves primárias: já ouvi pessoas afirmando que o ideal, por questões de performance e facilidades de consulta, seria criar uma coluna "id" autoincremental 
+mesmo para tabelas onde que existam colunas que poderiam assumir esse papel de PK. Qual sua opinião sobre o assunto?
+
+Resposta 6 - Depende da solução e da Empresa. Algumas preferem deixar como PK o CPF ou CNPJ, mas isso pode gerar problemas na digitação, pois os números devem estar corretos e não 
+pode haver, neste caso de CPF ou CNPJ, dados idênticos, gera inconsistência nos bancos de dados. Outras Empresas preferem criar o ID, auto incremental, já para não gerar esse problema. 
+Nas empresas em que trabalhei usávamos, muito o ID, mas como disse, depende da Empresa em que se trabalha.
