@@ -1,3 +1,36 @@
 ## Comentários e Perguntas:
 
-Não foram realizadas perguntas ou comentários referentes a disciplina.
+Pergunta 1 - Gostaria de contar com sua ajuda no encaminhamento a seguir, por favor. No teste final, na questão 10(Anexa), surgiu uma dúvida na resposta apontada como correta.
+Em primeiro lugar, não consegui encontrar a justificativa no material da disciplina no slide 23. Gostaria da confirmação de qual disciplina encontro o referido slide.
+De outra forma, tenho outro entendimento quanto a afirmativa de que os itens II e IV estejam corretos integralmente e gostaria de uma melhor explicação quanto aos meus apontamentos, por favor.
+Vejamos:
+Entendo que o item II, a abordagem Top-down tende a ter uma complexidade de testes mais alta, e não mais baixa, como afirma o item. As variáveis e interações podem influenciar os resultados e 
+tornar complexo e demorados os testes, mesmo que a causa raiz de problemas possa ser mais fácil de identificar. (Analise sob o ponto de vista da complexidade na definição do número dos testes).
+Já no item IV, A abordagem Bottom-up não necessariamente implica em um consumo excessivo de tempo para execução e manutenção dos testes a cada interação de software.Entendo que é justamente, 
+uma das vantagens da abordagem Bottom-up quando os testes podem ser executados e mantidos incrementalmente à medida que partes individuais são desenvolvidas e integradas, o que pode ser mais 
+eficiente em termos de tempo. Fico no aguardo de uma melhor explicação para os itens levantados e ajustes no resultado, se justificar. 
+
+Resposta 1 - Resposta do Professor Convidado: "Entendo que o item II, a abordagem Top-down tende a ter uma complexidade de testes mais alta, e não mais baixa, como afirma o item. 
+As variáveis e interações podem influenciar os resultados e tornar complexo e demorados os testes, mesmo que a causa raiz de problemas possa ser mais fácil de identificar. 
+(Analise sob o ponto de vista da complexidade na definição do número dos testes).".
+-- Em geral os requisitos de nível hierárquico superior tendem a ser mais superficiais e atender a uma demanda específica. Isso produz um conjunto de testes mais voltados às expectativas diretas do 
+usuário, deixando a complexidade mais baixa em relação ao bottom-up. Estabelecendo-se uma relação direta, pois sempre podemos entrar em meandros específicos de universos de aplicação. Por exemplo, 
+uma solução desenvolvida para monitorar a temperatura de uma usina nuclear exige um detalhamento muito maior do que o requisito para uma solução de impressão para consumidor final. 
+Um outro exemplo de top-down seria algo como:
+A solução deve receber arquivos de imagens e apresentá-los na tela.
+Para isso seriam feitos testes com arquivos suportados e não suportados.
+Arquivos de diversos tamanhos e extensões etc.
+Onde o critério de sucesso seria, apresentar na tela o arquivo correto, se suportado.
+"Já no item IV, A abordagem Bottom-up não necessariamente implica em um consumo excessivo de tempo para execução e manutenção dos testes a cada interação de software. Entendo que é justamente, 
+uma das vantagens da abordagem Bottom-up quando os testes podem ser executados e mantidos incrementalmente à medida que partes individuais são desenvolvidas e integradas, o que pode ser mais 
+eficiente em termos de tempo.".
+Novamente, em geral, a abordagem bottom-up implica em muito mais tempo para execução e manutenção. Pois quaisquer mudanças no código devem gerar alterações no comportamento da solução.
+Pode-se optar em não percorrer todos os caminhos disponíveis do Bottom-up, mas essas opções acarretam mais riscos de falha de cobertura e, por conseguinte, falha nos testes.
+Podemos pensar em usar análise de mutação para validar os testes criados nessa estratégia e então validar se os testes estão pegando os "mutantes" criados em tempo de execução.
+A manutenção nessa perspectiva é cumulativa e a complexidade aumenta de acordo com a vida do software em desenvolvimento, pois no início pode-se ter uma solução com 2 funcionalidades, 
+depois 4 e assim por diante. É necessário fazer o teste de regressão e entender seus resultados.
+Claro que tudo vai depender da complexidade e da criticidade da solução em desenvolvimento, mas em regra geral, quanto melhor trabalhados os requisitos, mais detalhes existem 
+para ser cobertos por testes. Isso nos leva a pensar também sobre a rastreabilidade. Top-down apresenta complexidades extras para validar se erro foi adicionado em especificação, design, 
+implementação ou testes. Visto que muitas vezes o teste só vai retornar uma falha para completar a execução. No bottom-up existe mais granularidade e uma possibilidade maior de isolamento 
+entre as diferentes partes, facilitando a identificação.
+
