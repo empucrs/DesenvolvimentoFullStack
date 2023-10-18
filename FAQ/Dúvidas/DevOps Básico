@@ -215,3 +215,20 @@ Comentário 4 - Segunda tentativa frustrada. Quando vc faz o git clone entra num
 
 Resposta 4 - Tu deves entrar no GitHub --> Abrir o projeto para clonagem --> Abrir o VC Code --> Ir na opção de Clone de Projeto --> Baixar para tua máquina. 
 
+Pergunta 21 - A Questão - Para reduzir o risco de  equívocos na implantação,  o servidor que executa a aplicação utiliza uma porta diferente em cada  ambiente. Em um ambiente de testes, 
+a porta de conexão com a aplicação é a 9090. No ambiente de desenvolvimento,  a porta é a 8080. Finalmente, no ambiente de produção a  porta utilizada é a 80.
+A aplicação é  antiga e foi codificada para utilizar sempre a porta 80. Nos ambientes de desenvolvimento e de testes foi utilizado o contêiner Docker e foi realizado um mapeamento de 
+portas para atender aos  números de  porta esperados. No ambiente de teste, basta executar a opção -p sendo:
+Opções:
+-p 9090:80.
+-p 80:9090.
+-p 80:8080.
+-p 8080:80.
+Opção apontada como correta (1a).
+Justificativa:
+O primeiro parâmetro é a porta do computador hospedeiro (host) e  o segundo valor o da porta no contêiner.
+Dentro do container  a  porta  80 está sendo utilizada pela  aplicação. Ao executar  a  imagem,  a  porta  9090 redireciona para o container, na porta 80.
+A equipe de teste utiliza a porta  9090. A porta  8080 seria utiliza por  um dos desenvolvedores.
+Questionamento: Se o primeiro parâmetro é a porta do computador hospedeiro(host) e o segundo a porta do container a resposta correta não seria a 2a? (80:9090)
+
+Resposta 21 - Não. A resposta do teste é realmente a "1", pois sempre se utiliza, primeiramente a porta do host ":" a porta do contêiner. A justificativa do Professor é bastante coerente.
