@@ -80,4 +80,17 @@ corrigível, como a definição textual errada de payload, não desfaz trabalho 
 encaminhamento a sua observação, solicitando a correção do ponto referido. Adicionalmente peço que nos interpele com dúvidas ou apontamentos sempre que julgar 
 necessário, para que possamos de forma coesa garantir a qualidade do curso que construímos. 
 
+Comentário 4 - Ótima aula, estava com um pouco de dificuldade no entendimento,  mas quando demonstrou através de código deu uma boa clareada. Eu sou programador Cobol e trabalho com 
+programação estruturada. Então pode imaginar o tamanho da mudança. Mas sinto que estou evoluindo muito nestas novas tecnologias, Estou fazendo uma imersão kubernets/docker com Fabrício 
+Veronez. Estou trabalhando em uma aplicação de exemplo, um sistema de cardápios em node.js, usando mongo.db. Criei uma imagem para minha aplicação e adicionei ela a um container através 
+do dockerfile. Para o banco de dados, baixei uma imagem do mongo.db do dockerhub. Ao executar a aplicação na parte que interage com o mongo, está me dando uma mensagem de erro. 
+Na aplicação fiz um bind de porta vinculando a porta do container ao do sistema operacional base. Acredito que o problema da conexão com o banco dentro do container seja algo 
+relacionado a porta. Bom, para concluir, aprendi muito na aula de hoje e achei muito interessante a implementação de micro serviços. Vou praticar bastante. Fico feliz que trouxe
+exemplos de códigos e não apenas conceitos. Parabéns!
+
+Resposta 4 - Excelente!!! Que bom que gostastes. Teu comentário; Ao executar a aplicação na parte que interage com o mongo, está me dando uma mensagem de erro. 
+Na aplicação fiz um bind de porta vinculando a porta do container ao do sistema operacional base. Acredito que o problema da conexão com o banco dentro do container seja algo 
+relacionado a porta - Sim, faz sentido, estou te enviando links que falam exatamente do teu problema, que é comum: 
+https://dev.to/felipepaz/dockerizando-uma-aplicacao-node-e-mongodb-1e02 e https://www.nanoshots.com.br/2016/11/docker-containerizando-o-nodejs-e-o.html.
+
 
