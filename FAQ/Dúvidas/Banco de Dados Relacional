@@ -57,3 +57,15 @@ mesmo para tabelas onde que existam colunas que poderiam assumir esse papel de P
 Resposta 6 - Depende da solução e da Empresa. Algumas preferem deixar como PK o CPF ou CNPJ, mas isso pode gerar problemas na digitação, pois os números devem estar corretos e não 
 pode haver, neste caso de CPF ou CNPJ, dados idênticos, gera inconsistência nos bancos de dados. Outras Empresas preferem criar o ID, auto incremental, já para não gerar esse problema. 
 Nas empresas em que trabalhei usávamos, muito o ID, mas como disse, depende da Empresa em que se trabalha.
+
+comentário 1 - Sobre a questão "No contexto do mapeamento do modelo conceitual para o relacional, considere as seguintes afirmações relativas ao mapeamento de relacionamentos 
+através de colunas adicionais em tabelas", gostaria de explicação e exemplo de por que as afirmações IV e V estão corretas. A justificativa no gabarito é vaga.
+
+Resposta 1 - O mapeamento do modelo relacional necessita da cardinalidade, para relacionar tabelas e deixar claro qual o tipo quantos Clientes, por exemplo, poderão realizar compras 
+de Produtos e gerar Nota Fiscal. Sendo assim, na alternativa IV temos: "Este tipo de relacionamento é adequado para o caso em que as cardinalidades do relacionamento sendo mapeados 
+são (0-1) de um lado e (0-1) do outro;" - Neste caso, nenhum ou um cliente pode realizar nenhuma ou 1 compra. Assim, no caso de não haver haver compra, a cardinalidade fica 0), 
+senão houver compra, cardinalidade 1. Se houver compra, como foi dito anteriormente gera apenas 1 nota fiscal, por cliente, no caso de não haver compra 0); 
+Na alternativa V temos: "Este tipo de relacionamento é adequado para o caso em que as cardinalidades do relacionamento sendo mapeados são (0-1) de um lado e (1-1) do outro.". 
+Neste caso e usando um outro exemplo uma empresa de varejo pode solicitar nenhuma ou uma compra de Produtos para um Fornecedor, novamente se a Empresa comprar Produtos deste 
+Fornecedor será gerada 1 Nota Fiscal, caso contrário nenhuma. Para realizar a Compra a empresa deve se cadastrar apenas uma vez no site do Fornecedor, realizar as compras 
+e gerar apenas uma Nota Fiscal.
