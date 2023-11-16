@@ -170,4 +170,12 @@ explicando. Fica a constatação para futuras turmas.
 Resposta 3 - No link: https://github.com/empucrs/DesenvolvimentoFullStack tens todos os códigos do professor, tutoriais, desafio, FAQ, e o livro, em PDF da disciplina de UX 
 atualizado. Podes baixar tudo para verificar o código desta disciplina. 
 
+Pergunta 21 - Poderia informar como ficaria o calculo, pois não consegui entender como ficaria a expressão percorrendo do valor inicial da variável i = 3 até i = 19,
+não consegui entender como ficaria a expressão completa. Ao executar no Vs Code Obitive estes resultados, mas não ficou claro.
+
+Resposta 21 -  O Fibonacci, do teu print está correto, visto que o primeiro índice, temos 1, no segundo repete o 1, pois não soma com o anterior e já no terceira, 
+já ocorre a soma do primeiro com o segundo, gerando o resultado 2, visto que 1 + 1 é 2. No quarto índice temos 3, também está correto, pois segundo Fibonacci, os valores 
+dos índices devem ser somados, assim, no quarto índice temos 3, pela soma dos valores dos dois índices anteriores, 2 + 1, que resulta em 3. O Fibonacci sem calcula os valores, 
+somando o valor que está no índice anterior, com o próximo, para geral o próximo valor.
+
 
