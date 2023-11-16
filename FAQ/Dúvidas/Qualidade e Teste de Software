@@ -34,3 +34,17 @@ para ser cobertos por testes. Isso nos leva a pensar também sobre a rastreabili
 implementação ou testes. Visto que muitas vezes o teste só vai retornar uma falha para completar a execução. No bottom-up existe mais granularidade e uma possibilidade maior de isolamento 
 entre as diferentes partes, facilitando a identificação.
 
+Pergunta 2 -  Eu fiz o teste e estou com uma dúvida na questão 10. Segue a questão: Questão 10 - São exemplos de níveis de teste:
+I – Teste de Unidade;
+II – Teste de Usabilidade;
+III – Teste de Sistema;
+IV – Teste de Aceitação.
+a) Somente I e II.
+b) Somente I e IV.
+c) Somente I, III e IV.    
+d) Todos os itens.      
+A questão que eu marquei foi a (d-Todos os itens), a questão que está acusando como correta é a (c). Minha dúvida (II – Teste de Usabilidade) não seria um nível de teste? 
+Uma vez que concentra a experiência do usuário? No enunciado não fala em níveis típicos de teste, apenas em níveis de teste.
+
+Resposta 2 - O processo de teste geralmente está dividido em 4 fases, são elas: de unidade, de integração, de sistema e de aceitação. Logo a resposta está correta.
+
