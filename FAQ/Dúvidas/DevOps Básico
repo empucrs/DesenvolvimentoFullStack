@@ -232,3 +232,11 @@ A equipe de teste utiliza a porta  9090. A porta  8080 seria utiliza por  um dos
 Questionamento: Se o primeiro parâmetro é a porta do computador hospedeiro(host) e o segundo a porta do container a resposta correta não seria a 2a? (80:9090)
 
 Resposta 21 - Não. A resposta do teste é realmente a "1", pois sempre se utiliza, primeiramente a porta do host ":" a porta do contêiner. A justificativa do Professor é bastante coerente.
+
+Pergunta 22 - Para Java temos framework de gestão de migration como o flyway ou o liquidbase. Ambos podem ser geridos ou pelo projeto ou pelo gerenciador de dependencia. Neste 
+caso, onde é melhor este processo estar? Pelo build ou pelo processo?
+
+Resposta 22 - O Flyway é uma ferramenta de migração de banco de dados baseada em código aberto. Ele permite que os desenvolvedores gerenciem a evolução do banco de dados de maneira c
+onfiável, automatizada e incremental, já o liquidbase é uma ferramenta de migração de banco de dados de código aberto que fornece às organizações uma maneira fácil de rastrear, 
+versão e implantar mudanças no esquema do banco de dados. É diferente de outras ferramentas de migração de banco de dados porque o software entende as mudanças que você está 
+fazendo com base e como você especifica essas mudanças. Logo, o melhor é ser usado no Processo.
