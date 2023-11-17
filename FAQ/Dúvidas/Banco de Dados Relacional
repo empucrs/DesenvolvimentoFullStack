@@ -69,3 +69,9 @@ Na alternativa V temos: "Este tipo de relacionamento é adequado para o caso em 
 Neste caso e usando um outro exemplo uma empresa de varejo pode solicitar nenhuma ou uma compra de Produtos para um Fornecedor, novamente se a Empresa comprar Produtos deste 
 Fornecedor será gerada 1 Nota Fiscal, caso contrário nenhuma. Para realizar a Compra a empresa deve se cadastrar apenas uma vez no site do Fornecedor, realizar as compras 
 e gerar apenas uma Nota Fiscal.
+
+Pergunta 7 - Eu compreendi as cardinalidades, só não entendi por que o mapeamento mediante colunas adicionais é adequado.
+
+Resposta 7 - Por que em Banco de Dados relacionais as tabelas são criadas e não existe uma flexibilidade como há em Banco de Dados NOSQL, Assim, ao utilizar o 
+mapeamento de colunas adicionais são evitados desperdícios e melhoria da produtividade, pois processos bem mapeados e executados em conformidade são 
+determinantes para tornar a Empresa mais competitivas.
