@@ -75,3 +75,13 @@ Pergunta 7 - Eu compreendi as cardinalidades, só não entendi por que o mapeame
 Resposta 7 - Por que em Banco de Dados relacionais as tabelas são criadas e não existe uma flexibilidade como há em Banco de Dados NOSQL, Assim, ao utilizar o 
 mapeamento de colunas adicionais são evitados desperdícios e melhoria da produtividade, pois processos bem mapeados e executados em conformidade são 
 determinantes para tornar a Empresa mais competitivas.
+
+Pergunta 8 - Uma entidade pode ter mais de uma relação com uma outra entidade? Mandei em anexo uma imagem da DER do projeto que quero desenvolver 
+nessa pós. Ainda fiquei com dúvida sobre os atributos que se correlacionam entre as entidades nesse DER que desenhei. Poderia me ajudar?
+
+Resposta 8 - Na verdade, uma entidade pode ter uma relação com outra entidade. Ao verificar teu DER. ao verificar vejo que podes desmembrar, assim: Atleta está com três chaves, 
+pode eixar a PK para Cod_Atleta, sem o ponto, com chave primaria desta entidade. As chaves estrangeiras, como Cod_Evento e Cod_admin pode deixar que está correto. 
+Estou vendo a falta da tabela partidas, que deve ser relacionada com Atleta, Evento e Admin. Admin SELECIONA os atletas para as partidas. Com a tabela Partidas, 
+tu podes fazer a relação de cardinalidade com os Eventos e colocar no triangulo PARTICIPA. Relaciona Atleta coma tabela Partida usando, dentro do triangulo PARTICIPA. 
+Identifica nesta tabela nova as chaves primárias e estrangeiras, como fizestes nas demais. Vai ficar mais claro e tu não vai precisar relacionar uma mesma entidade com outra duas x. 
+
