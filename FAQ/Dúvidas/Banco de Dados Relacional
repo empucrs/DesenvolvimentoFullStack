@@ -85,3 +85,10 @@ Estou vendo a falta da tabela partidas, que deve ser relacionada com Atleta, Eve
 tu podes fazer a relação de cardinalidade com os Eventos e colocar no triangulo PARTICIPA. Relaciona Atleta coma tabela Partida usando, dentro do triangulo PARTICIPA. 
 Identifica nesta tabela nova as chaves primárias e estrangeiras, como fizestes nas demais. Vai ficar mais claro e tu não vai precisar relacionar uma mesma entidade com outra duas x. 
 
+Comentário 2 - Eu achei meio confusa a sua explicação, mas vou tentar. No caso esse DRE é para uma plataforma de gerenciamento de atletas para a modalidade skate. Eu pratico 
+essa modalidade e tenho contato com a federação da minha cidade e minha ideia é criar uma ferramenta para auxiliar eles na gestão de atletas, eventos e criar um pequeno 
+portal com a lista desses atletas dividido por categoria: iniciante, amador e profissional. 
+
+Resposta 2 - Mas então estão faltando mais entidades, como categoria e time. Cada evento, tentando ser ais clara, tem times, partidas e atletas vinculados ao um evento, certo. 
+Não há como deixar dentro da entidade Atleta, como atributo time e partida, na verdade são entidades, para que não haja violação das formas normas de banco de dados.
+
