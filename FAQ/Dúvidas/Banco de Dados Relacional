@@ -92,3 +92,11 @@ portal com a lista desses atletas dividido por categoria: iniciante, amador e pr
 Resposta 2 - Mas então estão faltando mais entidades, como categoria e time. Cada evento, tentando ser ais clara, tem times, partidas e atletas vinculados ao um evento, certo. 
 Não há como deixar dentro da entidade Atleta, como atributo time e partida, na verdade são entidades, para que não haja violação das formas normas de banco de dados.
 
+Pergunta 8 - Acho que não precisa enviar para o professor. Sua ajuda está sendo muito importante pra mim. Eu acredito que agora a DER está ficando com mais sentido. 
+Anexei uma atualização, pode revisar por favor? Fiquei na dúvida sobre os relacionamento das entidades Endereço, Cidade, Estado e relacionamento das entidades Telefone, Email, Gênero.
+
+Resposta 8 - Certo. Só coloca o atributo CNPJ em Federação. Relacionamento Atleta TEM N-N Telefone (é isso mesmo, seja ele celular ou fixo), o mesmo para E-mail (para Atleta), 
+Atleta POSSUÍ 1-1 Gênero . Atleta TEM 1-1 Endereço, o mesmo vale para Cidade e Estado.  Admin TEM N-N Telefone, Email, e TEM 1 -1 Endereço, Estado E Cidade. Federação TEM N-N Telefone, 
+TEM 1-1 endereço, Estado e Cidade Na Entidade, por questões de legistação, tu vais ter que incluir o atributo Não binário, que são aquelas pessoas que não se identificam com os gêneros 
+masculino ou feminino. Email, no atributo tira nome, deixa só email. 
+
