@@ -20,3 +20,17 @@ Tem esse outro trecho de outro site que explica melhor ainda: "Cassandra não se
 e cria um registro na memória incluindo coluna e valor atualizado. Em seguida, agrupa inserções e atualiza na memória e, em intervalos, grava sequencialmente os dados no disco no modo de anexação. 
 A cada descarga, os dados são gravados em arquivos imutáveis ​​e nunca são substituídos. Como resultado, ao pular a verificação de arquivos de dados longos e adicionar novamente mesmos arquivos 
 de dados longos, as gravações levam muito menos tempo no Cassandra." (https://www.linkedin.com/pulse/why-cassandra-writes-faster-than-traditional-rdbms-vishal-kharjul/).
+
+Pergunta 3 - Estou com uma curiosidade referente aos Relacionamentos "identificadores" e "não identificadores" apresentados por volta dos 25m dessa aula.
+Eu trabalho com diversos frameworks que utilizam Object Relational Mapping  (Django, Spring, Prisma, etc.) e, se eu entendi o conceito corretamente, neles todos os 
+relacionamentos são "não identificadores", ou seja, por padrão todo ID de uma Foreign Key é um auto increment ou um UUID, etc. Portanto eu nunca havia visto qualquer menção 
+de "Relacionamentos Identificadores" antes.Com base nisso, eu fiquei gostaria de perguntar:- Em quais casos específicos acaba sendo mais interessante modelarmos uma relação com 
+Relacionamentos Identificadores e quais são as vantagens e/ou o que se espera ganhar com essa abordagem? (Eu penso em performance de busca, talvez seja mais eficiente e econômico do 
+que criar Indexes no banco.
+
+Resposta 3 - Só esclarecendo as vantagens: são altamente escaláveis e podem lidar com grandes volumes de dados. Eles geralmente são projetados para serem distribuídos em vários servidores, 
+permitindo a adição de mais capacidade de armazenamento e processamento conforme necessário. Esses bancos de dados geralmente não são normalizados e podem armazenar dados redundantes para 
+obter melhor desempenho. Desvantagem: Bancos de Dados NoSQL podem ser menos seguros do que seus equivalentes SQL, pois muitas vezes não possuem integridade referencial ou controle de transações, 
+o que pode levar a inconsistências de dados. Eles também podem exigir que os usuários escrevam código personalizado para acessar os dados, o que pode exigir mais habilidades técnicas. Quanto a 
+tua pergunta sobre relacionamentos não identificadores: é que os dados são armazenados em pares de chave-valor, o que significa que cada dado é identificado por uma chave única. Quais casos usar 
+relacionamentos identificadores: vou te indicar este link: https://learn.microsoft.com/pt-br/azure/architecture/data-guide/big-data/non-relational-data. Vai em Chave-Valor que está bem claro. 
