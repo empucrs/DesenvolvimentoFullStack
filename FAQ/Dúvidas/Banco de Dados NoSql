@@ -34,3 +34,8 @@ obter melhor desempenho. Desvantagem: Bancos de Dados NoSQL podem ser menos segu
 o que pode levar a inconsistências de dados. Eles também podem exigir que os usuários escrevam código personalizado para acessar os dados, o que pode exigir mais habilidades técnicas. Quanto a 
 tua pergunta sobre relacionamentos não identificadores: é que os dados são armazenados em pares de chave-valor, o que significa que cada dado é identificado por uma chave única. Quais casos usar 
 relacionamentos identificadores: vou te indicar este link: https://learn.microsoft.com/pt-br/azure/architecture/data-guide/big-data/non-relational-data. Vai em Chave-Valor que está bem claro. 
+
+Comentário 1 - Acredito que a aula esteja desatualzada com relação ao sistemas de transações do MongoDB. Segundo este [link](https://www.mongodb.com/docs/manual/core/transactions/) atualmente 
+é suportavel o uso de transações entre documentos.
+
+Resposta 1 - Sim, também utilizando o Mongo, como Maria ou Cassandra, todos suportam transações entre documentos. 
