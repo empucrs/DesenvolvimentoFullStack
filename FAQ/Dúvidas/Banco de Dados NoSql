@@ -39,3 +39,10 @@ Comentário 1 - Acredito que a aula esteja desatualzada com relação ao sistema
 é suportavel o uso de transações entre documentos.
 
 Resposta 1 - Sim, também utilizando o Mongo, como Maria ou Cassandra, todos suportam transações entre documentos. 
+
+Pergunta 4 -  Não entendi a parte que de um lado do losango a cardinalidades está (1,1) e do outro está (0,n). Pode me explicar melhor? A cardinalidade não 
+teria que ser uma só para o relacionamento? 
+
+Resposta 4 - A cardinalidade liga uma entidade a uma ação. Assim é necessária está cardinalidade dos dois lado, pois um cliente pode fazer nenhum ou um cliente e por isso (0,n), 
+e o estabelecimento pode sim, não ter pedido algum, certo?¹. Já do lado do pedido, o estabelecimento pode receber nenhum ou vários pedidos, e por isso (0,n). A multiplicidade, que 
+está na figura a baixo reflete o mesmo cenário, só que a simbologia é um pouco diferente, visto que, novamente o cliente pode fazer nenhum pedido ou vários. 
