@@ -100,3 +100,18 @@ Atleta POSSUÍ 1-1 Gênero . Atleta TEM 1-1 Endereço, o mesmo vale para Cidade 
 TEM 1-1 endereço, Estado e Cidade Na Entidade, por questões de legistação, tu vais ter que incluir o atributo Não binário, que são aquelas pessoas que não se identificam com os gêneros 
 masculino ou feminino. Email, no atributo tira nome, deixa só email. 
 
+Comentário 3 - No próprio VSCode é possível acessar um arquivo data.db, por exemplo. Basta instalar a extensão SQLite (https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite). 
+No VSCode executar CMD + Shift + P e procurar por SQLite: Open Database. Ele vai aparecer abaixo da lista dos arquivos do projeto em uma aba chamada SQLITE EXPLORER.
+
+Resposta 3 - Sim, o VSCode possuí várias extensões para baixar. Ótima observação. Essas extensões ajudam muito no desenvolvimento. 
+
+Comentário 4 - Estou enviando um screenshot pra ficar mais fácil de visualizar.
+
+Resposta 4 - Sim, Obrigada. Boa observação. 
+
+Comentário 5 - Essa mistura de camelCase com snake_case não acaba ficando confuso? O professor falou muito em seguir padrões, convenção de nome de variáveis, porém na prática não está 
+aplicando. Eu sei que é apenas didático, mas poderia seguir uma padrão.
+
+Resposta 5 -  No mercado de trabalho, utilizamos, sempre as entidades em letras maiúsculas e os atributos em minúscula. Esse é o padrão das Empresas quando tu modela 
+banco de dados e cria nos SGBD. 
+
