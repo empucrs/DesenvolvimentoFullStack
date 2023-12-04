@@ -120,4 +120,13 @@ Acabei encontrando o dado no material compartilhado. Ele não informou na aula q
 
 Resposta 9 - Entra em Desenvolvimento Full Stack --> Conteúdo --> Seleciona a disciplina --> e vai em material complementar. Só baixar. 
 
+Pergunta 10 - Uma entidade pode ter mais de uma relação com uma outra entidade? Mandei em anexo uma imagem da DER do projeto que quero desenvolver nessa pós. 
+Ainda fiquei com dúvida sobre os atributos que se correlacionam entre as entidades nesse DER que desenhei. Poderia me ajudar?
+
+Resposta do Professor: A resposta é sim. Na modelagem conceitual (como é o caso do modelo apresentado) uma entidade pode ter mais de uma relação com outra entidade. 
+Estou enviando um exemplo onde uma situação como essa está modelada. As entidades Trecho e Aeroporto possuem duas relações entre si (sai de / chega em).Notei que a conversa 
+evoluiu em direção ao Modelo Lógico Relacional, onde temos tabelas, chaves primarias, chaves estrangeiras, etc... Sugiro que peças ao aluno seu universo de discurso, ou minimundo, 
+para que seja possível entender os requisitos que ele pretende modelar. E após ter o Modelo Conceitual finalizado mapeá-lo para o Lógico relacional.". Segue print enviado pelo professor, 
+como exemplo. 
+
 
