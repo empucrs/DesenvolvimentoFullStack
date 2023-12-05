@@ -129,4 +129,12 @@ evoluiu em direção ao Modelo Lógico Relacional, onde temos tabelas, chaves pr
 para que seja possível entender os requisitos que ele pretende modelar. E após ter o Modelo Conceitual finalizado mapeá-lo para o Lógico relacional.". Segue print enviado pelo professor, 
 como exemplo. 
 
+Resposta do Professor: Seguem apontamentos do professor quanto ao teu modelo DER: "Meus comentários: Talvez ao invés de Funcionário ele poderia ter uma entidade 
+Pessoa que além de todos os atributos de Atleta e Admin tivesse um atributo que identificasse seu tipo (admin, funcionário, atleta). É um caso típico para ser representado 
+por generalização (um atleta é um tipo de pessoa, um admin é um tipo de pessoa, um funcionário é um tipo de pessoa). Isso faria com que vários relacionamentos que são comuns a 
+Admin, Atleta e Funcionário pudessem ser representados apenas uma vez, saindo de Pessoa. Por exemplo, no modelo atual tanto Admin como Atleta vinculam Telefone, se houvesse a 
+entidade Pessoa, o relacionamento seria apenas entre Pessoa e Telefone e as entidades especializadas (Admin, Funcionário, Atleta) herdariam o relacionamento (e os atributos comuns). 
+isso traria mais clareza à representação do modelo, evitando o cruzamento de linhas. Senti falta das cardinalidades mínimas nos relacionamentos que só apresentam as cardinalidades máximas.
+O aluno poderia usar verbos mais significativos nos relacionamentos. Muitos relacionamentos se chamam "vincula".
+
 
