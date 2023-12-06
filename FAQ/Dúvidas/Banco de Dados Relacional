@@ -137,4 +137,23 @@ entidade Pessoa, o relacionamento seria apenas entre Pessoa e Telefone e as enti
 isso traria mais clareza à representação do modelo, evitando o cruzamento de linhas. Senti falta das cardinalidades mínimas nos relacionamentos que só apresentam as cardinalidades máximas.
 O aluno poderia usar verbos mais significativos nos relacionamentos. Muitos relacionamentos se chamam "vincula".
 
+Pergunta 11 - Estou com o seguinte erro ao tentar a segunda abordagem que foi explicada. Pode me ajudar por favor?
+
+Resposta 11 - Comtribuição de aluno: Não sei se você chegou a resolver, mas tive esse mesmo problema e dando uma olhada aqui percebi que o "erro" está na versão da biblioteca SQLAlchemy. 
+Recentemente foi lançada a versão 2.0 e com isso algumas declarações mudaram. Para resolver isso, você provavelmente tem que instalar a versão 1.4.50 (no momento que estou respondendo, 
+é a última versão anterior à 2.0) para utilizar o código disponibilizado pelo professor ou utilizar a versão 2.0 mas com as novas declarações. Estou implementando os exercícios nessa 
+versão atualizada, segue link do repositório caso alguém queira visualizar e discutir sobre: https://github.com/Lucashcr/BDRel-PUCRS. 
+
+Resposta 11 - Minha resposta: O colega Lucas, tem razão, pode ser a falta dessa atualização sim. Tenta atualiza e avisa se deu certo. No mais o código parece bem correto. 
+Fico no aguardo. 
+
+Pergunta 12 - Estou com o seguinte erro ao tentar a segunda abordagem que foi explicada. Pode me ajudar por favor? O aluno enviou os prints com o erro e seu código.
+
+Resposta 12 - No primeiro erro, estás chamando self.dialect, estes são dois parâmetros enviados dentro do parentese, não entendi? No segundo erro lá em vendedor. registro_vendedor acredito 
+que vendedor_registro não deva estar como UNIQUE e por isso do erro. Estás com erro na linha 30, onde diz session.commit(), estás inserindo dados via cmd ou pelo SGBD? Por o que estou vendo, 
+tu conseguiu criar as tabelas. Aguardo.  Tenta isso:  Dando uma olhada percebi que o "erro" está na versão da biblioteca SQLAlchemy. Recentemente foi lançada a versão 2.0 e com isso 
+algumas declarações mudaram. Para resolver isso, você provavelmente tem que instalar a versão 1.4.50 (no momento que estou respondendo, é a última versão anterior à 2.0) para utilizar o 
+código disponibilizado pelo professor ou utilizar a versão 2.0 mas com as novas declarações. Estou implementando os exercícios nessa versão atualizada, segue link do repositório caso 
+alguém queira visualizar e discutir sobre: https://github.com/Lucashcr/BDRel-PUCRS. Aguardo seu retorno. 
+
 
