@@ -156,4 +156,7 @@ algumas declarações mudaram. Para resolver isso, você provavelmente tem que i
 código disponibilizado pelo professor ou utilizar a versão 2.0 mas com as novas declarações. Estou implementando os exercícios nessa versão atualizada, segue link do repositório caso 
 alguém queira visualizar e discutir sobre: https://github.com/Lucashcr/BDRel-PUCRS. Aguardo seu retorno. 
 
+Resposta 12 - Resposta doa luno - Já havia feito o downgrade do SQLAlchemy conforme deixei nos comentários anteriores. Depois do downgrade 
+consegui executar os exercícios normalmente. 
+
 
