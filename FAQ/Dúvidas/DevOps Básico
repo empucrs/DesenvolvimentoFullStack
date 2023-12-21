@@ -254,3 +254,9 @@ do doker, na parte inferior deve aparcer verde.
 
 Resposta 5 - Está correto o processo para uso do Docker Desktop. 
 
+Comentário 6 -  Tentei efetuar o mesmo processo para limpar as imagens locais e o resultado foi diferente do apresentado em aula. docker_clear mas não foi executado com sucesso.
+
+Resposta 6 -  Em suma, tu deves usar o comando docker image ls, par analisar as imagens contidas no ambiente Docker. Para apagar as imagens com segurança utilize o comando 
+docker image prune. As imagens devem ser listadas novamente. Tu podes também, remover uma imagem específica, através do nome, utilizando o comando $ docker image rm <image_name>. 
+Se preferires forçar a remoção da imagem, utiliza o comando $ docker image rm <image_name> -f. 
+
