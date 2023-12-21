@@ -247,3 +247,10 @@ só não sei se este já estaria com o cod atualizado, não sei se servirá para
 
 Resposta 23 - Que bom! Qualquer coisa chama.
 
+Comentário 5 - Quem utiliza o Win ao executar o comando docker build -t aula-ubuntu-curl -f Dockerfile . para a criação da imagem, exibira o erro abaixo:
+ERROR: error during connect: this error may indicate that the docker daemon is not running: Get "http://%2F%2F.%2Fpipe%2Fdocker_engine/_ping": open //./pipe/docker_engine: 
+The system cannot find the file specified.-t. Pesquisei na internet e consegui rodar coom sucesso somente após habilitar o Docker Desktop. Após verifiquei se o status do daemon 
+do doker, na parte inferior deve aparcer verde. 
+
+Resposta 5 - Está correto o processo para uso do Docker Desktop. 
+
