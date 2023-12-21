@@ -240,3 +240,10 @@ Resposta 22 - O Flyway é uma ferramenta de migração de banco de dados baseada
 onfiável, automatizada e incremental, já o liquidbase é uma ferramenta de migração de banco de dados de código aberto que fornece às organizações uma maneira fácil de rastrear, 
 versão e implantar mudanças no esquema do banco de dados. É diferente de outras ferramentas de migração de banco de dados porque o software entende as mudanças que você está 
 fazendo com base e como você especifica essas mudanças. Logo, o melhor é ser usado no Processo.
+
+Pergunta 23 - Estou tentando localizar link do projeto KubeDev utilizado pelo professor  Fabrício Veronez para executar o fork e não estou localizando na plataforma. Poderiam sinzalizar 
+se esta disponível e em qual local? Não encontrei link para baixar o projeto DeveKub para realizar o fork, entretanto localizei na plataforma um .zip chamado conversão-temperatura-2-main, 
+só não sei se este já estaria com o cod atualizado, não sei se servirá para acompanhamento da aula.  Favor desconsiderar mensagens anteriores, já localizei o repositório e realizei o fork.
+
+Resposta 23 - Que bom! Qualquer coisa chama.
+
