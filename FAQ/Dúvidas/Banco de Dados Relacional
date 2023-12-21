@@ -147,6 +147,9 @@ versão atualizada, segue link do repositório caso alguém queira visualizar e 
 Resposta 11 - Minha resposta: O colega Lucas, tem razão, pode ser a falta dessa atualização sim. Tenta atualiza e avisa se deu certo. No mais o código parece bem correto. 
 Fico no aguardo. 
 
+Resposta 11 - Resposta do Professor: Me parece que o aluno está executando o código várias vezes e repetindo os dados a serem inseridos, com isso ferindo a restrição 
+de integridade de Unique Key. Peça para ele tentar realizar os INSERTS manualmente no banco. Caso ele não consiga deve ser isso mesmo.
+
 Pergunta 12 - Estou com o seguinte erro ao tentar a segunda abordagem que foi explicada. Pode me ajudar por favor? O aluno enviou os prints com o erro e seu código.
 
 Resposta 12 - No primeiro erro, estás chamando self.dialect, estes são dois parâmetros enviados dentro do parentese, não entendi? No segundo erro lá em vendedor. registro_vendedor acredito 
@@ -156,7 +159,7 @@ algumas declarações mudaram. Para resolver isso, você provavelmente tem que i
 código disponibilizado pelo professor ou utilizar a versão 2.0 mas com as novas declarações. Estou implementando os exercícios nessa versão atualizada, segue link do repositório caso 
 alguém queira visualizar e discutir sobre: https://github.com/Lucashcr/BDRel-PUCRS. Aguardo seu retorno. 
 
-Resposta 12 - Resposta doa luno - Já havia feito o downgrade do SQLAlchemy conforme deixei nos comentários anteriores. Depois do downgrade 
+Resposta 12 - Resposta do aluno - Já havia feito o downgrade do SQLAlchemy conforme deixei nos comentários anteriores. Depois do downgrade 
 consegui executar os exercícios normalmente. 
 
 
