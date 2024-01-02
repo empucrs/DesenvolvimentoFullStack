@@ -46,3 +46,25 @@ teria que ser uma só para o relacionamento?
 Resposta 4 - A cardinalidade liga uma entidade a uma ação. Assim é necessária está cardinalidade dos dois lado, pois um cliente pode fazer nenhum ou um cliente e por isso (0,n), 
 e o estabelecimento pode sim, não ter pedido algum, certo?¹. Já do lado do pedido, o estabelecimento pode receber nenhum ou vários pedidos, e por isso (0,n). A multiplicidade, que 
 está na figura a baixo reflete o mesmo cenário, só que a simbologia é um pouco diferente, visto que, novamente o cliente pode fazer nenhum pedido ou vários. 
+
+Comentário 3 - Nem todos os bancos de dados NoSQL são orientados a documentos.
+
+Resposta 3 - Está correto que um banco de dados Relacional exige um esquema prévio. Sem definir a estrutura de uma tabela não é possível criá-la, ao contrário 
+dos bancos de dados NoSQL (também conhecidos como Sem Esquemas Prévios) onde os dados podem ser inseridos sem antes definirmos uma estrutura prévia. Porém existem bancos 
+de dados não relacionais que são orientados a diferentes tipos, como os exemplos abaixo: 
+Tipos de NoSQL:
+▪ Tipo COLUNA (ex. Cassandra)
+▪ Tipo DOCUMENTO (ex. MongoDB) ---> Note que destes exemplos apenas o MongoDB é orientado a documento.
+▪ Tipo CHAVE-VALOR (ex. Couchbase)
+▪ Tipo GRAFO (ex. OrientDB)
+▪ Tipo MULTIMODELOS (ex. ArangoDB).
+NoSQL é indicado para aplicações que: 
+▪ Lidam com grande volume de dados 
+▪ Exigem alto desempenho nas consultas e escritas 
+▪ Exigem escalabilidade horizontal
+Em relação a resposta da questão mencionada: A alternativa "São empregados para implementação de soluções complexas." não está correta porque também podem ser indicados 
+para soluções menos complexas, com as características acima. Além disso os BD Relacionais também são usados para implementação de soluções complexas. Então essa não é a 
+sua principal característica. A principal característica de um BD NoSQL (em geral) é não possuir um esquema prévio. Embora a maioria dos bancos de dados NoSQL seja conhecida 
+por ser schemaless (sem esquema) ou ter um esquema flexível, existem algumas exceções que mantêm um esquema definido ou semi-estruturado. Um exemplo é o Cassandra, um banco 
+de dados distribuído altamente escalável que permite definir um esquema de tabela antes de criar os dados. Embora ofereça flexibilidade em termos de adição de novas colunas 
+sem afetar os dados existentes.
