@@ -308,6 +308,16 @@ ajustes conforme considerações do orientador.
 Resposta 8 - O TCC passa pelo orientador que tem 2 semanas para dar a nota, após passa para o professor avaliador que tem 3 dias para dar a nota. Como estávamos de 
 recesso de Natal e Ano Novo, acredito que tua nota final pode sair esta semana.
 
+Pergunta 31 - Estou com dúvida sobre a seção 5 - Ciclo de Desenvolvimento da Solução, que tem as seguintes orientações: "Antes de iniciar o desenvolvimento de sua solução é importante 
+definir o ciclo de desenvolvimentos. Por quais etapas vais passar? Como serão separadas tais etapas? Como garantir que não haja conflito de versões? Como garantir que soluções em produção 
+não sejam afetadas por versões em desenvolvimento? Como serão feitas as validações das versões?". Que etapas do ciclo de desenvolvimento estão se referindo? Não ficou claro pra mim. 
+
+Resposta 31 - Toda a solução possuí um ciclo de desenvolvimento certo? Ao iniciar o desenvolvimento da tua solução, deves definir como será este ciclo de desenvolvimento. deves descrever 
+as etapas de desenvolvimento, a ordem das etapas, ou seja, primeira, segunda, etc. Quando uma etapa inicia e termina e quando a outra inicia e termina para passar para a próxima etapa. O próprio 
+Git faz o versionamento, por isso deves ter cuidado, pois como o Git versiona, deves ficar alerta para as versões em homologação e a que será colocada como produção e finalmente, estabelecer como 
+será realizada essas validações de versão, neste último caso, podes utilizar o Git para te auxiliar. Para ter um entendimento melhor desta seção, baixa o template de apoio, referente ao 
+desenvolvimento de soluções. Ele está bem claro. 
+
 
 
 
