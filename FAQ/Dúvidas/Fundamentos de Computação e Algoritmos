@@ -187,5 +187,10 @@ Comentário 4 - Para facilitar a visualização do conteúdo que está sendo exi
 Resposta 4 -  No link: https://github.com/empucrs/DesenvolvimentoFullStack. Como forma de auxílio, tens os códigos desta disciplina, tutoriais, desafios, FAQ e o livro da disciplina de UX. Podes baixar tudo 
 que achares relevante. 
 
+Pergunta 23 - Estou usando igual ao senhor o DevTools para fazer os códigos de explicação, e ao tentar executar o código de criação de objetivo como fábrica deu um erro, eu fiz a função do criarEmpregado, 
+criei um empregado com os valores e ao passar o método de calcular o salário aparece NaN. O que é isso? Fiquei perdida.
+
+Resposta 23 - Podes enviar o print? Para identificar o erro? Tu inicializou a variável que faz o calculo com zero? Estou te enviado o link com os códigos do professor para comparar.
+
 
 
