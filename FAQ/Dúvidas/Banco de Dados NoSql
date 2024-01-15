@@ -68,3 +68,8 @@ sua principal característica. A principal característica de um BD NoSQL (em ge
 por ser schemaless (sem esquema) ou ter um esquema flexível, existem algumas exceções que mantêm um esquema definido ou semi-estruturado. Um exemplo é o Cassandra, um banco 
 de dados distribuído altamente escalável que permite definir um esquema de tabela antes de criar os dados. Embora ofereça flexibilidade em termos de adição de novas colunas 
 sem afetar os dados existentes.
+
+Comentário 4 - Material incompleto do Exemplo prático.
+
+Resposta 4 - Se tu fores em Desenvolvimento Full Stack--> Conteúdo --> Disciplina Banco de dados No SQL, encontrarás material complementar. Lá tu encontrarás 
+o que precisa para complementar o exemplo prático. 
