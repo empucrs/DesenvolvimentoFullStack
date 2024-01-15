@@ -260,3 +260,8 @@ Resposta 6 -  Em suma, tu deves usar o comando docker image ls, par analisar as 
 docker image prune. As imagens devem ser listadas novamente. Tu podes também, remover uma imagem específica, através do nome, utilizando o comando $ docker image rm <image_name>. 
 Se preferires forçar a remoção da imagem, utiliza o comando $ docker image rm <image_name> -f. 
 
+Pergunta 24 - Teste Online: segue tela das tentativas (o aluno enviou o print), uma sem conseguir finalizar por conta da lentidão e sincronismo da página que quando sumiu o icone, 
+não exibiu o botão para confirmar o envio, o que devemos fazer, será que irá sincronizar e atualizar a informação da nota da segunda tentativa??
+
+Resposta 24 -  Atualiza com a nota da segunda tentativa. 
+
