@@ -78,3 +78,11 @@ Comentário 5 - Eu sei que esse material está disponível, porém, a imagem do 
 
 Resposta 5 -  A imagem do Docker, tu podes selecionar a que tu quiseres, até para testar. Não há necessidade de usar a imagem do exemplo. Espero ter sido mais clara. 
 Qualquer coisa chama. 
+
+Pergunta 5 - Estou com uma dúvida referente ao procedimento de bind da porta do container com a máquina host local, apresentado no exemplo prático de MongoDB 
+(Aula 02, Parte 2, minuto 19). O professor apresenta o comando "docker run mongo -p 27017:27017" para fazer o bind. Ao replicar o exemplo na minha máquina, ao dar esse comando, 
+o seguinte erro é retornado "Error parsing command line: unrecognised option '-p'". Busquei o erro em fóruns, mas não encontrei nada que me ajudasse nesse caso. Tens alguma sugestão 
+do que posso verificar para entender o que estou fazendo errado e como corrigir?
+
+Resposta 5 - Acredito que esteja com container duplicado e por isso do erro. Verifica o container, se por acaso não está duplicado, deleta um deles se estiver e tenta o comando novamente. 
+Comandos para verificação de suplicação: docker pull mongo:latest  e docker run --name mongo -d mongo:latest. 
