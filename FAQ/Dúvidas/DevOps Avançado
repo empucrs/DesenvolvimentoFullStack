@@ -225,3 +225,20 @@ isso quando executam. Eu não quis compartilhar a minha frustração com os alun
 Resposta 5 - Os comentários foram repassados ao Professor e a Coordenação do Curso, como disse anteriormente, estamos providenciando um Use Experience para o Curso, mas tenho 
 que aguardar a coordenação. Diante disso, com a proposta de Use Experience já enviada a Coordenação, precisamos aguardar o retorno. Neste Use Experience vocês poderão comentar 
 minuciosamente, se for o caso, todos os pontos, observados por vocês no Curso. Reforço, estamos aguardando a aprovação para colocar em prática este Canvas de Use Experience.
+
+Comentário 6 - Estou com a seguinte mensagem de erro:
+Build failed to start
+Build failed to start. The following error occurred: Cannot have more than 0 builds in queue for the account.
+
+Resposta 6 - Esse tipo de problema está relacionado as cotas para o número máximo de compilações em execução simultânea. Para alguns tipos de projeto e 
+plataformas, o padrão é 20. Se tu tens mais de um projeto rodando para ele e deixa só o que tu precisas Buildar para que a falha, ao startar deixe de ocorrer.
+
+Comentário 7 - Não explica como criar a Role. Pra mim não aparece nenhuma role criada.
+
+Resposta 7 - Para criar uma role é necessário ter em mente que após criar funções, você pode conceder privilégios de objeto à função e depois conceder a função a outras funções 
+ou usuários individuais para permitir a segurança do controle de acesso para objetos no sistema. Essa é a sintaxe para criação da role: 
+CREATE [ OR REPLACE ] ROLE [ IF NOT EXISTS ] <name>
+  [ COMMENT = '<string_literal>' ]
+  [ [ WITH ] TAG ( <tag_name> = '<tag_value>' [ , <tag_name> = '<tag_value>' , ... ] ) ]. 
+Importante: O identificador deve começar com um caractere alfabético e não pode conter espaços ou caracteres especiais a menos que toda a cadeia de caracteres do 
+identificador esteja entre aspas duplas (por exemplo, "My object"). Os identificadores delimitados por aspas duplas também diferenciam letras maiúsculas de minúsculas. 
