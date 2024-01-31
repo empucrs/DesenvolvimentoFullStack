@@ -79,3 +79,12 @@ interessante, se é pra mostrar algo rápido e etc ok, até entendo!! Mas usar t
 
 Resposta 4 - Às vezes é necessário usar o console devido ao nível de dificuldade do projeto. Verás que em outras disciplinas outras formas de rodar o projeto, como ao utilizar o 
 localhost também estão comtempladas no curso.
+
+Pergunta 9 - Estou usando igual ao senhor o DevTools para fazer os códigos de explicação, e ao tentar executar o código de criação de objetivo como fábrica deu 
+um erro, eu fiz a função do criarEmpregado, criei um empregado com os valores e ao passar o método de calcular o salário aparece NaN. O que é isso? Fiquei perdida.
+Para resolver eu apaguei os dados no console e fiz de novo, não tenho print. Apaguei tudo e fiz de novo. Recriei aquela parte de código.
+
+Resposta 9 - Podes enviar o print? Para identificar o erro? Tu inicializou a variável que faz o calculo com zero? Estou te enviado o link com os códigos do professor 
+para comparar. Tu apagou todo o código digitado no IDE e fez de novo? Isso? É assim mesmo que se aprende. Deu erro, pergunta, manda o print, se por acaso não tirares o print, faz novamente e testa. 
+É uma forma de reforçar o que já fez o aprendizado. 
+
