@@ -237,9 +237,8 @@ forma possível. Na tentativa de melhor te auxiliar segue material pro professor
 Comentário 7 - Não explica como criar a Role. Pra mim não aparece nenhuma role criada.
 
 Resposta 7 - Para criar uma role é necessário ter em mente que após criar funções, você pode conceder privilégios de objeto à função e depois conceder a função a outras funções 
-ou usuários individuais para permitir a segurança do controle de acesso para objetos no sistema. Essa é a sintaxe para criação da role: 
-CREATE [ OR REPLACE ] ROLE [ IF NOT EXISTS ] <name>
-  [ COMMENT = '<string_literal>' ]
-  [ [ WITH ] TAG ( <tag_name> = '<tag_value>' [ , <tag_name> = '<tag_value>' , ... ] ) ]. 
-Importante: O identificador deve começar com um caractere alfabético e não pode conter espaços ou caracteres especiais a menos que toda a cadeia de caracteres do 
-identificador esteja entre aspas duplas (por exemplo, "My object"). Os identificadores delimitados por aspas duplas também diferenciam letras maiúsculas de minúsculas. 
+ou usuários individuais para permitir a segurança do controle de acesso para objetos no sistema. Uma "Role", para ser mais simplista, está ligado ao CodePipeline, assim, na tentativa 
+de auxiliar melhor, clica no link: GitHub - cassiowt/cloudformation-demo: Exemplo de Cloud Formation para cursos DevOps. --> "Code" --> Download Zip --> Vai baixar compactado, descompacta 
+e novamente abre um novo "File" no VS code para abrir o projeto. Compara com o teu. O professor Cássio trata de "Role" a partir da página 13 do pdf apresentado na aula. Estou te enviando em anexo. 
+Qualquer coisa me chama.
+
