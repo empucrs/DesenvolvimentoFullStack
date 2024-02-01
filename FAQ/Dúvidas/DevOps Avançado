@@ -230,8 +230,9 @@ Comentário 6 - Estou com a seguinte mensagem de erro:
 Build failed to start
 Build failed to start. The following error occurred: Cannot have more than 0 builds in queue for the account.
 
-Resposta 6 - Esse tipo de problema está relacionado as cotas para o número máximo de compilações em execução simultânea. Para alguns tipos de projeto e 
-plataformas, o padrão é 20. Se tu tens mais de um projeto rodando para ele e deixa só o que tu precisas Buildar para que a falha, ao startar deixe de ocorrer.
+Resposta 6 -  No link https://github.com/cassiowt/nodepipeline-devops, baixa em "Code" -->  Dowload ZIP o projeto do professor Cassio. I projeto vai ser baixado compactado, 
+descompacta e abre em um no "File" este projeto. Compara o teu com o dele, pois sem o print, só com a informação de falha de build, está complicado de te ajudar da melhor 
+forma possível.
 
 Comentário 7 - Não explica como criar a Role. Pra mim não aparece nenhuma role criada.
 
