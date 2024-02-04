@@ -202,5 +202,9 @@ Pergunta 25 - Qual a diferença da linha de código que termina com ";" para a q
 Resposta 25 - Se está entre aspas é um texto escrito que será apresentado na tela (ou uma String). Se no código o ponto-e-vírgula indica o término da linha de código e a Vírgula, 
 que alguma linha de código complementará o raciocínio. 
 
+Pergunta 26 - Como eu posso fazer para acessar o Área de trabalho do computador, visto que o terminal não aceita espaço no nome? 
+
+Resposta 26 - Só minimizar o terminal (via cmd ou prompt) ou o VSCode (se estiveres trabalhando com o terminal, via IDE). Assim terás acesso a área de trabalho do teu computador. 
+
 
 
