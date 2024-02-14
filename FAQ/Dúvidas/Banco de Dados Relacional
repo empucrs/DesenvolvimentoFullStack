@@ -162,7 +162,7 @@ alguém queira visualizar e discutir sobre: https://github.com/Lucashcr/BDRel-PU
 Resposta 12 - Resposta do aluno - Já havia feito o downgrade do SQLAlchemy conforme deixei nos comentários anteriores. Depois do downgrade 
 consegui executar os exercícios normalmente. 
 
-Comentário 6 - Gostaria de reportar que os códigos utilizados pelo professor claudio não funcionam mais devido a versão do sqlalchemy que teve alterações major, 
+Comentário 6 - Gostaria de reportar que os códigos utilizados pelo professor claudio não funcionam mais devido a versão do sqlalchemy que teve alterações maior, 
 logo se tornando impossível acompanhar as aulas pelo conteúdo do jeito que ele mostra, consegui atualizar meu código para uma versão mais atual, mas acho que seria bom 
 disponibilizar um container com a versão correta instalada ou pelo menos avisar sobre a questão do versionamento em algum lugar para evitar dores de cabeça.
 
