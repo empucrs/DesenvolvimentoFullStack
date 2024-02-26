@@ -86,3 +86,7 @@ do que posso verificar para entender o que estou fazendo errado e como corrigir?
 
 Resposta 5 - Acredito que esteja com container duplicado e por isso do erro. Verifica o container, se por acaso não está duplicado, deleta um deles se estiver e tenta o comando novamente. 
 Comandos para verificação de suplicação: docker pull mongo:latest  e docker run --name mongo -d mongo:latest. 
+
+Pergunta 6 - Foi dito na aula 1 parte 3 que teria uma atividade, eu não estou encontrando onde ela está?
+
+Resposta 6 - Está no livro da disciplina. Entra na disciplina, na sala de aula virtual e faz o download do livro. Por aqui não consigo enviar. Arquivo muito grande.
