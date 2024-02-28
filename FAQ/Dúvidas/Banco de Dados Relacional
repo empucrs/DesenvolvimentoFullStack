@@ -168,4 +168,11 @@ disponibilizar um container com a versão correta instalada ou pelo menos avisar
 
 Resposta 6 - Vou enviar mensagem ao professor solicitando a correção.
 
+Comentário 7 - Estou tentando executar o script completo para inserção de dados e quando executo a segunda forma explicada na aula, esta gerando o erro abaixo: já baixei o código 
+do seu github e editei o nome da tabela Produto de acordo com o que criei e esta exibindo a mesma msg de erro, poderia sinalizar o que poderia esta sendo executado de forma errada.
+
+Resposta 7 - Parece que tu podes estar executando o código várias vezes e repetindo os dados a serem inseridos, com isso ferindo a restrição de integridade de Unique Key. 
+Tenta realizar os INSERTS manualmente no banco.
+
+
 
