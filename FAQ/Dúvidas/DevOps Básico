@@ -265,3 +265,14 @@ não exibiu o botão para confirmar o envio, o que devemos fazer, será que irá
 
 Resposta 24 -  Atualiza com a nota da segunda tentativa. 
 
+Pergunta 25 - Nesta parte de issue do github e a associação com histórias de usuário, como funciona? 
+
+Resposta 25 - Os GitHubs Issues são itens que podem ser criados em um repositório para planejar, discutir e monitorar o trabalho. Ele permite o acompanhamento do trabalho através 
+do GitHub, ou seja, por exemplo: Ao mencionar um problema em outro problema ou pull request, a linha do tempo do problema reflete a referência cruzada para que você possa 
+acompanhar o trabalho relacionado. Para indicar que o trabalho está em andamento, então tu podes vincular um problema a um pull request. Quando o pull request faz merge, 
+o problema vinculado é fechado automaticamente. Para Criar um Issue, na barra superior, a baixo de giyhub/nomeDoRepositório, tu clicas em issues --> Novo Problema 
+(Se o repositório usar modelos de problemas, ao lado do tipo de problema que você deseja abrir, clique em Introdução. Se o tipo de problema que você deseja abrir não 
+estiver incluído nas opções disponíveis, clique em Abrir um problema em branco) --> No campo título dê um nome ao problema --> No corpo do comentário, digite uma 
+descrição do problema --> Ao término, clique em Enviar novo problema. Espero ter ajudado. Tu podes também ir na documentação do GitHub e verificar os exemplo com print de tela. 
+Segue link: https://docs.github.com/pt/issues.
+
