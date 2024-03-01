@@ -174,5 +174,10 @@ do seu github e editei o nome da tabela Produto de acordo com o que criei e esta
 Resposta 7 - Parece que tu podes estar executando o código várias vezes e repetindo os dados a serem inseridos, com isso ferindo a restrição de integridade de Unique Key. 
 Tenta realizar os INSERTS manualmente no banco.
 
+Comentário 7 - Antes de executar o script eu apaguei os dados das tabelas, executei os mesmos passos que são apresentados na aula, vou tentar analisar melhor, mas a intenção é 
+executar o script conforme o professor mostrou em aula.
+
+Resposta 7 -  Isso mesmo! O ideal então é "dropar" tudo e criar um banco de dados novo. Assim tu poderás usar o script.
+
 
 
