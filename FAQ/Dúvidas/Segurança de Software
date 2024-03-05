@@ -78,3 +78,14 @@ Pergunta 6 - Tem uma questão que eu gostaria de contestar também, sobre a CIFR
 Resposta 6 - Por que ao cifrar a palavra, deves ter esquecido que é uma palavra em mauícula. Segue resposta do professor: "Conferi e a resposta indicada como correta é a letra A mesmo e o 
 gabarito está correto. O aluno fez um deslocamento para frente e não seguiu a figura da questão.". 
 
+Pergunta 7 -  Refrente ao enunciado da questão abaixo, deveríamos marcar a opção correta ou incorreta? Questão 9: Você foi desafiado a decifrar um texto cifrado. O texto cifrado usou a 
+cifra AES com o modo de operação CTR e sem preenchimento (NoPadding). Você recebe vetor de inicialização (IV), o texto cifrado e a chave que foi utilizada para cifrar o texto claro. 
+Todas as informações estão em hexadecimal.  Para decifrar você pode utilizar qualquer linguagem que forneça uma biblioteca para o AES, por exemplo, PyCrypto (Python), Crypto++ (C++), 
+Java. Ou algum site que consiga decifrar este texto, por exemplo, https://the-x.cn/en-us/cryptography/Aes.aspxConsiderando IV = 69DDA8455C7DD4254DF353B773304EEC, 
+texto cifrado = 6B6627C957C42F97F5F839ADE8AFEF2DA2C47E7A20282C4E5C044513469E1922D6D671D1E7165118CB636AC0AC235EAA0D54FB32C48ADDB60E821B8FF7290BB7e a chave utilizada = 
+36F18357BE4DBD77F050515C73FCF9F2A) AES ECB é o modo de operação que revela informações ao atacante.B) CBC não permite que a cifragem e a decifragem sejam em paralelo.C) 
+AES é a cifra que é utilizada como padrão em diversos protocolos.D) CTR permite que a cifragem e decifragem sejam feitas em paralelo. Fiquei em dúvida durante a prova, pois 
+acredito que tenha mais de uma alternativa verdadeira.
+
+Resposta 7 - A alternativa correta é a "D", devido a chave gerada para o texto, pois permite seu uso de cifragem e decifragem em paralelo.
+
